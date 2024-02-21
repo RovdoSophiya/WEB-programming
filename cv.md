@@ -8,17 +8,33 @@ tepephone: +375293174309
 gmail: [rovdosophiya@gmail.com](mailto:rovdosophiya@gmail.com)  
 email: [ms.sanson@mail.ru](https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lslfgkgt.0gs&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi%2Cnavi&x-login-auth=1&afterReload=1)  
 
+___
 **My goals:**  
 - improve englisg
 - learn programming
 - finish university with red diploma  
 
+____
 **Education:**  
  Place of studying: Belarusian-Russian University  
  Years of studying: 2020-n.d  
  Degree name: Balalavr 
 
+_____
 **Advantages:**  
 - assudity
 - responsibility
 - stress resistance  
+
+____
+**My Projects:**  
+- [PNPK](https://github.com/RovdoSophiya/Lab_rab8_PNPK)
+- [TestingProgram](https://github.com/RovdoSophiya/TestingProgram)
+
+_________
+**Experience of work:**  
+none 
+
+___
+**English language:**  
+B2 level, finish courses in English School  
