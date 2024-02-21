@@ -3,6 +3,8 @@
 **Sophiya Rouda**  
 student of group PIR-221
 
+<image src="D:/images/photo.jpg" alt="Photo">
+
 **Contacts:**  
 tepephone: +375293174309  
 gmail: [rovdosophiya@gmail.com](mailto:rovdosophiya@gmail.com)  
