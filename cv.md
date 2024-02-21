@@ -3,7 +3,7 @@
 **Sophiya Rouda**  
 student of group PIR-221
 
-<image src="D:/images/photo.jpg" alt="Photo">
+<image src="images/photo.jpg" alt="Photo">
 
 **Contacts:**  
 tepephone: +375293174309  
