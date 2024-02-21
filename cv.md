@@ -38,3 +38,28 @@ none
 ___
 **English language:**  
 B2 level, finish courses in English School  
+
+___
+**Example of code:**  
+```csharp
+static string PathEnter()
+{
+    Console.WriteLine("Введите filePath");
+    string filePath = Console.ReadLine();
+    Console.Clear();
+    return filePath;
+}
+
+static List<String> QuastionGenerator(string data, int count, List<String> anwserToList)
+{
+    string Quastion = data;
+    string[] Qua = Quastion.Split('%', '#');
+    for (int i = 1; i < Qua.Length; i++)
+    {
+        Console.WriteLine(Qua[i]);
+        string anwser = Console.ReadLine();
+        anwserToList.Add($"{count}, {anwser}");
+        Console.Clear();
+    }
+    return anwserToList;
+}
