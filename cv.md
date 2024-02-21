@@ -14,6 +14,11 @@ email: [ms.sanson@mail.ru](https://e.mail.ru/inbox/?app_id_mytracker=58519&authi
 - finish university with red diploma  
 
 **Education:**  
-- Place of studying: Belarusian-Russian University  
-- Years of studying: 2020-n.d  
-- Degree name: Balalavr 
+ Place of studying: Belarusian-Russian University  
+ Years of studying: 2020-n.d  
+ Degree name: Balalavr 
+
+**Advantages:**  
+- assudity
+- responsibility
+- stress resistance  
