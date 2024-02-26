@@ -1,1 +1,3 @@
-https://github.com/RovdoSophiya/WEB-programming/blob/Markdown/cv.md
+ My CV
+https://rovdosophiya.github.io/WEB-programming/
+
