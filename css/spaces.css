@@ -1,0 +1,143 @@
+.spaces-title__block {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.speces-cards{
+  display: flex;
+  gap: 30px;
+}
+.spaces-title {
+  font-family: DM Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 1px;
+text-align: center;
+width: 73px;
+height: 29px;
+top: 2493px;
+left: 683px;
+margin: 0 auto;
+}
+.spaces-card__title {
+  font-family: DM Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 31px;
+letter-spacing: 0em;
+text-align: center;
+height: 31px;
+margin: 0 auto;
+margin-bottom: 10px;
+}
+.spaces-card__subtitle {
+  font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: center;
+width: 234px;
+height: 84px;
+opacity: 0.6;
+text-align: center;
+margin: 0 auto;
+margin-bottom: 60px;
+}
+.spaces-card__description {
+  font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+width: 190px;
+height: 28px;
+left: 40px;
+}
+.spaces-card__items {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+.spaces-card {
+  background-color: #FFF0D2;
+  width: 270px;
+  height: 641px;
+  border-radius: 16px;
+  padding-top: 40px;
+}
+
+.blue-card {
+  background-color: white;
+}
+
+ .spaces-card:hover {
+  background-color: #FFF0D2;
+} 
+
+
+/* .spaces-card__btn {
+border: 1px solid #FFB21E1A;
+width: 192px;
+padding: 16px 24px;
+gap: 16px;
+border-radius: 8px; 
+background-color: white;
+font-family: DM Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: center;
+color: #FFB21E;
+margin-top: 50px;
+} */
+
+.btn {
+  border: 1px solid #1254FF1A;
+  width: 192px;
+padding: 16px 24px;
+gap: 16px;
+border-radius: 8px;  
+background-color: white;
+font-family: DM Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0em;
+text-align: left;
+margin-top: 50px;
+color: #1254FF;
+}
+
+.yel-btn {
+  color: #FFB21E;
+  border: 1px solid #FFB21E1A;
+}
+.spaces-card__link {
+display: flex;
+justify-content: center;
+gap: 16px;
+}
+
+.spaces-card__btn {
+  border: 1px solid #FFB21E1A;
+  width: 192px;
+  padding: 16px 24px;
+  gap: 16px;
+  border-radius: 8px; 
+  background-color: #FFB21E;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  margin-top: 50px;
+  }
+.spaces-wrap {
+  padding-bottom: 250px;
+}
