@@ -1,0 +1,69 @@
+.facilities-logo {
+  font-family: DM Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 29px;
+letter-spacing: 1px;
+text-align: center;
+width: 90px;
+height: 29px;
+top: 1581px;
+left: 674px;
+margin: 0 auto;
+}
+.facilities-title {
+  font-family: Questrial;
+font-size: 64px;
+font-weight: 400;
+line-height: 99px;
+letter-spacing: 0em;
+text-align: center;
+width: 1200px;
+height: 99px;
+top: 1642px;
+left: 120px;
+}
+.facilities-titles {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.facilities-title__item {
+  font-family: DM Sans;
+font-size: 24px;
+font-weight: 400;
+line-height: 35px;
+letter-spacing: 0px;
+text-align: left;
+height: 35px;
+top: 80px;
+font-weight: 500;
+margin-bottom: 10px;
+margin-top: 10px;
+}
+.facilities-description__item{
+  font-family: DM Sans;
+font-size: 18px;
+font-weight: 400;
+line-height: 28px;
+letter-spacing: 0px;
+text-align: left;
+width: 312px;
+height: 84px;
+top: 123px;
+opacity: 0.6;
+
+}
+.facilities-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+  
+}
+.facilities-block__item {
+  margin-bottom: 35px;
+}
+.facilities-wrap {
+  margin-bottom: 100px;
+}

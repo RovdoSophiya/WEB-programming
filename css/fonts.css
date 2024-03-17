@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Questria";
+  src: url("../fonts/Questrial-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url("../fonts/DMSans-Regular.ttf");
+  font-weight: 400;
+}
