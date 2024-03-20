@@ -1,32 +1,51 @@
 body {
   background-color: rgb(245, 240, 240);
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1442px;
 }
+
+.header {
+  width: 1200px;
+  height: 108px;
+  flex-shrink: 0;
+}
+
 .container {
-  padding: 0 15px;
+  flex-shrink: 0;
   max-width: 1200px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
 }
 
 .logo {
   width: 168px;
-  height: 49px;
+  height: 68px;
+  flex-shrink: 0;
   top: 130px;
   left: 234px;
-  font-family: Questrial;
+  color: #000;
+  font-family: Questria;
   font-size: 48px;
+  font-style: normal;
   font-weight: 400;
-  line-height: 49px;
-  letter-spacing: 0em;
-  text-align: left;
+  line-height: normal;
 }
+
 .navigation-list {
+  width: 688px;
+  height: 26px;
+  flex-shrink: 0;
   display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-shrink: 0;
+  list-style-type: none;
 }
 
 .navigation-list__item:not(:first-child) {
@@ -34,6 +53,18 @@ body {
 }
 
 .navigation-list__item a {
+  width: 109px;
+  flex-shrink: 0;
+  color: #000;
+
+  text-align: center;
+  font-family: "DM Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: none;
+
+  /* line-height: normal;
   font-size: 14px;
   font-weight: 600;
   color: black;
@@ -45,5 +76,5 @@ body {
   letter-spacing: 0em;
   text-align: center;
   width: 109px;
-  height: 26px;
+  height: 26px; */
 }
