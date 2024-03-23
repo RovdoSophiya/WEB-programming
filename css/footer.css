@@ -1,73 +1,87 @@
 .footer-wrap {
+  margin-left: -3px;
   padding-bottom: 40px;
 }
 .footer-info {
-  margin-bottom: 70px;
+  margin-bottom: 59px;
 }
 .footer-info__links {
   display: flex;
   justify-content: space-between;
 }
 .block__titile {
-  font-family: Questrial;
-font-size: 40px;
-font-weight: 400;
-line-height: 41px;
-letter-spacing: 0em;
-text-align: left;
-width: 140px;
-height: 41px;
-margin-bottom: 25px;
+  font-family: Questria;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 140px;
+  height: 41px;
+  margin-bottom: -4px;
+  margin-top: 10px;
 }
 .block__subtitile {
-font-family: DM Sans;
-font-size: 18px;
-font-weight: 400;
-line-height: 28px;
-letter-spacing: 0em;
-text-align: left;
-width: 230px;
-opacity: 0.6;
-margin-bottom: 25px;
-color: #000000;
-
+  font-family: DM Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 230px;
+  opacity: 0.6;
+  margin-bottom: 25px;
+  color: #000000;
 }
 .footer-media {
   display: flex;
   gap: 25px;
 }
-.footer-media a{
+.footer-media a {
   text-decoration: none;
+  margin-left:-1px;
+}
+.info-links__block{
+  margin-left: -30px;
+  margin-top: -16px;
 }
 .info-links__title {
   font-family: DM Sans;
-font-size: 24px;
-font-weight: 500;
-line-height: 31px;
-letter-spacing: 0em;
-text-align: left;
-margin-bottom: 35px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.info-links__title_email {
+  font-family: DM Sans;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-top: 10px;
 }
 .info-links a {
   display: block;
   text-decoration: none;
   font-family: DM Sans;
-font-size: 18px;
-font-weight: 400;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: left;
-width: 50px;
-color: #000000;
-margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  width: 50px;
+  color: #000000;
+  margin-bottom: 25px;
 }
 .copywrite-text {
   font-family: DM Sans;
-font-size: 16px;
-font-weight: 400;
-line-height: 21px;
-letter-spacing: 0.01em;
-text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+  text-align: left;
 }
 .copywrite {
   display: flex;
@@ -77,22 +91,35 @@ text-align: left;
 hr {
   border: 0.5px solid #000000;
   width: 889px;
-top: 461px;
-left: 430px;
-border: 0.5 ;  
-opacity: 0.2;
+  top: 461px;
+  left: 430px;
+  border: 0.5;
+  opacity: 0.2;
+}
+.email{
+  width: 282px;
+  margin-right: 32px;
+  display: inline-flex;
+padding: 16px;
+align-items: flex-start;
+gap: 10px;
+border-radius: 8px;
+border: 1px solid rgba(0, 0, 0, 0.10);
+
+background: #FFF;
+
 }
 .email-input {
-  border: 1px solid #0000001A;
-  width: 314px;
-padding: 16px; 
-gap: 10px;
-border-radius: 8px; 
-font-family: DM Sans;
+  width: 232px;
+  color: #000;
+border: none;
+font-family: "DM Sans";
 font-size: 18px;
+font-style: normal;
 font-weight: 400;
-line-height: 23px;
-letter-spacing: 0em;
-text-align: left;
-
+line-height: normal;
+}
+.black-arrow{
+  width: 24px;
+height: 24px;
 }

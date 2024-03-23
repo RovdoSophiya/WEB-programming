@@ -1,5 +1,5 @@
 .facilities {
-  height: 872px;
+  height: 860px;
   flex-shrink: 0;
 }
 
@@ -70,18 +70,20 @@
 }
 .facilities-block {
   display: inline-flex;
-align-items: flex-start;
-gap: 132px;
+  align-items: flex-start;
+  gap: 132px;
 }
 .facilities-block__item {
-  margin-bottom: 35px;
-  margin-right: -3px;
+  margin-bottom: 33px;
+  margin-right: -4px;
   width: 312px;
-height: 207px;
+  height: 207px;
 }
-.facilities-wrap {
-  margin-bottom: 100px;
-}
-.swap{
+
+
+.swap {
   height: 48px;
+}
+.vector-blue{
+
 }
