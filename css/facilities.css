@@ -35,16 +35,10 @@
   }
   .advantages-list {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 4.7%;
-  }
-  .advantages-row {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 11%; /* 132px */
-  }
-  .second-row {
-    padding-top: 6.8%;
+    gap: 20% 11%;
   }
   .advantages-title {
     color: #000;
@@ -64,6 +58,7 @@
     line-height: 155%; /* 27.9px */
     opacity: 0.6;
     margin-top: 3%;
+    margin-bottom: 26%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1200px) {
@@ -102,17 +97,12 @@
     padding-top: 1%;
   }
   .advantages-list {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 4.7%;
-  }
-  .advantages-row {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 11%; /* 132px */
-  }
-  .second-row {
-    padding-top: 6.8%;
+    gap: 11% 6.8%;
   }
   .advantages-title {
     color: #000;
@@ -170,17 +160,12 @@
     padding-top: 1%;
   }
   .advantages-list {
+    justify-content: center;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     padding-top: 4.7%;
-  }
-  .advantages-row {
-    display: inline-flex;
-    align-items: flex-start;
-    gap: 11%; /* 132px */
-  }
-  .second-row {
-    padding-top: 6.8%;
+    gap: 11% 6.8%;
   }
   .advantages-title {
     color: #000;
