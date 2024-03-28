@@ -1,63 +1,147 @@
-body {
-  background-color: rgb(245, 240, 240);
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1442px;
+@media (min-width: 1200px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company-text {
+    width: 14%; /*168px*/
+  }
+  .logo {
+    color: #000;
+    font-family: Questria;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.33%; /*40px*/
+    width: 55.67%; /*668px*/
+    height: 26px;
+  }
+  .header-bar a {
+    width: 16.31%; /*668px*/
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .menu {
+    display: none;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company-text {
+    width: 14%; /*168px*/
+  }
+  .logo {
+    color: #000;
+    font-family: Questria;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 3.33%; /*40px*/
+    width: 55.67%; /*668px*/
+    height: 26px;
+  }
+  .header-bar a {
+    width: 16.31%; /*668px*/
+    color: #000;
+    text-align: center;
+    font-family: "DM Sans";
+    font-size: 1.25em;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
+  .menu {
+    display: none;
+  }
 }
 
-.header {
-  width: 1200px;
-  height: 108px;
-  flex-shrink: 0;
+@media (max-width: 1000px) {
+  .header-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company-text {
+    width: 14%; /*168px*/
+  }
+  .logo {
+    color: #000;
+    font-family: Questria;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-bar {
+    display: none;
+  }
 }
 
-.container {
-  flex-shrink: 0;
-  max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+@media (min-width: 320px) and (max-width: 500px) {
+  .header-container {
+    width: 100%;
+    display: flex;
 
-.logo {
-  width: 168px;
-  height: 68px;
-  flex-shrink: 0;
-  top: 130px;
-  left: 234px;
-  color: #000;
-  font-family: Questria;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.navigation-list{
-  display: flex;
-width: 688px;
-height: 26px;
-align-items: flex-start;
-gap: 40px;
-flex-shrink: 0;
-list-style-type: none;
-margin-bottom: 35px;
-}
+    justify-content: space-between;
+    align-items: center;
+  }
+  .company-text {
+    width: 14%; /*168px*/
+  }
+  .logo {
+    color: #000;
+    font-family: Questria;
+    font-size: 2.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .header-bar {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    width: 97px;
+    height: 26px;
+    padding: 0px 6px 2px 7px;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-text {
+    width: 84px;
+    height: 24px;
+    color: #000;
 
-.navigation-list__item a{
-  width: 109px;
-  flex-shrink: 0;
-  color: #000;
-
-text-align: center;
-font-family: "DM Sans";
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-decoration: none;
-margin-left: 40px;
+    font-family: Questria;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }

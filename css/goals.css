@@ -1,97 +1,186 @@
-.goals-block {
-  display: flex;
-  align-items: center;
-  padding: 0px 185px 150px 150px;
-  justify-content: center;
-  align-items: center;
-  height: 463px;
-}
-.image img {
-  /* width: 357px;
-height: 341px;
-top: 1007px;
-left: 155px; */
+@media (min-width: 1200px) {
+  .about-company {
+    width: 94%; /*1128px*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    align-items: flex-start;
+  }
+  .company-image {
+    padding-top: 6%;
+  }
+  .about-info {
+    padding-top: 14.5%;
+  }
+  .goal-title {
+    color: #000;
+    font-family: Questria;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 92.8px */
+    padding-top: 1%;
+  }
+  .goal-vector {
+    padding-bottom: 0.7%;
+  }
+  .text-about {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .goals-description {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 31px */
+    padding-top: 1%;
+  }
+  .link-block {
+    padding-top: 4.7%;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5%;
+  }
+  .link-block a {
+    color: #1254ff;
 
-  border-radius: 100%;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
 }
-.image {
-}
-.image-goal {
-  margin-bottom: 20px;
-  margin-left: 38px;
-  margin-right: 35px;
-}
-.goals-info {
-  width: 666px;
-  height: 308px;
-  flex-shrink: 0;
-  margin-top: 14px;
-  margin-right: 25px;
-}
+@media (min-width: 1000px) and (max-width: 1200px) {
+  .about-company {
+    width: 94%; /*1128px*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    align-items: flex-start;
+  }
+  .company-image {
+    padding-top: 6%;
+  }
+  .about-info {
+    padding-top: 14.5%;
+  }
+  .goal-title {
+    color: #000;
+    font-family: Questria;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 92.8px */
+    padding-top: 1%;
+  }
+  .text-about {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .goals-description {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 31px */
+    padding-top: 1%;
+  }
+  .link-block {
+    padding-top: 4.7%;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5%;
+  }
+  .link-block a {
+    color: #1254ff;
 
-.goal_vector {
-  padding-bottom: 8px;
-  margin-left: 15px;
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
 }
-.text-about {
-  width: 61px;
-  height: 29px;
-  top: 1014px;
-  left: 582px;
-  font-family: DM Sans;
-  font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  text-align: left;
-  margin: 0;
-  margin-left: 15px;
-}
-.goal-title {
-  margin-bottom: 10px;
-  font-family: Questria;
-  font-size: 64px;
-  font-weight: 400;
-  line-height: 70px;
-  letter-spacing: 0em;
-  text-align: left;
-  width: 285px;
-  /* height: 99px; */
-  top: 1067px;
-  left: 582px;
-  margin-left: 15px;
-  margin-top: 16px;
-}
-.goal-description {
-  margin-bottom: 30px;
-  margin-left: 15px;
-  font-family: DM Sans;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 31px;
-  letter-spacing: 0em;
-  text-align: left;
-  width: 666px;
-  height: 93px;
-  top: 1166px;
-  left: 582px;
-  opacity: 0.6;
-}
-.link-block a {
-  font-family: DM Sans;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 31px;
-  letter-spacing: 0em;
-  text-align: left;
-  text-decoration: none;
-  color: #1254ff;
-  margin-right: 10px;
-  margin-left: 15px;
-}
-.link-block {
-  display: flex;
-  align-items: center;
-}
-.goals_blue_arrow {
-  margin-left: 7px;
+@media (max-width: 1000px) {
+  .about-company {
+    width: 94%; /*1128px*/
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 4%;
+    align-items: flex-start;
+  }
+  .company-image {
+    padding-top: 6%;
+  }
+  .about-info {
+    padding-top: 14.5%;
+  }
+  .goal-title {
+    color: #000;
+    font-family: Questria;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 92.8px */
+    padding-top: 1%;
+  }
+  .text-about {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 29px */
+    letter-spacing: 1px;
+    margin: 0;
+  }
+  .goals-description {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 155%; /* 31px */
+    padding-top: 1%;
+  }
+  .link-block {
+    padding-top: 4.7%;
+    display: flex;
+    flex-direction: row;
+    gap: 2.5%;
+  }
+  .link-block a {
+    color: #1254ff;
+
+    font-family: "DM Sans";
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;
+  }
 }

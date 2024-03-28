@@ -1,0 +1,257 @@
+@media (min-width: 1200px) {
+  .main-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    width: 100%; /*703px*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.67%; /*32px*/
+    padding-top: 7%;
+  }
+  .company-country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 26.1px */
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 2.4%;
+  }
+  .underline_country {
+    margin-top: 2.5%;
+  }
+  .images {
+    width: 68.1%; /*618px*/
+  }
+  .description {
+    color: #000;
+    font-family: Questria;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 81.2px */
+    margin: 0;
+    padding-top: 2.8%;
+    padding-left: 1%;
+  }
+  .company-text-spanish {
+    width: 78.7%; /* 553.26px */
+  }
+  .text-spanish {
+    color: #000;
+
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%; /* 31px */
+    margin: 0;
+    padding-top: 2.6%;
+    padding-left: 1%;
+  }
+  .reservation {
+    display: flex;
+    width: 32.11%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #ffb21e;
+    margin-top: 4%;
+    padding: 2.5% 4%;
+  }
+  .reservation-text {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155%; /* 31px */
+  }
+  .image1 {
+    padding-left: 19.5%;
+    padding-top: 7.5%;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1200px) {
+  .main-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    width: 100%; /*703px*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.67%; /*32px*/
+    padding-top: 7%;
+  }
+  .company-country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 26.1px */
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 2.4%;
+  }
+  .underline_country {
+    margin-top: 2.5%;
+  }
+  .images {
+    width: 68.1%; /*618px*/
+  }
+  .description {
+    color: #000;
+    font-family: Questria;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 81.2px */
+    margin: 0;
+    padding-top: 2.8%;
+    padding-left: 1%;
+  }
+  .company-text-spanish {
+    width: 78.7%; /* 553.26px */
+  }
+  .text-spanish {
+    color: #000;
+
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%; /* 31px */
+    margin: 0;
+    padding-top: 2.6%;
+    padding-left: 1%;
+  }
+  .reservation {
+    display: flex;
+    width: 32.11%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #ffb21e;
+    margin-top: 4%;
+    padding: 2.5% 4%;
+  }
+  .reservation-text {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155%; /* 31px */
+  }
+  .image1 {
+    padding-top: 7.5%;
+  }
+}
+@media (max-width: 1000px) {
+  .main-block {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .content {
+    width: 100%; /*703px*/
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.67%; /*32px*/
+    padding-top: 7%;
+  }
+  .company-country {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .country {
+    color: #000;
+    font-family: "DM Sans";
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 26.1px */
+    letter-spacing: 1px;
+    margin: 0;
+    padding-left: 2.4%;
+  }
+  .underline_country {
+    margin-top: 2.5%;
+  }
+  .images {
+    width: 68.1%; /*618px*/
+  }
+  .description {
+    color: #000;
+    font-family: Questria;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 81.2px */
+    margin: 0;
+    padding-top: 2.8%;
+    padding-left: 1%;
+  }
+  .company-text-spanish {
+    width: 78.7%; /* 553.26px */
+  }
+  .text-spanish {
+    color: #000;
+
+    font-family: "DM Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 152%; /* 31px */
+    margin: 0;
+    padding-top: 2.6%;
+    padding-left: 1%;
+  }
+  .reservation {
+    display: flex;
+    width: 32.11%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    background: #ffb21e;
+    margin-top: 4%;
+    padding: 2.5% 4%;
+  }
+  .reservation-text {
+    color: #fff;
+    font-family: "DM Sans";
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 155%; /* 31px */
+  }
+  .image1 {
+    padding-left: 19.5%;
+    padding-top: 7.5%;
+  }
+}
