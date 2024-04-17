@@ -1,4 +1,4 @@
-.bottles-frame{
+.bottles-frame {
   width: 84.65%;
   height: 414px;
   margin-left: auto;
@@ -7,18 +7,18 @@
   position: relative;
   z-index: 2;
 }
-.bottles-image{
+.bottles-image {
   width: 100%;
 }
-.bottles-text{
+.bottles-text {
   position: relative;
   width: 100%;
   height: 92px;
-  background-color: #DF9B7A;
+  background-color: #df9b7a;
   z-index: 1;
   bottom: 96px;
 
-  color: #F6F4EC;
+  color: #f6f4ec;
   font-family: "Roboto";
   font-style: normal;
 
@@ -26,14 +26,14 @@
   justify-content: space-between;
   align-items: center;
 }
-.bottles-text p{
+.bottles-text p {
   font-size: 20px;
- line-height: 32px; /* 160% */
- text-transform: uppercase;
- margin-left: 2.5%;/* 30px */
+  line-height: 32px; /* 160% */
+  text-transform: uppercase;
+  margin-left: 2.5%; /* 30px */
 }
-.bottles-text a{
-  color: #F6F4EC;
+.bottles-text a {
+  color: #f6f4ec;
   font-size: 18px;
   line-height: 28.8px; /* 160% */
   margin-right: 2.7%;
