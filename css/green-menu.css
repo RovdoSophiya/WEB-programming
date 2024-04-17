@@ -1,25 +1,25 @@
-.green-menu{
+.green-menu {
   height: 304px;
-  background-color:#A9AE8D;
+  background-color: #a9ae8d;
 
-  color: #F6F4EC;
+  color: #f6f4ec;
   font-family: "Roboto";
   font-style: normal;
 
   padding-left: 70px;
-  padding-top: 69px;
 }
-.green-menu-text1{
+.green-menu-text1 {
+  padding-top: 69px;
   font-size: 18px;
   line-height: 28.8px; /* 160% */
   margin-bottom: 15px;
 }
-.green-menu-text2{
+.green-menu-text2 {
   font-size: 33px;
   line-height: 64px; /* 193.939% */
   margin-bottom: 30px;
 }
-.green-menu-text3{
+.green-menu-text3 {
   font-size: 16px;
   line-height: 27.2px; /* 170% */
 }
