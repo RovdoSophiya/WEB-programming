@@ -67,8 +67,8 @@
   gap: 41px;
 }
 .language-buttons-and-themes button {
-  background: transparent;
-  border: none;
+   background: transparent; 
+   border: none; 
 }
 .language-buttons {
   display: flex;

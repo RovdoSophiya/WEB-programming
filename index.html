@@ -18,17 +18,18 @@
   <body>
     <section class="header">
       <div class="annotation">
-        <p class="shopping-annotation">Free Shopping on US Orders Over $60</p>
+        <p id="shoppingAnnotation" class="shopping-annotation">Free Shopping on US Orders Over $60</p>
       </div>
       <div class="header-menu">
         <div class="menu">
-          <a class="menu-item" href="#">Shop</a>
-          <a class="menu-item" href="#">The Edit</a>
-          <a class="menu-item" href="#">Our story</a>
-          <a class="menu-item" href="#">Reviews</a>
+          <a class="menu-item" id="shop" href="#">Shop</a>
+          <a class="menu-item" id="edit" href="#">The Edit</a>
+          <a class="menu-item" id="story" href="#">Our story</a>
+          <a class="menu-item" id="reviews" href="#">Reviews</a>
         </div>
         <div class="hidden-menu">
-          <p>Menu</p>
+          <div class="light-menu"><img class="light-menu-icon"/></div>
+          <div class="dark-menu"><img class="dark-menu-icon" /></div>
         </div>
         <div class="menu-logo">
           <img class="logo" src="img/Logo.png" />
@@ -37,10 +38,10 @@
           <div class="language-buttons-and-themes">
             <div class="language-buttons">
               <div class="lang-button">
-                <button class="rus">Rus</button>
+                <button id="rus" class="rus">Rus</button>
               </div>
               <div class="lang-button">
-                <button class="en">En</button>
+                <button id="en" class="en">En</button>
               </div>
             </div>
             <div class="themes">
@@ -55,14 +56,14 @@
           <div class="signs">
             <a
               class="sign-in"
-              id="Open-modal-authorization"
+              id="signIn"
               src="sign in-up.html"
               >Sign In</a
             >
             <div id="modalContainer"></div>
             <a
-              class="sign-in"
-              id="Open-modal-authorization"
+              class="sign-up"
+              id="signUp"
               src="sign in-up.html"
               >Sign Up</a
             >
@@ -74,18 +75,18 @@
     <section class="photo-section">
       <div class="shop-now-container">
         <div class="shop-now">
-          <a class="shop-text" href="#">SHOP NOW</a>
+          <a id="shopText" class="shop-text" href="#">SHOP NOW</a>
         </div>
       </div>
     </section>
     <section class="green-menu">
-      <p class="green-menu-text1">READY TO GET DRENCHED?</p>
-      <p class="green-menu-text2">Meet Monsoon Moisture Mask</p>
-      <a class="green-menu-text3">Shop Now</a>
+      <p id="greenMenuText1" class="green-menu-text1">READY TO GET DRENCHED?</p>
+      <p id="greenMenuText2" class="green-menu-text2">Meet Monsoon Moisture Mask</p>
+      <a id="greenMenuText3" class="green-menu-text3">Shop Now</a>
     </section>
     <section class="production-list">
       <div class="production-list-container">
-        <p class="pick-bottles">Pick a Pretty Bottle</p>
+        <p id="pickBottles" class="pick-bottles">Pick a Pretty Bottle</p>
         <div class="production-frame">
           <div class="list">
             <div class="product-item">
@@ -278,5 +279,6 @@
         <p>© 2021 dae. All rights reserved.</p>
       </div>
     </footer>
+   <script src="../javaScript/change-language.js"></script>
   </body>
 </html>
