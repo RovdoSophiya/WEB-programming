@@ -23,7 +23,7 @@
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20%;
+  /* gap: 20%; */
 
   color: #b45f4d;
   font-family: "Roboto";
@@ -31,7 +31,7 @@
 }
 .menu {
   display: flex;
-  width: 24.3%;
+  width: 30%;
   align-items: flex-start;
   gap: 31px;
   padding-left: 1.4%;
@@ -46,24 +46,112 @@
 .menu-logo {
   padding-top: 0.4%;
   padding-bottom: 0.4%;
+  padding-right: 1.4%;
 }
 .account {
   display: flex;
-  width: 26%;
-  justify-content: flex-end;
+  width: 30%; /* 426px*/
+  justify-content: space-between;
   font-size: 14px;
   line-height: 22.4px; /* 160% */
   padding-top: 1.5%;
   gap: 3.1%;
 }
-.acount-name {
-  padding-top: 1.1%;
-}
-.account-container {
+.language-buttons-and-themes {
   display: flex;
-  height: 25.625px;
-  padding: 0.313px 12px 3.313px 12px;
+  width: 60.56%; /* 258px*/
+  height: 45px;
+  /* padding: 0% 2.1%; */
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 41px;
+}
+.language-buttons-and-themes button {
+  background: transparent;
+  border: none;
+}
+.language-buttons {
+  display: flex;
+  width: 36.43%; /* 94px*/
+  height: 39px;
+  padding: 5px 0px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 4px;
+}
+.lang-button {
+  width: 45px;
+}
+.rus,
+.en {
+  color: #b4604d;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 160% */
+  text-transform: capitalize;
+}
+.themes {
+  display: flex;
+  width: 55px;
+  height: 24px;
+  justify-content: center;
+  align-items: flex-start;
+  /* gap: 7px; */
+  padding-left: 9%;
+  padding-bottom: 5%;
+}
+.signs {
+  display: flex;
+  width: 40%;
+  height: 45px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 5%;
+}
+.sign-in {
+  width: 69px;
+  color: #b4604d;
+
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28.8px; /* 160% */
+  text-transform: capitalize;
+  margin-top: -1%;
+}
+.hidden-menu {
+  display: none;
+}
+@media (max-width: 1393px) and (min-width: 1001px) {
+  .menu {
+    width: 40%;
+    gap: 25px;
+  }
+  .menu-logo {
+    padding-top: 0.4%;
+    padding-bottom: 0.4%;
+    margin-left: -15%;
+  }
+}
+@media (max-width: 1001px) {
+  .hidden-menu {
+    display: contents;
+    width: 12%;
+    font-size: 24px;
+    line-height: normal;
+  }
+  .hidden-menu p {
+    padding-top: 1.6%;
+    padding-left: 4%;
+  }
+  .menu {
+    display: none;
+  }
+  .menu-logo {
+    margin-left: 15%;
+  }
 }

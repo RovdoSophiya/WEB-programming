@@ -4,6 +4,7 @@
   padding-top: 1.7%;
   flex-direction: column;
   align-items: center;
+  flex-wrap: wrap;
   gap: 43.156px;
 }
 .following-link {
@@ -18,17 +19,17 @@
 .follows-photos {
   width: 100%;
   display: flex;
-  flex-wrap: wrap ;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  gap:11px;
+  gap: 11px;
   padding: 0.4% 0% 0% 0%;
 }
 .photo-item {
-  width: 15.97%;
+  width: 230px;
 }
-.orange-logo{
+.orange-logo {
   width: 20%;
   position: relative;
   top: -60px;
