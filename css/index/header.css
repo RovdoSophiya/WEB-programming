@@ -67,8 +67,8 @@
   gap: 41px;
 }
 .language-buttons-and-themes button {
-   background: transparent; 
-   border: none; 
+  background: transparent;
+  border: none;
 }
 .language-buttons {
   display: flex;
@@ -111,17 +111,9 @@
   align-items: flex-start;
   gap: 5%;
 }
-.sign-in {
-  width: 69px;
-  color: #b4604d;
-
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28.8px; /* 160% */
-  text-transform: capitalize;
-  margin-top: -1%;
+.open-modal-button {
+  border: none;
+  background-color: transparent;
 }
 .hidden-menu {
   display: none;

@@ -8,13 +8,16 @@ body {
   font-family: "Roboto";
 }
 
-.main {
+.modal {
+  position: fixed;
+  z-index: 1;
   position: relative;
   height: 500px;
   overflow: hidden;
   background: url("/img/fone.jpg") no-repeat center/cover;
   border-radius: 10px;
   box-shadow: 5px 20px 50px #151414;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #chk {
@@ -105,18 +108,33 @@ button:hover {
 #chk:checked ~ .signup label {
   transform: scale(0.6);
 }
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 @media (min-width: 768px) {
-  .main {
+  .modal {
     width: 700px;
   }
 }
 @media (max-width: 768px) and (min-width: 500px) {
-  .main {
+  .modal {
     width: 400px;
   }
 }
 @media (max-width: 500px) and (min-width: 320px) {
-  .main {
+  .modal {
     width: 320px;
   }
 }
