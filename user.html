@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/index/header.css" />
-    <link rel="stylesheet" href="css/index/fonts.css" />
     <link rel="stylesheet" href="css/normalized.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
     <link rel="stylesheet" href="css/index/photo-section.css" />
     <link rel="stylesheet" href="css/index/green-menu.css" />
     <link rel="stylesheet" href="css/index/production-list.css" />
@@ -13,7 +13,8 @@
     <link rel="stylesheet" href="css/index/meet-dae.css" />
     <link rel="stylesheet" href="css/index/following.css" />
     <link rel="stylesheet" href="css/index/footer.css" />
-    <title>Dae</title>
+    <link rel="stylesheet" href="css/user/busket.css" />
+    <title>Account</title>
   </head>
   <body>
     <section class="header">
@@ -55,10 +56,12 @@
               </button>
             </div>
           </div>
-          <div class="signs">
-            <button class="open-modal-button" id="openModalButton">
-              <img src="img/User-icon.png" />
-            </button>
+          <div class="account-information">
+            <p class="account-name">Account</p>
+            <div class="sum">
+              <img class="busket-icon" src="img/Shop-icon.png" />
+              <p>0</p>
+            </div>
           </div>
         </div>
       </div>
@@ -173,22 +176,15 @@
         </div>
       </div>
     </section>
-    <section class="meet-dae">
-      <img class="first-girl" src="img/First-girl.png" />
-      <img class="second-girl" src="img/Second-girl.png" />
-      <div class="Dae-annotation-text">
-        <p id="meetDae" class="Dae-line">Meet Dae</p>
-        <p id="textDae" class="Dae-text">
-          We’re a haircare line based in sunny Arizona. Our products are made up
-          of the many things that make our home special, including the scent of
-          orange blossoms in the air, colors of majestic sunsets and nourishing
-          ingredients derived from desert botanicals. We believe haircare
-          doesn’t have to be complicated and aimed to make a line that is simple
-          and effective. We hope that dae plays a special role in your everyday
-          hair routine from sunrise to sunset and allows you to feel the warmth
-          of the desert wherever you are.
-        </p>
-        <button id="learnMore" class="Learn-more">Read More</button>
+    <section class="busket">
+      <p id="userMeetDae" class="user-meet-dae">MEET DAE</p>
+      <div class="busket-container">
+        <div class="text-icon">
+          <p class="busket-text" id="busket">Busket</p>
+          <img class="shop-icon" src="img/Shop-icon.png" />
+        </div>
+
+        <p class="busket-price">64.00$</p>
       </div>
     </section>
     <section class="following">
@@ -274,7 +270,6 @@
         <p id="rights">© 2021 dae. All rights reserved.</p>
       </div>
     </footer>
-
-    <script src="../javaScript/change-language.js"></script>
+    <script src="javaScript/user-change-language.js"></script>
   </body>
 </html>
