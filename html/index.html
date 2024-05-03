@@ -3,88 +3,163 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index/header.css" />
-    <link rel="stylesheet" href="css/index/fonts.css" />
-    <link rel="stylesheet" href="css/normalized.css" />
-    <link rel="stylesheet" href="css/index/photo-section.css" />
-    <link rel="stylesheet" href="css/index/green-menu.css" />
-    <link rel="stylesheet" href="css/index/production-list.css" />
-    <link rel="stylesheet" href="css/index/bottles-photo.css" />
-    <link rel="stylesheet" href="css/index/meet-dae.css" />
-    <link rel="stylesheet" href="css/index/following.css" />
-    <link rel="stylesheet" href="css/index/footer.css" />
+    <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/index/fonts.css" />
+    <link rel="stylesheet" href="../css/normalized.css" />
+    <link rel="stylesheet" href="../css/index/photo-section.css" />
+    <link rel="stylesheet" href="../css/index/green-menu.css" />
+    <link rel="stylesheet" href="../css/index/production-list.css" />
+    <link rel="stylesheet" href="../css/index/bottles-photo.css" />
+    <link rel="stylesheet" href="../css/index/meet-dae.css" />
+    <link rel="stylesheet" href="../css/index/following.css" />
+    <link rel="stylesheet" href="../css/index/footer.css" />
+    <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <title>Dae</title>
   </head>
   <body>
     <section class="header">
       <div class="annotation">
-        <p id="shoppingAnnotation" class="shopping-annotation">
+        <p data-i18="shoppingAnnotation" class="shopping-annotation">
           Free Shopping on US Orders Over $60
         </p>
       </div>
       <div class="header-menu">
         <div class="menu">
-          <a class="menu-item" id="shop" href="#">Shop</a>
-          <a class="menu-item" id="edit" href="#">The Edit</a>
-          <a class="menu-item" id="story" href="#">Our story</a>
-          <a class="menu-item" id="reviews" href="#">Reviews</a>
+          <a class="menu-item" data-i18="edit" href="index.html">Main</a>
+          <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
+          <a class="menu-item" data-i18="story" href="#">Our story</a>
+          <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
         </div>
         <div class="hidden-menu">
           <div class="light-menu"><img class="light-menu-icon" /></div>
           <div class="dark-menu"><img class="dark-menu-icon" /></div>
         </div>
         <div class="menu-logo">
-          <img class="logo" src="img/Logo.png" />
+          <img class="logo" src="../img/Logo.png" />
         </div>
         <div class="account">
           <div class="language-buttons-and-themes">
             <div class="language-buttons">
               <div class="lang-button">
-                <button id="rus" class="rus">Rus</button>
+                <button data-i18="rus" class="rus">Rus</button>
               </div>
               <div class="lang-button">
-                <button id="en" class="en">En</button>
+                <button data-i18="en" class="en">En</button>
               </div>
             </div>
             <div class="themes">
               <button class="dark-menu-icon">
-                <img src="img/Dark-theme.png" />
+                <img src="../img/Dark-theme.png" />
               </button>
               <button class="light-menu-icon">
-                <img src="img/Ligth-theme.png" />
+                <img src="../img/Ligth-theme.png" />
               </button>
             </div>
           </div>
           <div class="signs">
-            <button class="open-modal-button" id="openModalButton">
-              <img src="img/User-icon.png" />
+            <button
+              class="open-modal-button"
+              id="open-modal-button"
+              data-i18="openModalButton"
+            >
+              <img src="../img/User-icon.png" />
             </button>
           </div>
         </div>
       </div>
     </section>
+    <section class="registration-authorization-modal" id="modal-window">
+      <span class="modal" id="Modal">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <button id="close" class="close">x</button>
+        <div class="signup">
+          <form>
+            <label for="chk" aria-hidden="true" data-i18="signUp">Sign up</label>
+            <input
+              class="input"
+              type="text"
+              name="txt"
+              placeholder="Enter name"
+              data-i18="enterName"
+              required=""
+            />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              data-i18="enterEmail"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="pswd"
+              placeholder="Enter password"
+              data-i18="enterPassword"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="repeatpswd"
+              placeholder="Repeat password"
+              data-i18="repeatPassword"
+              required=""
+            />
+            <button class="ra" data-i18="signUp">Sign up</button>
+          </form>
+        </div>
+
+        <div class="login">
+          <form>
+            <label for="chk" aria-hidden="true" data-i18="login">Login</label>
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              data-i18="enterEmail"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="pswd"
+              placeholder="Enter password"
+              data-i18="enterPassword"
+              required=""
+            />
+            <a data-i18="forgetPassword">forget your password?</a>
+            <button class="ra" data-i18="login">Login</button>
+          </form>
+        </div>
+      </span>
+    </section>
     <section class="photo-section">
       <div class="shop-now-container">
         <div class="shop-now">
-          <a id="shopText" class="shop-text" href="#">SHOP NOW</a>
+          <a data-i18="shopText" class="shop-text" href="#">SHOP NOW</a>
         </div>
       </div>
     </section>
     <section class="green-menu">
-      <p id="greenMenuText1" class="green-menu-text1">READY TO GET DRENCHED?</p>
-      <p id="greenMenuText2" class="green-menu-text2">
+      <p data-i18="greenMenuText1" class="green-menu-text1">
+        READY TO GET DRENCHED?
+      </p>
+      <p data-i18="greenMenuText2" class="green-menu-text2">
         Meet Monsoon Moisture Mask
       </p>
-      <a id="greenMenuText3" class="green-menu-text3">Shop Now</a>
+      <a data-i18="greenMenuText3" class="green-menu-text3">Shop Now</a>
     </section>
     <section class="production-list">
       <div class="production-list-container">
-        <p id="pickBottles" class="pick-bottles">Pick a Pretty Bottle</p>
+        <p data-i18="pickBottles" class="pick-bottles">Pick a Pretty Bottle</p>
         <div class="production-frame">
           <div class="list">
             <div class="product-item">
               <div class="product-photo">
-                <img src="img/Dream-set.png" />
+                <img src="../img/Dream-set.png" />
               </div>
               <div class="product-description">
                 <p class="text-upp">The Daedreamer Set</p>
@@ -93,7 +168,7 @@
             </div>
             <div class="product-item">
               <div class="product-photo">
-                <img src="img/Shampoo.png" />
+                <img src="../img/Shampoo.png" />
               </div>
               <div class="product-description">
                 <p class="text-upp">Shampoo</p>
@@ -102,7 +177,7 @@
             </div>
             <div class="product-item">
               <div class="product-photo">
-                <img src="img/Conditioner.png" />
+                <img src="../img/Conditioner.png" />
               </div>
               <div class="product-description">
                 <p class="text-upp">Conditioner</p>
@@ -119,7 +194,7 @@
             </div>
             <div class="product-item">
               <div class="product-photo">
-                <img src="img/Dream-set.png" />
+                <img src="../img/Dream-set.png" />
               </div>
               <div class="product-description">
                 <p class="text-upp">The Daedreamer Set</p>
@@ -156,29 +231,29 @@
             </div>
           </div>
           <div class="scroll">
-            <button class="arrow"><img src="img/Arrow-left.png" /></button>
-            <button class="arrow"><img src="img/Arrow-right.png" /></button>
+            <button class="arrow"><img src="../img/Arrow-left.png" /></button>
+            <button class="arrow"><img src="../img/Arrow-right.png" /></button>
           </div>
         </div>
       </div>
     </section>
     <section class="bottles-photo">
       <div class="bottles-frame">
-        <img class="bottles-image" src="img/bottles.png" />
+        <img class="bottles-image" src="../img/bottles.png" />
         <div class="bottles-text">
-          <p id="warmthDesert">
+          <p data-i18="warmthDesert">
             Feel the warmth of the desert wherever you are.
           </p>
-          <a href="#" id="shopSets">Shop Sets</a>
+          <a href="#" data-i18="shopSets">Shop Sets</a>
         </div>
       </div>
     </section>
     <section class="meet-dae">
-      <img class="first-girl" src="img/First-girl.png" />
-      <img class="second-girl" src="img/Second-girl.png" />
+      <img class="first-girl" src="../img/First-girl.png" />
+      <img class="second-girl" src="../img/Second-girl.png" />
       <div class="Dae-annotation-text">
-        <p id="meetDae" class="Dae-line">Meet Dae</p>
-        <p id="textDae" class="Dae-text">
+        <p data-i18="meetDae" class="Dae-line">Meet Dae</p>
+        <p data-i18="textDae" class="Dae-text">
           We’re a haircare line based in sunny Arizona. Our products are made up
           of the many things that make our home special, including the scent of
           orange blossoms in the air, colors of majestic sunsets and nourishing
@@ -188,46 +263,46 @@
           hair routine from sunrise to sunset and allows you to feel the warmth
           of the desert wherever you are.
         </p>
-        <button id="learnMore" class="Learn-more">Read More</button>
+        <button data-i18="learnMore" class="Learn-more">Read More</button>
       </div>
     </section>
     <section class="following">
-      <a id="followingLink" class="following-link">Follow Us @daehair</a>
+      <a data-i18="followingLink" class="following-link">Follow Us @daehair</a>
       <div class="follows-photos">
         <div class="photo-item">
-          <img src="img/following-photo1.png" /><img
+          <img src="../img/following-photo1.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
         <div class="photo-item">
-          <img src="img/following-photo2.png" /><img
+          <img src="../img/following-photo2.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
         <div class="photo-item">
-          <img src="img/following-photo3.png" /><img
+          <img src="../img/following-photo3.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
         <div class="photo-item">
-          <img src="img/following-photo4.png" /><img
+          <img src="../img/following-photo4.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
         <div class="photo-item">
-          <img src="img/following-photo5.png" /><img
+          <img src="../img/following-photo5.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
         <div class="photo-item">
-          <img src="img/following-photo6.png" /><img
+          <img src="../img/following-photo6.png" /><img
             class="orange-logo"
-            src="img/Orange-logo.png"
+            src="../img/Orange-logo.png"
           />
         </div>
       </div>
@@ -238,43 +313,43 @@
         <div class="links-and-email">
           <div class="link-block">
             <div class="first-links-block">
-              <a id="sustainability" class="link">Sustainability</a>
-              <a id="contactUs" class="link">Contact Us</a>
-              <a id="FAQ" class="link">FAQ</a>
-              <a id="careers" class="link">Careers</a>
+              <a data-i18="sustainability" class="link">Sustainability</a>
+              <a data-i18="contactUs" class="link">Contact Us</a>
+              <a data-i18="FAQ" class="link">FAQ</a>
+              <a data-i18="careers" class="link">Careers</a>
             </div>
             <div class="second-links-block">
-              <a id="privacyPolicy" class="link">Privacy Policy</a>
-              <a id="CAPrivacyRights" class="link">CA Privacy Rights</a>
-              <a id="termsOfUse" class="link">Terms of Use</a>
-              <a id="newsletter" class="link">Newsletter</a>
+              <a data-i18="privacyPolicy" class="link">Privacy Policy</a>
+              <a data-i18="CAPrivacyRights" class="link">CA Privacy Rights</a>
+              <a data-i18="termsOfUse" class="link">Terms of Use</a>
+              <a data-i18="newsletter" class="link">Newsletter</a>
             </div>
           </div>
 
           <div class="email-block">
-            <p id="firstEmailText" class="first-email-text">
+            <p data-i18="firstEmailText" class="first-email-text">
               ONLY GOOD HAIR DAES AHEAD—AND 10% OFF YOUR FIRST ORDER
             </p>
             <div class="email">
               <div class="email-field">
                 <input type="email" class="email-input" />
               </div>
-              <button id="subscribe" class="subscribe">Subscribe</button>
+              <button data-i18="subscribe" class="subscribe">Subscribe</button>
             </div>
-            <p id="underEmailText" class="under-email-text">
+            <p data-i18="underEmailText" class="under-email-text">
               Want to shop in person? Swing by our showroom.
             </p>
-            <p id="address" class="under-email-text">
+            <p data-i18="address" class="under-email-text">
               M-F, 10am-2pm 5051 E Indigo St, Suite 105, Mesa, AZ 85205
             </p>
           </div>
         </div>
       </div>
       <div class="rights">
-        <p id="rights">© 2021 dae. All rights reserved.</p>
+        <p data-i18="rights">© 2021 dae. All rights reserved.</p>
       </div>
     </footer>
-
     <script src="../javaScript/change-language.js"></script>
+    <script src="../javaScript/modal-window.js"></script>
   </body>
 </html>

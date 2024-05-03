@@ -1,86 +1,130 @@
+const i18Obj = {
+  en: {
+    shoppingAnnotation: "Free Shopping on US Orders Over $60",
+    shop: "Shop",
+    edit: "The Edit",
+    story: "Our Story",
+    reviews: "Reviews",
+    rus: "Rus",
+    en: "En",
+    shopText: "SHOP NOW",
+    greenMenuText1: "READY TO GET DRENCHED?",
+    greenMenuText2: "Meet Monsoon Moisture Mask",
+    greenMenuText3: "Shop Now",
+    pickBottles: "Pick a Pretty Bottle",
+    warmthDesert: "Feel the warmth of the desert wherever you are.",
+    shopSets: "Shop sets",
+    meetDae: "Meet Dae",
+    textDae:
+      "We are a haircare line based in sunny Arizona. Our products are made up\nof the many things that make our home special, including the scent of\norange blossoms in the air, colors of majestic sunsets and nourishing\ningredients derived from desert botanicals. We believe haircare\ndoesn't have to be complicated and aimed to make a line that is simple\nand effective. We hope that dae plays a special role in your everyday\nhair routine from sunrise to sunset and allows you to feel the warmth\nof the desert wherever you are.",
+    learnMore: "Learn more",
+    followingLink: "Follow Us @daehair",
+    sustainability: "Sustainability",
+    contactUs: "Contact Us",
+    FAQ: "FAQ",
+    careers: "Careers",
+    privacyPolicy: "Privacy Policy",
+    CAPrivacyRights: "CA Privacy Rights",
+    termsOfUse: "Terms of Use",
+    newsletter: "Newsletter",
+    firstEmailText: "ONLY GOOD HAIR DAES AHEAD—AND 10% OFF YOUR FIRST ORDER",
+    subscribe: "Subscribe",
+    underEmailText: " Want to shop in person? Swing by our showroom.",
+    address: " M-F, 10am-2pm 5051 E Indigo St, Suite 105, Mesa, AZ 85205",
+    rights: "© 2021 dae. All rights reserved.",
+    userMeetDae: "MEET DAE",
+    busket: "Busket",
+    signUp: "Sign up",
+    login: "Login",
+    forgetPassword: "forget your password?",
+    enterName: "Enter name",
+    enterEmail: "Enter email",
+    enterPassword: "Enter password",
+    repeatPassword: "Repeat password",
+  },
+  ru: {
+    shoppingAnnotation: "Скидки от 60$",
+    shop: "Магазин",
+    edit: "Эдит",
+    story: "История",
+    reviews: "Отзывы",
+    rus: "Рус",
+    en: "Англ",
+    shopText: "КУПИТЬ",
+    greenMenuText1: "ГОТОВЫ НАМОКНУТЬ?",
+    greenMenuText2: "Встречайте новую маску",
+    greenMenuText3: "Купить сейчас",
+    pickBottles: "Выберите продукцию",
+    warmthDesert: "Почувствуйте тепло пустыни, где бы вы ни находились",
+    shopSets: "Магазин",
+    meetDae: "Мы - Dae",
+    textDae:
+      "Мы — линия по уходу за волосами, базирующаяся в солнечной Аризоне. Наша продукция состоит из многих вещей, которые делают наш дом особенным, включая запах цветов апельсина в воздухе, цвета величественных закатов и питательные ингредиенты, полученные из растений пустыни. Мы верим, что уход за волосами не должен быть сложным и направлен на создание простой и эффективной линии. Мы надеемся, что Dae сыграет особую роль в вашей повседневной жизни, обеспечивая уход за волосами от восхода до заката и позволяя почувствовать тепло пустыни, где бы вы ни находились.",
+    learnMore: "Подробнее",
+    followingLink: "Подписывайтесь @daehair",
+    sustainability: "Экологичность",
+    contactUs: "Контакты",
+    FAQ: "FAQ",
+    careers: "Карьера",
+    privacyPolicy: "Конфиденциальность",
+    CAPrivacyRights: "Конф. права",
+    termsOfUse: "Правила пользования",
+    newsletter: "Новости",
+    firstEmailText: "ВПЕРЕД ТОЛЬКО ХОРОШИЕ ВОЛОСЫ И СКИДКА 10% НА ПЕРВЫЙ ЗАКАЗ",
+    subscribe: "Подписаться",
+    underEmailText: "Хотите делать покупки лично? Загляните в наш шоу-рум.",
+    address: " М-Ж, 10.00-14.00 5051 Шт. Индиго, ул. 105, Меза, AZ 85205",
+    rights: "© 2021 dae. Все права защищены.",
+    userMeetDae: "Встречайте DAE",
+    busket: "Корзина",
+    signUp: "Зарегестрироваться",
+    login: "Войти",
+    forgetPassword: "забыли пароль?",
+    enterName: "Введите имя",
+    enterEmail: "Введите почту",
+    enterPassword: "Введите пароль",
+    repeatPassword: "Повторите пароль",
+  },
+};
+
 let translations;
+let currentLanguage = localStorage.getItem("language") || "en";
 
-function loadTranslations(language) {
-  fetch("../json/" + language + ".json")
-    .then((response) => response.json())
-    .then((data) => {
-      translations = data;
-      updateContent();
-    })
-    .catch((error) => console.error("Ошибка:", error));
+// function getTranslate(lang) {
+//   const elements = document.querySelectorAll("[data-i18]");
+//   elements.forEach((elem) => {
+//     const key = elem.dataset.i18;
+//     if (i18Obj[lang][key]) {
+//       elem.textContent = i18Obj[lang][key];
+//     }
+//   });
+// }
+function getTranslate(lang) {
+  const elements = document.querySelectorAll("[data-i18]");
+  elements.forEach((elem) => {
+    const key = elem.dataset.i18;
+    if (i18Obj[lang][key]) {
+      if (elem.placeholder) {
+        elem.placeholder = i18Obj[lang][key];
+      } else {
+        elem.textContent = i18Obj[lang][key];
+      }
+    }
+  });
 }
+const enButton = document.querySelector('button[data-i18="en"]');
+const ruButton = document.querySelector('button[data-i18="rus"]');
 
-function updateContent() {
-  document.getElementById("shoppingAnnotation").textContent =
-    translations.shoppingAnnotation;
-
-  document.getElementById("shop").textContent = translations.shop;
-  document.getElementById("edit").textContent = translations.edit;
-  document.getElementById("story").textContent = translations.story;
-  document.getElementById("reviews").textContent = translations.reviews;
-
-  document.getElementById("rus").textContent = translations.rus;
-  document.getElementById("en").textContent = translations.en;
-
-  document.getElementById("shopText").textContent = translations.shopText;
-
-  document.getElementById("greenMenuText1").textContent =
-    translations.greenMenuText1;
-  document.getElementById("greenMenuText2").textContent =
-    translations.greenMenuText2;
-  document.getElementById("greenMenuText3").textContent =
-    translations.greenMenuText3;
-
-  document.getElementById("pickBottles").textContent = translations.pickBottles;
-
-  document.getElementById("warmthDesert").textContent =
-    translations.warmthDesert;
-  document.getElementById("shopSets").textContent = translations.shopSets;
-
-  document.getElementById("meetDae").textContent = translations.meetDae;
-  document.getElementById("textDae").textContent = translations.textDae;
-  document.getElementById("learnMore").textContent = translations.learnMore;
-
-  document.getElementById("followingLink").textContent =
-    translations.followingLink;
-
-  document.getElementById("sustainability").textContent =
-    translations.sustainability;
-  document.getElementById("contactUs").textContent = translations.contactUs;
-  document.getElementById("FAQ").textContent = translations.FAQ;
-  document.getElementById("careers").textContent = translations.careers;
-  document.getElementById("privacyPolicy").textContent =
-    translations.privacyPolicy;
-  document.getElementById("CAPrivacyRights").textContent =
-    translations.CAPrivacyRights;
-  document.getElementById("termsOfUse").textContent = translations.termsOfUse;
-  document.getElementById("newsletter").textContent = translations.newsletter;
-
-  document.getElementById("firstEmailText").textContent =
-    translations.firstEmailText;
-  document.getElementById("subscribe").textContent = translations.subscribe;
-  document.getElementById("underEmailText").textContent =
-    translations.underEmailText;
-  document.getElementById("address").textContent = translations.address;
-  document.getElementById("rights").textContent = translations.rights;
-}
-
-const rusButton = document.getElementById("rus"); // Выбираем кнопку смены языка по идентификатору
-const enButton = document.getElementById("en"); // Выбираем кнопку смены языка по идентификатору
-
-rusButton.addEventListener("click", () => {
-  loadTranslations("rus");
-  localStorage.setItem("language", "rus");
-});
+enButton.addEventListener("click", () => getTranslate("en"));
+ruButton.addEventListener("click", () => getTranslate("rus"));
 
 enButton.addEventListener("click", () => {
-  loadTranslations("en");
-  localStorage.setItem("language", "en");
+  getTranslate("en");
+  localStorage.setItem("language", "en"); // Сохраняем выбранный язык в localStorage
+});
+ruButton.addEventListener("click", () => {
+  getTranslate("ru");
+  localStorage.setItem("language", "ru"); // Сохраняем выбранный язык в localStorage
 });
 
-const savedLanguage = localStorage.getItem("language");
-if (savedLanguage) {
-  loadTranslations(savedLanguage);
-} else {
-  loadTranslations("en"); // Если язык не сохранен в localStorage, загрузим английский
-}
+loadTranslations(currentLanguage);
