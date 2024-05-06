@@ -6,11 +6,11 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 43.156px;
+  background-color: var(--var-header-menu-bg);
 }
 .following-link {
-  color: #000;
+  color: var(--var-follow-link);
   text-align: center;
-  font-family: "Roboto";
   font-size: 23px;
   font-style: normal;
   line-height: 39.2px; /* 170.435% */

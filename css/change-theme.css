@@ -1,0 +1,34 @@
+:root{
+  --var-shopping-annotation-text: #f1d3b9;
+  --var-header-menu-bg: rgba(246, 244, 236, 1);
+  --var-header-menu-text: #b45f4d;
+  --var-color-red:#b45f4d;
+
+  --var-themes-color:none;
+  --var-icon-color:transparent;
+  --var-green-menu:#a9ae8d;
+
+  --var-dae-annotation-bg:#f8f8f8;
+  --var-dae-bg:#f1d3b9;
+  --var-follow-link:#000;
+
+  --var-footer-bg:#f6f4ec;
+  
+}
+/*селектор выбора*/
+[dark] {
+  --var-shopping-annotation-text: rgb(229, 225, 225);
+  --var-header-menu-bg: black;
+  --var-header-menu-text: white;
+  --var-color-red: #3a0b02;
+
+  --var-themes-color: rgb(109, 175, 109);
+  --var-icon-color: white;
+  --var-green-menu:#2b2f12;
+
+  --var-dae-annotation-bg:#2b2f12;
+  --var-dae-bg:black;
+  --var-follow-link:white;
+
+  --var-footer-bg:black;
+}

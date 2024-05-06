@@ -1,11 +1,8 @@
 .green-menu {
   height: 304px;
-  background-color: #a9ae8d;
-
+  background-color: var(--var-green-menu);
   color: #f6f4ec;
-  font-family: "Roboto";
   font-style: normal;
-
   padding-left: 70px;
 }
 .green-menu-text1 {

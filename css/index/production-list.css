@@ -1,9 +1,8 @@
 .production-list {
-  background-color: rgba(246, 244, 236, 1);
+  background-color: var(--var-header-menu-bg);
   height: 835px;
   /*font*/
-  color: #B45F4D;
-  font-family: "Roboto";
+  color: var(--var-header-menu-text);
   font-style: normal;
   overflow: hidden;
 }
@@ -13,14 +12,14 @@
   margin-right: auto;
   padding-top: 39px;
 }
-.pick-bottles{
+.pick-bottles {
   font-size: 23px;
   line-height: 39.2px; /* 170.435% */
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 37px;
 }
-.list{
+.list {
   width: 6820px;
   display: inline-flex;
   height: 643.156px;
@@ -31,19 +30,19 @@
   font-size: 18px;
   line-height: 25.2px; /* 140% */
 }
-.text-upp{
+.text-upp {
   text-transform: uppercase;
 }
-.product-item{
+.product-item {
   display: flex;
   width: 380px;
   height: 643.156px;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  gap: 3px; 
+  gap: 3px;
 }
-.scroll{
+.scroll {
   width: 100%;
   display: inline-flex;
   height: 19px;
@@ -57,4 +56,3 @@
   border: none;
   cursor: pointer;
 }
-

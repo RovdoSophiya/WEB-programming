@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/index/header.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
     <link rel="stylesheet" href="../css/normalized.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/index/photo-section.css" />
     <link rel="stylesheet" href="../css/index/green-menu.css" />
     <link rel="stylesheet" href="../css/index/production-list.css" />
@@ -14,6 +15,7 @@
     <link rel="stylesheet" href="../css/index/following.css" />
     <link rel="stylesheet" href="../css/index/footer.css" />
     <link rel="stylesheet" href="../css/sign-in-up/style.css" />
+    <link rel="stylesheet" href="../css/change-theme.css" />
     <title>Dae</title>
   </head>
   <body>
@@ -25,15 +27,34 @@
       </div>
       <div class="header-menu">
         <div class="menu">
-          <a class="menu-item" data-i18="edit" href="index.html">Main</a>
+          <a class="menu-item" data-i18="main" href="index.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
           <a class="menu-item" data-i18="story" href="#">Our story</a>
           <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
         </div>
         <div class="hidden-menu">
-          <div class="light-menu"><img class="light-menu-icon" /></div>
-          <div class="dark-menu"><img class="dark-menu-icon" /></div>
+          <button class="small-size-menu">
+            <img class="green-menu-icon" src="../img/green-menu.png" />
+          </button>
         </div>
+        <nav class="hidden-menu-nav">
+          <div class="hidden-menu-wrap">
+            <div class="hidden-menu-items">
+              <div class="hidden-menu-item">
+                <a href="#" class="hidden-menu-link">Main</a>
+              </div>
+              <div class="hidden-menu-item">
+                <a href="#" class="hidden-menu-link">Shop</a>
+              </div>
+              <div class="hidden-menu-item">
+                <a href="#" class="hidden-menu-link">Our story</a>
+              </div>
+              <div class="hidden-menu-item">
+                <a href="#" class="hidden-menu-link">Reviews</a>
+              </div>
+            </div>
+          </div>
+        </nav>
         <div class="menu-logo">
           <img class="logo" src="../img/Logo.png" />
         </div>
@@ -48,10 +69,10 @@
               </div>
             </div>
             <div class="themes">
-              <button class="dark-menu-icon">
+              <button class="dark-menu-icon" id="darkTheme">
                 <img src="../img/Dark-theme.png" />
               </button>
-              <button class="light-menu-icon">
+              <button class="light-menu-icon" id="lightTheme">
                 <img src="../img/Ligth-theme.png" />
               </button>
             </div>
@@ -74,7 +95,9 @@
         <button id="close" class="close">x</button>
         <div class="signup">
           <form>
-            <label for="chk" aria-hidden="true" data-i18="signUp">Sign up</label>
+            <label for="chk" aria-hidden="true" data-i18="signUp"
+              >Sign up</label
+            >
             <input
               class="input"
               type="text"
@@ -118,6 +141,7 @@
               class="input"
               type="email"
               name="email"
+              id="sign-up-login"
               placeholder="Enter email"
               data-i18="enterEmail"
               required=""
@@ -126,187 +150,198 @@
               class="input"
               type="password"
               name="pswd"
+              id="sign-up-password"
               placeholder="Enter password"
               data-i18="enterPassword"
               required=""
             />
             <a data-i18="forgetPassword">forget your password?</a>
-            <button class="ra" data-i18="login">Login</button>
+            <button class="ra" id="loginButton" data-i18="login">Login</button>
           </form>
         </div>
       </span>
     </section>
-    <section class="photo-section">
-      <div class="shop-now-container">
-        <div class="shop-now">
-          <a data-i18="shopText" class="shop-text" href="#">SHOP NOW</a>
-        </div>
-      </div>
-    </section>
-    <section class="green-menu">
-      <p data-i18="greenMenuText1" class="green-menu-text1">
-        READY TO GET DRENCHED?
-      </p>
-      <p data-i18="greenMenuText2" class="green-menu-text2">
-        Meet Monsoon Moisture Mask
-      </p>
-      <a data-i18="greenMenuText3" class="green-menu-text3">Shop Now</a>
-    </section>
-    <section class="production-list">
-      <div class="production-list-container">
-        <p data-i18="pickBottles" class="pick-bottles">Pick a Pretty Bottle</p>
-        <div class="production-frame">
-          <div class="list">
-            <div class="product-item">
-              <div class="product-photo">
-                <img src="../img/Dream-set.png" />
-              </div>
-              <div class="product-description">
-                <p class="text-upp">The Daedreamer Set</p>
-                <p class="text">$49.00</p>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo">
-                <img src="../img/Shampoo.png" />
-              </div>
-              <div class="product-description">
-                <p class="text-upp">Shampoo</p>
-                <p class="text">$24.00 to $64.00</p>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo">
-                <img src="../img/Conditioner.png" />
-              </div>
-              <div class="product-description">
-                <p class="text-upp">Conditioner</p>
-                <p class="text">$24.00 to $64.00</p>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo">
-                <img src="../img/Dream-set.png" />
-              </div>
-              <div class="product-description">
-                <p class="text-upp">The Daedreamer Set</p>
-                <p class="text">$49.00</p>
-              </div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-            <div class="product-item">
-              <div class="product-photo"></div>
-              <div class="product-description"></div>
-            </div>
-          </div>
-          <div class="scroll">
-            <button class="arrow"><img src="../img/Arrow-left.png" /></button>
-            <button class="arrow"><img src="../img/Arrow-right.png" /></button>
+    <main>
+      <section class="photo-section">
+        <div class="shop-now-container">
+          <div class="shop-now">
+            <a data-i18="shopText" class="shop-text" href="#">SHOP NOW</a>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="bottles-photo">
-      <div class="bottles-frame">
-        <img class="bottles-image" src="../img/bottles.png" />
-        <div class="bottles-text">
-          <p data-i18="warmthDesert">
-            Feel the warmth of the desert wherever you are.
-          </p>
-          <a href="#" data-i18="shopSets">Shop Sets</a>
-        </div>
-      </div>
-    </section>
-    <section class="meet-dae">
-      <img class="first-girl" src="../img/First-girl.png" />
-      <img class="second-girl" src="../img/Second-girl.png" />
-      <div class="Dae-annotation-text">
-        <p data-i18="meetDae" class="Dae-line">Meet Dae</p>
-        <p data-i18="textDae" class="Dae-text">
-          We’re a haircare line based in sunny Arizona. Our products are made up
-          of the many things that make our home special, including the scent of
-          orange blossoms in the air, colors of majestic sunsets and nourishing
-          ingredients derived from desert botanicals. We believe haircare
-          doesn’t have to be complicated and aimed to make a line that is simple
-          and effective. We hope that dae plays a special role in your everyday
-          hair routine from sunrise to sunset and allows you to feel the warmth
-          of the desert wherever you are.
+      </section>
+      <section class="green-menu">
+        <p data-i18="greenMenuText1" class="green-menu-text1">
+          READY TO GET DRENCHED?
         </p>
-        <button data-i18="learnMore" class="Learn-more">Read More</button>
-      </div>
-    </section>
-    <section class="following">
-      <a data-i18="followingLink" class="following-link">Follow Us @daehair</a>
-      <div class="follows-photos">
-        <div class="photo-item">
-          <img src="../img/following-photo1.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
+        <p data-i18="greenMenuText2" class="green-menu-text2">
+          Meet Monsoon Moisture Mask
+        </p>
+        <a data-i18="greenMenuText3" class="green-menu-text3">Shop Now</a>
+      </section>
+      <section class="production-list">
+        <div class="production-list-container">
+          <p data-i18="pickBottles" class="pick-bottles">
+            Pick a Pretty Bottle
+          </p>
+          <div class="production-frame">
+            <div class="list">
+              <div class="product-item">
+                <div class="product-photo">
+                  <img src="../img/Dream-set.png" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">Shampoo</p>
+                  <p class="text">$24.00 to $64.00</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo">
+                  <img src="../img/Conditioner.png" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">Conditioner</p>
+                  <p class="text">$24.00 to $64.00</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo">
+                  <img src="../img/Dream-set.png" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+              <div class="product-item">
+                <div class="product-photo"></div>
+                <div class="product-description"></div>
+              </div>
+            </div>
+            <div class="scroll">
+              <button class="arrow"><img src="../img/Arrow-left.png" /></button>
+              <button class="arrow">
+                <img src="../img/Arrow-right.png" />
+              </button>
+            </div>
+          </div>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo2.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
+      </section>
+      <section class="bottles-photo">
+        <div class="bottle-section">
+          <div class="bottles-frame">
+            <img class="bottles-image" src="../img/bottles.png" />
+            <div class="bottles-text">
+              <p data-i18="warmthDesert">
+                Feel the warmth of the desert wherever you are.
+              </p>
+              <a href="#" data-i18="shopSets">Shop Sets</a>
+            </div>
+          </div>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo3.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
+      </section>
+      <section class="meet-dae">
+        <img class="first-girl" src="../img/First-girl.png" />
+        <img class="second-girl" src="../img/Second-girl.png" />
+        <div class="Dae-annotation-text">
+          <p data-i18="meetDae" class="Dae-line">Meet Dae</p>
+          <p data-i18="textDae" class="Dae-text">
+            We’re a haircare line based in sunny Arizona. Our products are made
+            up of the many things that make our home special, including the
+            scent of orange blossoms in the air, colors of majestic sunsets and
+            nourishing ingredients derived from desert botanicals. We believe
+            haircare doesn’t have to be complicated and aimed to make a line
+            that is simple and effective. We hope that dae plays a special role
+            in your everyday hair routine from sunrise to sunset and allows you
+            to feel the warmth of the desert wherever you are.
+          </p>
+          <button data-i18="learnMore" class="Learn-more">Read More</button>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo4.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
+      </section>
+      <section class="following">
+        <a data-i18="followingLink" class="following-link"
+          >Follow Us @daehair</a
+        >
+        <div class="follows-photos">
+          <div class="photo-item">
+            <img src="../img/following-photo1.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo2.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo3.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo4.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo5.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo6.png" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+            />
+          </div>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo5.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
-        </div>
-        <div class="photo-item">
-          <img src="../img/following-photo6.png" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-          />
-        </div>
-      </div>
-    </section>
+      </section>
+    </main>
     <footer>
       <div class="line"></div>
       <div class="footer-info">
@@ -351,5 +386,8 @@
     </footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/modal-window.js"></script>
+    <script src="../javaScript/open-menu.js"></script>
+    <script src="../javaScript/open-admin.js"></script>
+    <script src="../javaScript/change-theme.js"></script>
   </body>
 </html>

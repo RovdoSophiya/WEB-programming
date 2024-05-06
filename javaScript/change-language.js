@@ -2,7 +2,7 @@ const i18Obj = {
   en: {
     shoppingAnnotation: "Free Shopping on US Orders Over $60",
     shop: "Shop",
-    edit: "The Edit",
+    main: "Main",
     story: "Our Story",
     reviews: "Reviews",
     rus: "Rus",
@@ -41,16 +41,17 @@ const i18Obj = {
     enterEmail: "Enter email",
     enterPassword: "Enter password",
     repeatPassword: "Repeat password",
+    exit: "Exit",
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
     shop: "Магазин",
-    edit: "Эдит",
+    main: "Главная",
     story: "История",
     reviews: "Отзывы",
     rus: "Рус",
     en: "Англ",
-    shopText: "КУПИТЬ",
+    shopText: "ПРОСМОТР",
     greenMenuText1: "ГОТОВЫ НАМОКНУТЬ?",
     greenMenuText2: "Встречайте новую маску",
     greenMenuText3: "Купить сейчас",
@@ -84,6 +85,7 @@ const i18Obj = {
     enterEmail: "Введите почту",
     enterPassword: "Введите пароль",
     repeatPassword: "Повторите пароль",
+    exit: "Выход",
   },
 };
 

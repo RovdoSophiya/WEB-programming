@@ -2,31 +2,27 @@
   width: 100%;
 }
 .annotation {
-  background-color: rgba(179, 96, 80, 1);
+  background-color: var(--var-color-red);
   height: 47px;
   width: 100%;
 }
 .shopping-annotation {
   width: 100%;
   text-align: center;
-  font-family: "Roboto";
   font-size: 17px;
   font-style: normal;
   line-height: 27.2px;
-  color: #f1d3b9;
+  color: var(--var-shopping-annotation-text);
   padding-top: 0.8%;
 }
 .header-menu {
   width: 100%;
-  background-color: rgba(246, 244, 236, 1);
+  background-color: var(--var-header-menu-bg);
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  /* gap: 20%; */
-
-  color: #b45f4d;
-  font-family: "Roboto";
+  /* color: var(--var-header-menu-text); */
   font-style: normal;
 }
 .menu {
@@ -41,7 +37,7 @@
   font-size: 18px;
   line-height: 28.8px; /* 160% */
   text-transform: capitalize;
-  color: #b45f4d;
+  color: var(--var-header-menu-text);
 }
 .menu-logo {
   padding-top: 0.4%;
@@ -85,9 +81,7 @@
 }
 .rus,
 .en {
-  color: #b4604d;
-
-  font-family: Roboto;
+  color: var(--var-header-menu-text);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -101,9 +95,12 @@
   justify-content: center;
   align-items: flex-start;
   /* gap: 7px; */
+  background-color: var(--var-themes-color);
+  border-radius: 5px;
   padding-left: 9%;
   padding-bottom: 5%;
 }
+
 .signs {
   display: flex;
   width: 40%;
@@ -114,7 +111,9 @@
 }
 .open-modal-button {
   border: none;
-  background-color: transparent;
+  /* background-color: transparent; */
+  background-color: var(--var-icon-color);
+  border-radius: 25px;
 }
 .hidden-menu {
   display: none;
@@ -136,15 +135,18 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.hidden-menu-nav {
+  display: none;
+}
 @media (max-width: 1393px) and (min-width: 1001px) {
   .menu {
     width: 40%;
     gap: 25px;
   }
   .menu-logo {
-    padding-top: 0.4%;
+    padding-top: 0%;
     padding-bottom: 0.4%;
-    margin-left: -15%;
+    margin-left: -8%;
   }
 }
 @media (max-width: 1001px) {
@@ -153,6 +155,10 @@
     width: 12%;
     font-size: 24px;
     line-height: normal;
+  }
+  .show-burger-menu {
+    width: 40px;
+    height: auto;
   }
   .hidden-menu p {
     padding-top: 1.6%;

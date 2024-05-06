@@ -14,7 +14,7 @@
   width: 128px;
   padding-top: 7%;
   padding-bottom: 7%;
-  background-color: rgba(179, 96, 80, 1);
+  background-color: var(--var-color-red);
 }
 .shop-text {
   color: #fff;

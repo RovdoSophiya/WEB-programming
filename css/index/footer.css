@@ -1,9 +1,8 @@
 footer {
   width: 100%;
   height: 401px;
-  background-color: #f6f4ec;
-  color: #b45f4d;
-  font-family: "Roboto";
+  background-color: var(--var-footer-bg);
+  color: var(--var-header-menu-text);
   font-style: normal;
 }
 .line {
@@ -64,7 +63,7 @@ footer {
   margin-bottom: 4%;
   width: 89%;
   height: 40px;
-  border: 1px solid #b45f4d;
+  border: 1px solid var(--var-header-menu-text);
   display: flex;
   flex-direction: row;
 }
@@ -76,11 +75,12 @@ footer {
   width: 100%;
   height: 100%;
   border: none;
+  color: var(--var-header-menu-text);
 }
 .subscribe {
   background: none;
   border: none;
-  color: #b45f4d;
+  color: var(--var-header-menu-text);
   font-size: 13px;
   line-height: 0px; /* 0% */
   text-transform: uppercase;

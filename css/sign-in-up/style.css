@@ -136,6 +136,9 @@ label {
   .modal {
     width: 400px;
   }
+  .registration-authorization-modal.open .modal {
+    margin-top: 20%;
+  }
 }
 @media (max-width: 500px) and (min-width: 320px) {
   .modal {
