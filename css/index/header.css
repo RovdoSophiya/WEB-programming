@@ -54,6 +54,13 @@
   padding-top: 1.5%;
   gap: 3.1%;
 }
+.busket-icon{
+  background-color:var(--var-icon-color);
+  border-radius:5px;
+}
+.account p{
+  color:var(--var-header-menu-text);
+}
 .language-buttons-and-themes {
   display: flex;
   width: 60.56%; /* 258px*/
