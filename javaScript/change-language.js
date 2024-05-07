@@ -19,6 +19,7 @@ const i18Obj = {
       "We are a haircare line based in sunny Arizona. Our products are made up\nof the many things that make our home special, including the scent of\norange blossoms in the air, colors of majestic sunsets and nourishing\ningredients derived from desert botanicals. We believe haircare\ndoesn't have to be complicated and aimed to make a line that is simple\nand effective. We hope that dae plays a special role in your everyday\nhair routine from sunrise to sunset and allows you to feel the warmth\nof the desert wherever you are.",
     learnMore: "Learn more",
     followingLink: "Follow Us @daehair",
+    map: "WE ARE ON MAP",
     sustainability: "Sustainability",
     contactUs: "Contact Us",
     FAQ: "FAQ",
@@ -42,6 +43,21 @@ const i18Obj = {
     enterPassword: "Enter password",
     repeatPassword: "Repeat password",
     exit: "Exit",
+    shopAll: "SHOP ALL",
+    shopInfo: "Clean hair for every hour of the day",
+    bundleSave: "BUNDLE & SAVE",
+    perfectProducts: "The perfect product for you",
+    motherSet: "MOTHER SET",
+    buy: "Buy",
+    shampoo: "SHAMPOO",
+    hairSet: "HAIR SET",
+    serumFace: "SERUM FACE",
+    styling: "STYLING",
+    easierRoutine: "Make your routine easier with Dae",
+    hairSpray: "HAIR SPRAY",
+    hairGear: "HAIR GEAR",
+    handCream: "HAND CREAM",
+    serumSet: "SERUM SET",
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
@@ -63,6 +79,7 @@ const i18Obj = {
       "Мы — линия по уходу за волосами, базирующаяся в солнечной Аризоне. Наша продукция состоит из многих вещей, которые делают наш дом особенным, включая запах цветов апельсина в воздухе, цвета величественных закатов и питательные ингредиенты, полученные из растений пустыни. Мы верим, что уход за волосами не должен быть сложным и направлен на создание простой и эффективной линии. Мы надеемся, что Dae сыграет особую роль в вашей повседневной жизни, обеспечивая уход за волосами от восхода до заката и позволяя почувствовать тепло пустыни, где бы вы ни находились.",
     learnMore: "Подробнее",
     followingLink: "Подписывайтесь @daehair",
+    map: "МЫ НА КАРТЕ",
     sustainability: "Экологичность",
     contactUs: "Контакты",
     FAQ: "FAQ",
@@ -86,21 +103,26 @@ const i18Obj = {
     enterPassword: "Введите пароль",
     repeatPassword: "Повторите пароль",
     exit: "Выход",
+    shopAll: "КУПИТЬ",
+    shopInfo: "Чистые волосы в течение каждого часа дня",
+    bundleSave: "ОБЪЕДИНЯЙТЕ И ЭКОНОМЬТЕ",
+    perfectProducts: "Идеальный продукт для вас",
+    motherSet: "ЖЕНСКИЙ НАБОР",
+    buy: "Купить",
+    shampoo: "ШАМПУНЬ",
+    hairSet: "НАБОР ДЛЯ ВОЛОС",
+    serumFace: "СЫВОРОТКА ДЛЯ ЛИЦА",
+    styling: "СТАЙЛИНГ",
+    easierRoutine: "Сделай рутину проще с Dae",
+    hairSpray: "СПРЕЙ ДЛЯ ВОЛОС",
+    hairGear: "УХОДОВЫЙ НАБОР",
+    handCream: "КРЕМ ДЛЯ РУК",
+    serumSet: "НАБОР СЫВОРОТОК",
   },
 };
 
-let translations;
 let currentLanguage = localStorage.getItem("language") || "en";
 
-// function getTranslate(lang) {
-//   const elements = document.querySelectorAll("[data-i18]");
-//   elements.forEach((elem) => {
-//     const key = elem.dataset.i18;
-//     if (i18Obj[lang][key]) {
-//       elem.textContent = i18Obj[lang][key];
-//     }
-//   });
-// }
 function getTranslate(lang) {
   const elements = document.querySelectorAll("[data-i18]");
   elements.forEach((elem) => {
@@ -114,19 +136,36 @@ function getTranslate(lang) {
     }
   });
 }
+
 const enButton = document.querySelector('button[data-i18="en"]');
 const ruButton = document.querySelector('button[data-i18="rus"]');
 
-enButton.addEventListener("click", () => getTranslate("en"));
-ruButton.addEventListener("click", () => getTranslate("rus"));
-
 enButton.addEventListener("click", () => {
   getTranslate("en");
-  localStorage.setItem("language", "en"); // Сохраняем выбранный язык в localStorage
+  currentLanguage = "en";
+  localStorage.setItem("language", "en");
 });
 ruButton.addEventListener("click", () => {
   getTranslate("ru");
-  localStorage.setItem("language", "ru"); // Сохраняем выбранный язык в localStorage
+  currentLanguage = "ru";
+  localStorage.setItem("language", "ru");
 });
 
-loadTranslations(currentLanguage);
+// Добавляем вызов функции при загрузке страницы
+window.addEventListener("load", () => {
+  getTranslate(currentLanguage);
+});
+
+// function loadTranslations(lang) {
+//   const elements = document.querySelectorAll("[data-i18]");
+//   elements.forEach((elem) => {
+//     const key = elem.dataset.i18;
+//     if (i18Obj[lang][key]) {
+//       if (elem.placeholder) {
+//         elem.placeholder = i18Obj[lang][key];
+//       } else {
+//         elem.textContent = i18Obj[lang][key];
+//       }
+//     }
+//   });
+// }

@@ -1,19 +1,21 @@
-:root{
+:root {
   --var-shopping-annotation-text: #f1d3b9;
   --var-header-menu-bg: rgba(246, 244, 236, 1);
   --var-header-menu-text: #b45f4d;
-  --var-color-red:#b45f4d;
+  --var-color-red: #b45f4d;
 
-  --var-themes-color:none;
-  --var-icon-color:transparent;
-  --var-green-menu:#a9ae8d;
+  --var-themes-color: none;
+  --var-icon-color: transparent;
+  --var-green-menu: #a9ae8d;
 
-  --var-dae-annotation-bg:#f8f8f8;
-  --var-dae-bg:#f1d3b9;
-  --var-follow-link:#000;
+  --var-dae-annotation-bg: #f8f8f8;
+  --var-dae-bg: #f1d3b9;
+  --var-follow-link: #000;
 
-  --var-footer-bg:#f6f4ec;
-  
+  --var-footer-bg: #f6f4ec;
+
+  --var-shop-container: rgba(241, 211, 185, 1);
+  --var-shop-text-color: rgba(129, 58, 58, 0.84);
 }
 /*селектор выбора*/
 [dark] {
@@ -24,11 +26,14 @@
 
   --var-themes-color: rgb(109, 175, 109);
   --var-icon-color: white;
-  --var-green-menu:#2b2f12;
+  --var-green-menu: #2b2f12;
 
-  --var-dae-annotation-bg:#2b2f12;
-  --var-dae-bg:black;
-  --var-follow-link:white;
+  --var-dae-annotation-bg: #2b2f12;
+  --var-dae-bg: black;
+  --var-follow-link: white;
 
-  --var-footer-bg:black;
+  --var-footer-bg: black;
+
+  --var-shop-container: black;
+  --var-shop-text-color: white;
 }
