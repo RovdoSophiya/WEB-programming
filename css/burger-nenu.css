@@ -89,3 +89,9 @@
 .menu-item {
   transition-duration: 0.25s;
 }
+@media (max-width: 520px) {
+  .menu-btn {
+    left: 0;
+    top: 10px;
+  }
+}

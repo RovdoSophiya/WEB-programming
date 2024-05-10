@@ -40,12 +40,13 @@
 .menu-logo {
   padding-top: 0.4%;
   padding-bottom: 0.4%;
-  padding-right: 1.4%;
+  margin-right: -3.6%;
+  /* padding-right: 1.4%; */
 }
 .account {
   display: flex;
-  width: 30%; /* 426px*/
-  justify-content: space-evenly;
+  width: 35%; /* 426px*/
+  justify-content: space-between;
   align-items: center;
   font-size: 14px;
   line-height: 22.4px; /* 160% */
@@ -56,12 +57,10 @@
   background-color: var(--var-icon-color);
   border-radius: 5px;
 }
-.account p {
-  color: var(--var-header-menu-text);
-}
+
 .language-buttons-and-themes {
   display: flex;
-  width: 60.56%; /* 258px*/
+  width: 40%; /* 258px*/
   height: 45px;
   justify-content: center;
   align-items: center;
@@ -129,6 +128,16 @@
   margin-top: -4px;
   gap: 5%;
 }
+.user-exit {
+  margin-top: -15px;
+  margin-right: 15px;
+}
+.user-exit-item {
+  font-size: 24px;
+  line-height: 28.8px; /* 160% */
+  text-transform: capitalize;
+  color: var(--var-header-menu-text);
+}
 .open-modal-button {
   border: none;
   background-color: var(--var-icon-color);
@@ -137,16 +146,7 @@
 .hidden-menu {
   display: none;
 }
-.account-information {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 30%;
-  height: 45px;
-  padding-right: 10px;
-  margin-top: -10px;
-}
+
 .sum {
   margin-top: -2px;
   width: 40px;
@@ -154,7 +154,43 @@
   flex-direction: row;
   justify-content: space-between;
 }
+.greetings {
+  width: 100%;
+  height: 40px;
+  background-color: var(--var-color-red);
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+}
+.welcome {
+  width: 90%;
+}
+.welcome p {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 27.2px;
+  color: var(--var-shopping-annotation-text);
+  margin-left: 150px;
+}
+.account-information {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 10%;
+  padding-right: 10px;
+  margin-top: -10px;
+}
+.account-name,
+.sum {
+  color: var(--var-shopping-annotation-text);
+}
 .burger-menu {
+  display: none;
+}
+.language-buttons-burger {
   display: none;
 }
 @media (max-width: 1393px) and (min-width: 1001px) {
@@ -165,7 +201,8 @@
   .menu-logo {
     padding-top: 0%;
     padding-bottom: 0.4%;
-    margin-left: -8%;
+    margin-right: 6.6%;
+    /* margin-left: -8%; */
   }
   .burger-menu {
     display: none;
@@ -190,7 +227,10 @@
     display: none;
   }
   .menu-logo {
-    margin-left: 36%;
+    margin-left: 28%;
+  }
+  .user-exit {
+    display: none;
   }
   /*__________burger-menu_____________________*/
   .burger-menu {
@@ -198,5 +238,53 @@
   }
   .account {
     justify-content: flex-end;
+  }
+  .language-buttons-and-themes {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .language-buttons {
+    display: none;
+  }
+  .language-buttons-burger {
+    display: flex;
+    width: 100%; /* 258px*/
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    gap: 41px;
+  }
+  .language-buttons-burger button {
+    background: transparent;
+    border-radius: 5px;
+  }
+  .language-buttons-list {
+    display: flex;
+    width: 36.43%; /* 94px*/
+    height: 39px;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .lang-button {
+    width: 45px;
+  }
+  .lang-button button.rus {
+    background: rgb(122, 224, 115);
+  }
+
+  .lang-buttonbutton.en {
+    background: rgb(44, 91, 34);
+    color: white;
+  }
+}
+@media (max-width: 520px) {
+  .menu-logo {
+    display: none;
+  }
+  .account {
+    width: 50%;
   }
 }

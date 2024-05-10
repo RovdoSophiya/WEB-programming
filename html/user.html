@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/normalized.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/fonts.css" />
@@ -27,7 +28,7 @@
       </div>
       <div class="header-menu">
         <div class="menu">
-          <a class="menu-item" data-i18="edit" href="user.html">Main</a>
+          <a class="menu-item" data-i18="main" href="user.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
           <a class="menu-item" data-i18="story" href="about-shop.html"
             >Our story</a
@@ -36,17 +37,48 @@
             >Reviews</a
           >
         </div>
-        <div class="hidden-menu">
-          <button class="show-burger-menu">
-            <img src="../img/green-menu.png" />
-          </button>
-          <nav class="menu-nav">
-            <a class="menu-item" data-i18="edit" href="user.html">Main</a>
-            <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
-            <a class="menu-item" data-i18="story" href="#">Our story</a>
-            <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
-          </nav>
-        </div>
+        <nav class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <ul class="menu-box">
+            <li>
+              <a class="menu-item-burger" data-i18="main" href="index.html"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="shop" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="story" href="#"
+                >Our story</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="reviews" href="#"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="exit" href="index.html"
+                >Exit</a
+              >
+            </li>
+            <li><div class="language-buttons-burger">
+              <div class="language-buttons-list">
+                <div class="lang-button">
+                  <button data-i18="rus" class="rus">Rus</button>
+                </div>
+                <div class="lang-button">
+                  <button data-i18="en" class="en">En</button>
+                </div>
+              </div></li>
+          </ul>
+        </nav>
         <div class="menu-logo">
           <img class="logo" src="../img/Logo.png" />
         </div>
@@ -69,15 +101,18 @@
               </button>
             </div>
           </div>
-          <div class="account-information">
-            <p class="account-name">Account</p>
-            <div class="sum">
-              <img class="busket-icon" src="../img/Shop-icon.png" />
-              <p>0</p>
-            </div>
-          </div>
           <div class="user-exit">
-            <a class="menu-item" data-i18="exit" href="index.html">Exit</a>
+            <a class="user-exit-item" data-i18="exit" href="index.html">Exit</a>
+          </div>
+        </div>
+      </div>
+      <div class="greetings">
+        <div class="welcome"><p>Welcome back,dear user</p></div>
+        <div class="account-information">
+          <p class="account-name">Points</p>
+          <div class="sum">
+            <img class="busket-icon" src="../img/Shop-icon.png" />
+            <p>0</p>
           </div>
         </div>
       </div>
