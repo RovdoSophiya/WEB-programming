@@ -111,6 +111,15 @@
   align-items: center;
   flex-direction: column;
 }
+.themes button.light-theme {
+  background: rgb(156, 171, 155);
+  color: white;
+}
+
+.themes button.dark-theme {
+  background: rgb(44, 91, 34);
+  color: white;
+}
 .signs {
   display: flex;
   width: 40%;
@@ -182,9 +191,6 @@
   }
   .menu-logo {
     margin-left: 36%;
-  }
-  .language-buttons-and-themes {
-    display: none;
   }
   /*__________burger-menu_____________________*/
   .burger-menu {

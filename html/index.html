@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
     <link rel="stylesheet" href="../css/normalized.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -33,7 +34,34 @@
           <a class="menu-item" data-i18="story" href="#">Our story</a>
           <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
         </div>
-        <nav class="burger-menu"></nav>
+        <nav class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <ul class="menu-box">
+            <li>
+              <a class="menu-item-burger" data-i18="main" href="index.html"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="shop" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="story" href="#"
+                >Our story</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="reviews" href="#"
+                >Reviews</a
+              >
+            </li>
+          </ul>
+        </nav>
         <div class="menu-logo">
           <img class="logo" src="../img/Logo.png" alt="Logo" />
         </div>
@@ -74,7 +102,11 @@
         <button id="close" class="close">x</button>
         <div class="signup">
           <form>
-            <label for="chk" aria-hidden="true" data-i18="signUp"
+            <label
+              class="reg-button"
+              for="chk"
+              aria-hidden="true"
+              data-i18="signUp"
               >Sign up</label
             >
             <input
@@ -147,7 +179,13 @@
 
         <div class="login">
           <form>
-            <label for="chk" aria-hidden="true" data-i18="login">Login</label>
+            <label
+              class="reg-button"
+              for="chk"
+              aria-hidden="true"
+              data-i18="login"
+              >Login</label
+            >
             <input
               class="input"
               type="email"
