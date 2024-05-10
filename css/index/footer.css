@@ -1,6 +1,6 @@
 footer {
   width: 100%;
-  height: 401px;
+  /* height: 401px; */
   background-color: var(--var-footer-bg);
   color: var(--var-header-menu-text);
   font-style: normal;
@@ -9,7 +9,6 @@ footer {
   width: 100%;
   height: 2px;
   background-color: #f1d3b9;
-  margin-top: -13px;
 }
 .footer-info {
   width: 97%;
@@ -29,7 +28,6 @@ footer {
   width: 55.83%;
   height: 128px;
   align-items: flex-start;
-
   font-size: 14px;
   font-style: normal;
   line-height: 19.6px; /* 140% */
@@ -85,7 +83,6 @@ footer {
   line-height: 0px; /* 0% */
   text-transform: uppercase;
 }
-
 .under-email-text {
   font-size: 14px;
   line-height: 22.4px; /* 160% */
@@ -96,4 +93,58 @@ footer {
   margin-top: 6.8%;
   font-size: 14px;
   line-height: 22.4px; /* 160% */
+}
+@media (max-width: 1130px) {
+  .first-email-text {
+    font-size: 12px;
+  }
+}
+@media (max-width: 972px) {
+  .first-email-text {
+    font-size: 10px;
+  }
+  .under-email-text {
+    font-size: 10px;
+  }
+  .under-email-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 695px) {
+  .link-block {
+    display: none;
+  }
+  .email-block {
+    width: 80%;
+  }
+  .first-email-text {
+    font-size: 12px;
+  }
+  .under-email-text {
+    font-size: 12px;
+  }
+  .under-email-text {
+    font-size: 12px;
+  }
+  .subscribe {
+    font-size: 12px;
+  }
+}
+@media (max-width: 362px) {
+  .email-block {
+    width: 90%;
+  }
+  .first-email-text {
+    font-size: 8px;
+  }
+  .under-email-text {
+    font-size: 8px;
+  }
+  .under-email-text {
+    font-size: 8px;
+  }
+  .subscribe {
+    font-size: 8px;
+  }
 }

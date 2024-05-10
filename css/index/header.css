@@ -21,8 +21,6 @@
   display: inline-flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-start;
-  /* color: var(--var-header-menu-text); */
   font-style: normal;
 }
 .menu {
@@ -54,18 +52,17 @@
   padding-top: 1.5%;
   gap: 3.1%;
 }
-.busket-icon{
-  background-color:var(--var-icon-color);
-  border-radius:5px;
+.busket-icon {
+  background-color: var(--var-icon-color);
+  border-radius: 5px;
 }
-.account p{
-  color:var(--var-header-menu-text);
+.account p {
+  color: var(--var-header-menu-text);
 }
 .language-buttons-and-themes {
   display: flex;
   width: 60.56%; /* 258px*/
   height: 45px;
-  /* padding: 0% 2.1%; */
   justify-content: center;
   align-items: center;
   gap: 41px;
@@ -101,24 +98,30 @@
   height: 24px;
   justify-content: center;
   align-items: flex-start;
-  /* gap: 7px; */
   background-color: var(--var-themes-color);
   border-radius: 5px;
   padding-left: 9%;
   padding-bottom: 5%;
 }
-
+.theme-page {
+  width: 55px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .signs {
   display: flex;
   width: 40%;
-  height: 45px;
+  /* height: 39.64px; */
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
+  margin-top: -4px;
   gap: 5%;
 }
 .open-modal-button {
   border: none;
-  /* background-color: transparent; */
   background-color: var(--var-icon-color);
   border-radius: 25px;
 }
@@ -142,7 +145,7 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.hidden-menu-nav {
+.burger-menu {
   display: none;
 }
 @media (max-width: 1393px) and (min-width: 1001px) {
@@ -154,6 +157,9 @@
     padding-top: 0%;
     padding-bottom: 0.4%;
     margin-left: -8%;
+  }
+  .burger-menu {
+    display: none;
   }
 }
 @media (max-width: 1001px) {
@@ -175,6 +181,16 @@
     display: none;
   }
   .menu-logo {
-    margin-left: 15%;
+    margin-left: 36%;
+  }
+  .language-buttons-and-themes {
+    display: none;
+  }
+  /*__________burger-menu_____________________*/
+  .burger-menu {
+    display: flex;
+  }
+  .account {
+    justify-content: flex-end;
   }
 }

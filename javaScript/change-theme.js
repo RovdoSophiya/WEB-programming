@@ -1,35 +1,20 @@
-// document.getElementById('darkTheme').addEventListener('click', toggleDarkTheme);
-// document.getElementById('lightTheme').addEventListener('click', toggleLightTheme);
-// // Функция для переключения на темную тему
-// function toggleDarkTheme() {
-//   document.documentElement.style.setProperty('--body-color', '#000');
-//   document.documentElement.style.setProperty('--text-color', '#fff');
-//   document.documentElement.style.setProperty('--hover-color', '#fff');
-// }
-
-// // Функция для переключения на светлую тему
-// function toggleLightTheme() {
-//   document.documentElement.style.setProperty('--body-color', '#fff');
-//   document.documentElement.style.setProperty('--text-color', '#000');
-//   document.documentElement.style.setProperty('--hover-color', '#000');
-// }
-// const toChange=(isCheched)=>
-// {
-//   if(toChange)
-//   {
-//     document.body.setAttribute('dark','');
-//   }
-//   else{
-//     document.body.removeAttribute('dark')
-//   }
-// }
 function setDarkTheme() {
-  document.body.setAttribute('dark', '');
+  document.body.setAttribute("dark", "");
+  localStorage.setItem("theme", "dark");
 }
 
 function setLightTheme() {
-  document.body.removeAttribute('dark');
+  document.body.removeAttribute("dark");
+  localStorage.setItem("theme", "light");
 }
 
-document.getElementById('darkTheme').addEventListener('click', setDarkTheme);
-document.getElementById('lightTheme').addEventListener('click', setLightTheme);
+document.getElementById("darkTheme").addEventListener("click", setDarkTheme);
+document.getElementById("lightTheme").addEventListener("click", setLightTheme);
+
+// Проверяем, есть ли сохраненная тема в локальном хранилище и применяем её
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  setDarkTheme();
+} else {
+  setLightTheme();
+}

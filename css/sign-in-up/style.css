@@ -19,7 +19,7 @@
 }
 .modal {
   background: url("/img/fone.jpg") no-repeat center/cover;
-  height: 500px;
+  height: 700px;
   border-radius: 10px;
   box-shadow: 5px 20px 50px #151414;
   transform: scale(0);
@@ -84,7 +84,7 @@ label {
   background: rgb(107, 116, 56);
 }
 .login {
-  height: 500px;
+  height: 700px;
   background: rgba(169, 174, 141, 1);
   border-radius: 60%/10%;
   transform: translateY(-180px);

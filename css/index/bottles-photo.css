@@ -62,9 +62,6 @@
   .bottles-text p {
     font-size: 16px;
   }
-  .meet-dae {
-    display: none;
-  }
   .bottles-text {
     height: 80px;
     bottom: 80px;
@@ -80,9 +77,6 @@
   .bottles-text p {
     font-size: 10px;
   }
-  .meet-dae {
-    display: none;
-  }
   .bottles-text {
     height: 60px;
     bottom: 60px;
@@ -97,9 +91,6 @@
   }
   .bottles-text p {
     font-size: 8px;
-  }
-  .meet-dae {
-    display: none;
   }
   .bottles-text {
     height: 40px;

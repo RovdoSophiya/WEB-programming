@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/index/fonts.css" />
+    <link rel="stylesheet" href="../css/normalized.css" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/sign-in-up/style.css" />
+    <link rel="stylesheet" href="../css/change-theme.css" />
+    <link rel="stylesheet" href="../css/reviews/reviews-image.css" />
+    <link rel="stylesheet" href="../css/reviews/reviews.css" />
+    <title>Dae reviews</title>
+  </head>
+  <body>
+    <section class="header">
+      <div class="annotation">
+        <p data-i18="shoppingAnnotation" class="shopping-annotation">
+          Free Shopping on US Orders Over $60
+        </p>
+      </div>
+      <div class="header-menu">
+        <div class="menu">
+          <a class="menu-item" data-i18="main" href="index.html">Main</a>
+          <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
+          <a class="menu-item" data-i18="story" href="#">Our story</a>
+          <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
+        </div>
+        <div class="menu-logo">
+          <img class="logo" src="../img/Logo.png" alt="Logo" />
+        </div>
+        <div class="account">
+          <div class="language-buttons-and-themes">
+            <div class="language-buttons">
+              <div class="lang-button">
+                <button data-i18="rus" class="rus">Rus</button>
+              </div>
+              <div class="lang-button">
+                <button data-i18="en" class="en">En</button>
+              </div>
+            </div>
+            <div class="themes">
+              <button class="dark-menu-icon" id="darkTheme">
+                <img src="../img/Dark-theme.png" alt="Dark-icon" />
+              </button>
+              <button class="light-menu-icon" id="lightTheme">
+                <img src="../img/Ligth-theme.png" alt="Light-icon" />
+              </button>
+            </div>
+          </div>
+          <div class="signs">
+            <button
+              class="open-modal-button"
+              id="open-modal-button"
+              data-i18="openModalButton"
+            >
+              <img src="../img/User-icon.png" alt="User icon" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main>
+      <section class="reviews-image">
+        <div class="reviews-page-info">
+          <p
+            class="reviews-image-section-text1"
+            id="reviews"
+            data-i18="reviewsInfo"
+          >
+            Reviews
+          </p>
+          <p
+            class="reviews-image-section-text2"
+            id="reviews"
+            data-i18="custSay"
+          >
+            What our customers say about us
+          </p>
+        </div>
+      </section>
+      <section class="reviews">
+        <p class="Reviews-upper">Dae reviews</p>
+        <div class="reviews-cards-container">
+          <div class="reviews-cards">
+            <div class="reviews-card" id="page1">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page2">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page3">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page4">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page5">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page6">
+              <div class="review"></div>
+            </div>
+            <div class="reviews-card" id="page7">
+              <div class="review"></div>
+            </div>
+          </div>
+        </div>
+        <div class="reviews-pagination">
+          <button class="pagination-item" onclick="prevPage()">&lt;&lt;</button>
+          <button class="pagination-item" onclick="changePage(1)">1</button>
+          <button class="pagination-item" onclick="changePage(2)">2</button>
+          <button class="pagination-item" onclick="changePage(3)">3</button>
+          <button class="pagination-item" onclick="changePage(4)">4</button>
+          <button class="pagination-item" onclick="changePage(5)">5</button>
+          <button class="pagination-item" onclick="changePage(6)">6</button>
+          <button class="pagination-item" onclick="changePage(7)">7</button>
+          <button class="pagination-item" onclick="nextPage()">&gt;&gt;</button>
+          <!-- <div class="pagination-item">  <a href="reviews-card1.html"><<</a></div>
+          <div class="pagination-item">  <a href="reviews-card1.html">1</a></div>
+          <div class="pagination-item">  <a href="reviews-card2.html">2</a></div>
+          <div class="pagination-item">  <a href="#">3</a></div>
+          <div class="pagination-item">  <a href="#">4</a></div>
+          <div class="pagination-item">  <a href="#">5</a></div>
+          <div class="pagination-item">  <a href="#">6</a></div>
+          <div class="pagination-item">  <a href="#">7</a></div>
+          <div class="pagination-item">  <a href="#">>></a></div> -->
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="../javaScript/change-language.js"></script>
+    <script src="../javaScript/modal-window.js"></script>
+    <script src="../javaScript/open-menu.js"></script>
+    <script src="../javaScript/open-admin.js"></script>
+    <script src="../javaScript/change-theme.js"></script>
+    <script src="../javaScript/reviews-paginatiion.js"></script>
+  </body>
+</html>
