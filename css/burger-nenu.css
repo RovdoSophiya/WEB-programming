@@ -1,10 +1,9 @@
-/* скрываем чекбокс */
 #menu-toggle {
   opacity: 0;
 }
 .menu-btn {
-  display: flex; /* используем flex для центрирования содержимого */
-  align-items: center; /* центрируем содержимое кнопки */
+  display: flex;
+  align-items: center;
   position: relative;
   top: 20px;
   left: 20px;
@@ -43,7 +42,6 @@
   margin: 0;
   padding-top: 20px;
   padding-left: 20px;
-  /* padding: 80px 0; */
   list-style: none;
   text-align: center;
   background-color: var(--var-green-menu);
@@ -88,6 +86,46 @@
 }
 .menu-item {
   transition-duration: 0.25s;
+}
+.themes-burger {
+  display: none;
+}
+.language-buttons-burger {
+  display: none;
+}
+@media (max-width: 768px) {
+  .language-buttons-burger {
+    display: flex;
+    width: 100%; /* 258px*/
+    height: 45px;
+    padding: 5px 0px;
+    justify-content: center;
+    align-items: center;
+  }
+  .language-buttons-burger button {
+    background: transparent;
+    border-radius: 5px;
+  }
+  .themes-burger {
+    width: 45px;
+  }
+  .themes-burger button {
+    height: 30px;
+  }
+  .themes-burger button.light-theme {
+    background: rgb(122, 224, 115);
+  }
+  .themes-burger button.dark-theme {
+    background: rgb(44, 91, 34);
+    color: white;
+  }
+  .themes-burger {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4px;
+  }
 }
 @media (max-width: 520px) {
   .menu-btn {

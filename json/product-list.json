@@ -1,0 +1,17 @@
+[
+  {
+    "name": "The Daedreamer Set",
+    "price": "$49.00",
+    "image": "../img/Dream-set.png"
+  },
+  {
+    "name": "Shampoo",
+    "price": "$24.00 to $64.00",
+    "image": "../img/Shampoo.png"
+  },
+  {
+    "name": "Conditioner",
+    "price": "$24.00 to $64.00",
+    "image": "../img/Conditioner.png"
+  }
+]

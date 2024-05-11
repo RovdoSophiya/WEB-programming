@@ -1,34 +1,36 @@
 .production-list {
   background-color: var(--var-header-menu-bg);
   height: 835px;
-  /*font*/
+  width: 100%;
   color: var(--var-header-menu-text);
   font-style: normal;
   overflow: hidden;
 }
 .production-list-container {
-  width: 97.22%;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-top: 39px;
+  overflow: hidden;
 }
 .pick-bottles {
   font-size: 23px;
-  line-height: 39.2px; /* 170.435% */
+  line-height: 39.2px;
   text-align: center;
   text-transform: capitalize;
   margin-bottom: 37px;
 }
 .list {
+  display: flex;
+  transition: transform 0.5s ease;
   width: 6820px;
   display: inline-flex;
   height: 643.156px;
   padding: 0px 130px 0px 50px;
   align-items: flex-start;
-  gap: 80px;
-  /*font*/
+  gap: 81px;
   font-size: 18px;
-  line-height: 25.2px; /* 140% */
+  line-height: 25.2px;
 }
 .text-upp {
   text-transform: uppercase;
@@ -55,4 +57,59 @@
   background: none;
   border: none;
   cursor: pointer;
+}
+/* .production-list-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.production-frame {
+  position: relative;
+  width: 100%;
+}
+
+.list {
+  margin-left: 80px;
+  display: flex;
+  transition: transform 0.5s ease;
+  justify-content: space-around;
+  gap: 80px;
+}
+
+.product-item {
+  flex: 0 0 auto;
+  margin-right: 20px; /* Пространство между карточками 
+  width: 380px; /* Ширина каждой карточки 
+}
+
+.scroll {
+  position: fixed;
+  bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.arrow {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.arrow img {
+  width: 30px; /* Размеры стрелок 
+} */
+@media (max-width: 900px) {
+  .list {
+    gap: 41px;
+    padding: 0;
+  }
+}
+@media (max-width: 768px) {
+  .list {
+    gap: 41px;
+    padding: 0;
+  }
 }

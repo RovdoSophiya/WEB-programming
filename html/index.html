@@ -64,6 +64,26 @@
                 >Reviews</a
               >
             </li>
+            <li>
+              <div class="language-buttons-burger">
+                <div class="lang-button">
+                  <button data-i18="rusB" class="rus">Rus</button>
+                </div>
+                <div class="lang-button">
+                  <button data-i18="enB" class="en">En</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="themes-burger">
+                <button class="dark-menu-icon" id="darkTheme-burger">
+                  <img src="../img/Dark-theme.png" alt="Dark-icon" />
+                </button>
+                <button class="light-menu-icon" id="lightTheme-burger">
+                  <img src="../img/Ligth-theme.png" alt="Light-icon" />
+                </button>
+              </div>
+            </li>
           </ul>
         </nav>
         <div class="menu-logo">
@@ -266,12 +286,22 @@
                 </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
                 <div class="product-photo">
@@ -283,40 +313,83 @@
                 </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
               <div class="product-item">
-                <div class="product-photo"></div>
-                <div class="product-description"></div>
+                <div class="product-photo">
+                  <img src="../img/Shampoo.png" alt="Shampoo" />
+                </div>
+                <div class="product-description">
+                  <p class="text-upp">The Daedreamer Set</p>
+                  <p class="text">$49.00</p>
+                </div>
               </div>
             </div>
             <div class="scroll">
               <button class="arrow">
-                <img src="../img/Arrow-left.png" alt="Left arrow" />
+                <img
+                  src="../img/Arrow-left.png"
+                  onclick="onLeftButton()"
+                  alt="Left arrow"
+                />
               </button>
               <button class="arrow">
-                <img src="../img/Arrow-right.png" alt="Right allow" />
+                <img
+                  src="../img/Arrow-right.png"
+                  onclick="onRightButton()"
+                  alt="Right allow"
+                />
               </button>
             </div>
           </div>
@@ -463,9 +536,10 @@
       </div>
     </footer>
     <script src="../javaScript/change-language.js"></script>
-    <script src="../javaScript/modal-window.js"></script>
+    <script src="../javaScript/open-modal-window.js"></script>
     <script src="../javaScript/open-menu.js"></script>
     <script src="../javaScript/open-admin.js"></script>
     <script src="../javaScript/change-theme.js"></script>
+    <script src="../javaScript/product-list-slider.js"></script>
   </body>
 </html>

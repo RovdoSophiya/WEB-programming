@@ -190,9 +190,6 @@
 .burger-menu {
   display: none;
 }
-.language-buttons-burger {
-  display: none;
-}
 @media (max-width: 1393px) and (min-width: 1001px) {
   .menu {
     width: 40%;
@@ -243,47 +240,15 @@
     width: 100%;
   }
 }
-
 @media (max-width: 768px) {
   .language-buttons {
     display: none;
   }
-  .language-buttons-burger {
-    display: flex;
-    width: 100%; /* 258px*/
-    height: 45px;
-    justify-content: center;
-    align-items: center;
-    gap: 41px;
-  }
-  .language-buttons-burger button {
-    background: transparent;
-    border-radius: 5px;
-  }
-  .language-buttons-list {
-    display: flex;
-    width: 36.43%; /* 94px*/
-    height: 39px;
-    padding: 5px 0px;
-    justify-content: center;
-    align-items: flex-start;
-  }
-  .lang-button {
-    width: 45px;
-  }
-  .lang-button button.rus {
-    background: rgb(122, 224, 115);
-  }
-
-  .lang-buttonbutton.en {
-    background: rgb(44, 91, 34);
-    color: white;
+  .themes {
+    display: none;
   }
 }
 @media (max-width: 520px) {
-  .menu-logo {
-    display: none;
-  }
   .account {
     width: 50%;
   }

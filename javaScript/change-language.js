@@ -7,6 +7,8 @@ const i18Obj = {
     reviews: "Reviews",
     rus: "Rus",
     en: "En",
+    rusB: "Rus",
+    enB: "En",
     shopText: "SHOP NOW",
     greenMenuText1: "READY TO GET DRENCHED?",
     greenMenuText2: "Meet Monsoon Moisture Mask",
@@ -69,6 +71,8 @@ const i18Obj = {
     reviews: "Отзывы",
     rus: "Рус",
     en: "Англ",
+    rusB: "Рус",
+    enB: "Англ",
     shopText: "ПРОСМОТР",
     greenMenuText1: "ГОТОВЫ НАМОКНУТЬ?",
     greenMenuText2: "Встречайте новую маску",
@@ -160,16 +164,17 @@ window.addEventListener("load", () => {
   getTranslate(currentLanguage);
 });
 
-// function loadTranslations(lang) {
-//   const elements = document.querySelectorAll("[data-i18]");
-//   elements.forEach((elem) => {
-//     const key = elem.dataset.i18;
-//     if (i18Obj[lang][key]) {
-//       if (elem.placeholder) {
-//         elem.placeholder = i18Obj[lang][key];
-//       } else {
-//         elem.textContent = i18Obj[lang][key];
-//       }
-//     }
-//   });
-// }
+/*бургер-смена*/
+const enButtonB = document.querySelector('button[data-i18="enB"]');
+const ruButtonB = document.querySelector('button[data-i18="rusB"]');
+
+enButtonB.addEventListener("click", () => {
+  getTranslate("en");
+  currentLanguage = "en";
+  localStorage.setItem("language", "en");
+});
+ruButtonB.addEventListener("click", () => {
+  getTranslate("ru");
+  currentLanguage = "ru";
+  localStorage.setItem("language", "ru");
+});
