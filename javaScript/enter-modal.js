@@ -31,21 +31,23 @@ document.addEventListener("DOMContentLoaded", function () {
 /*проверка корректности телефона*/
 function validateSignupForm() {
   let tel = signupForm.elements["tel"].value.trim();
-// Проверка наличия номера телефона
-if (tel === "") {
-  alert("Please enter your phone number.");
-  return false;
-}
-// Проверка длины номера телефона
-if (tel.length !== 13) {
-  alert("Phone number must contain 13 digits including the country code (+375).");
-  return false;
-}
-// Проверка наличия и корректности кода страны
-if (tel.substring(0, 4) !== "+375") {
-  alert("Phone number must start with +375.");
-  return false;
-}
-// Все проверки пройдены успешно
-return true;
+  // Проверка наличия номера телефона
+  if (tel === "") {
+    alert("Please enter your phone number.");
+    return false;
+  }
+  // Проверка длины номера телефона
+  if (tel.length !== 13) {
+    alert(
+      "Phone number must contain 13 digits including the country code (+375)."
+    );
+    return false;
+  }
+  // Проверка наличия и корректности кода страны
+  if (tel.substring(0, 4) !== "+375") {
+    alert("Phone number must start with +375.");
+    return false;
+  }
+  // Все проверки пройдены успешно
+  return true;
 }

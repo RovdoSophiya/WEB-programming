@@ -26,6 +26,8 @@
   font-weight: 400;
   line-height: 32px; /* 106.667% */
   text-transform: uppercase;
+  margin-right: 10px;
+  gap:5px;
 }
 .text-icon {
   display: flex;
@@ -35,4 +37,34 @@
 .shop-icon {
   background-color: var(--var-icon-color);
   border-radius: 5px;
+}
+@media(max-width:900px){
+  .user-meet-dae {
+     font-size: 40px;
+  }
+  .busket-container {
+    font-size: 28px;
+  }
+}
+@media(max-width:679px){
+  .user-meet-dae {
+     font-size: 30px;
+  }
+  .busket-container {
+    font-size: 18px;
+  }
+  .busket {
+    height: 90px;
+  }
+}
+@media(max-width:460px){
+  .user-meet-dae {
+     font-size: 20px;
+  }
+  .busket-container {
+    font-size: 14px;
+  }
+  .busket {
+    height: 70px;
+  }
 }

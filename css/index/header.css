@@ -43,6 +43,17 @@
   margin-right: -3.6%;
   /* padding-right: 1.4%; */
 }
+.menu-logo-user {
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  margin-right: 16%;
+}
+.menu-user {
+  padding-top: 0.4%;
+  padding-bottom: 0.4%;
+  margin-right: -3.6%;
+  /* padding-right: 1.4%; */
+}
 .account {
   display: flex;
   width: 35%; /* 426px*/
@@ -57,10 +68,9 @@
   background-color: var(--var-icon-color);
   border-radius: 5px;
 }
-
 .language-buttons-and-themes {
   display: flex;
-  width: 40%; /* 258px*/
+  width: 70%; /* 258px*/
   height: 45px;
   justify-content: center;
   align-items: center;
@@ -68,7 +78,8 @@
 }
 .language-buttons-and-themes button {
   background: transparent;
-  border: none;
+  border-color: rgb(219, 176, 113);
+  background-color: var(--var-themes-color);
 }
 .language-buttons {
   display: flex;
@@ -77,7 +88,6 @@
   padding: 5px 0px;
   justify-content: center;
   align-items: flex-start;
-  gap: 4px;
 }
 .lang-button {
   width: 45px;
@@ -93,14 +103,14 @@
 }
 .themes {
   display: flex;
-  width: 55px;
-  height: 24px;
+  width: 65px;
+  height: 27px;
   justify-content: center;
   align-items: flex-start;
-  background-color: var(--var-themes-color);
+  /* background-color: var(--var-themes-color); */
   border-radius: 5px;
-  padding-left: 9%;
-  padding-bottom: 5%;
+  /* padding-left: 9%; */
+  margin-bottom: 10px;
 }
 .theme-page {
   width: 55px;
@@ -121,11 +131,11 @@
 }
 .signs {
   display: flex;
-  width: 40%;
+  width: 30%;
   /* height: 39.64px; */
   justify-content: center;
   align-items: center;
-  margin-top: -4px;
+  margin-top: -10px;
   gap: 5%;
 }
 .user-exit {
@@ -139,14 +149,17 @@
   color: var(--var-header-menu-text);
 }
 .open-modal-button {
+  display: flex;
   border: none;
   background-color: var(--var-icon-color);
   border-radius: 25px;
+  height: 34px;
+  width: 35px;
+  justify-content: center;
 }
 .hidden-menu {
   display: none;
 }
-
 .sum {
   margin-top: -2px;
   width: 40px;
@@ -182,6 +195,16 @@
   width: 10%;
   padding-right: 10px;
   margin-top: -10px;
+}
+.user-account {
+  display: flex;
+  width: 25%; /* 426px*/
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  line-height: 22.4px; /* 160% */
+  padding-top: 1.5%;
+  gap: 3.1%;
 }
 .account-name,
 .sum {
@@ -226,8 +249,14 @@
   .menu-logo {
     margin-left: 28%;
   }
+  .menu-logo-user {
+    margin-right: -11%;
+  }
   .user-exit {
     display: none;
+  }
+  .user-account {
+    width: 15%;
   }
   /*__________burger-menu_____________________*/
   .burger-menu {
@@ -247,9 +276,20 @@
   .themes {
     display: none;
   }
+  .signs {
+    margin-top: 0px;
+  }
 }
 @media (max-width: 520px) {
   .account {
     width: 50%;
+  }
+}
+@media (max-width: 378px) {
+  .menu-logo {
+    margin-left: 21%;
+  }
+  .signs {
+    width: 40%;
   }
 }

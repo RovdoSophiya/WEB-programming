@@ -1,4 +1,6 @@
 :root {
+  --var-body: transparent;
+
   --var-shopping-annotation-text: #f1d3b9;
   --var-header-menu-bg: rgba(246, 244, 236, 1);
   --var-header-menu-text: #b45f4d;
@@ -19,12 +21,14 @@
 }
 /*селектор выбора*/
 [dark] {
+  --var-body: black;
+
   --var-shopping-annotation-text: rgb(229, 225, 225);
   --var-header-menu-bg: black;
   --var-header-menu-text: white;
   --var-color-red: #3a0b02;
 
-  --var-themes-color: rgb(109, 175, 109);
+  --var-themes-color: #757f33;
   --var-icon-color: white;
   --var-green-menu: #2b2f12;
 

@@ -18,7 +18,6 @@ function setLightTheme() {
 document.getElementById("darkTheme").addEventListener("click", setDarkTheme);
 document.getElementById("lightTheme").addEventListener("click", setLightTheme);
 
-
 /*смена для бургер меню*/
 const lightThemeButtonB = document.getElementById("lightTheme-burger");
 const darkThemeButtonB = document.getElementById("darkTheme-burger");
@@ -37,8 +36,12 @@ function setLightTheme() {
   darkThemeButtonB.classList.remove("dark-theme");
 }
 
-document.getElementById("darkTheme-burger").addEventListener("click", setDarkTheme);
-document.getElementById("lightTheme-burger").addEventListener("click", setLightTheme);
+document
+  .getElementById("darkTheme-burger")
+  .addEventListener("click", setDarkTheme);
+document
+  .getElementById("lightTheme-burger")
+  .addEventListener("click", setLightTheme);
 
 // Проверяем, есть ли сохраненная тема в локальном хранилище и применяем её
 const savedTheme = localStorage.getItem("theme");
@@ -47,4 +50,3 @@ if (savedTheme === "dark") {
 } else {
   setLightTheme();
 }
-

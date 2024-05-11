@@ -131,6 +131,11 @@ footer {
     font-size: 12px;
   }
 }
+@media (max-width: 432px) {
+  .links-and-email {
+    height: 200px;
+  }
+}
 @media (max-width: 362px) {
   .email-block {
     width: 90%;

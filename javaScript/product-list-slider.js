@@ -38,5 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Привязываем функции к событиям клика на кнопки
   document.querySelector(".arrow-left").addEventListener("click", onLeftButton);
-  document.querySelector(".arrow-right").addEventListener("click", onRightButton);
+  document
+    .querySelector(".arrow-right")
+    .addEventListener("click", onRightButton);
 });
