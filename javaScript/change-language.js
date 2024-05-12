@@ -1,6 +1,7 @@
 const i18Obj = {
   en: {
     shoppingAnnotation: "Free Shopping on US Orders Over $60",
+    pers: "Personal area",
     shop: "Shop",
     main: "Main",
     story: "Our Story",
@@ -36,7 +37,7 @@ const i18Obj = {
     address: " M-F, 10am-2pm 5051 E Indigo St, Suite 105, Mesa, AZ 85205",
     rights: "© 2021 dae. All rights reserved.",
     userMeetDae: "MEET DAE",
-    busket: "Busket: ",
+    busket: "Go to busket",
     signUp: "Sign up",
     login: "Login",
     forgetPassword: "forget your password?",
@@ -65,6 +66,7 @@ const i18Obj = {
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
+    pers: "Личный кабинет",
     shop: "Магазин",
     main: "Главная",
     story: "История",
@@ -100,7 +102,7 @@ const i18Obj = {
     address: " М-Ж, 10.00-14.00 5051 Шт. Индиго, ул. 105, Меза, AZ 85205",
     rights: "© 2021 dae. Все права защищены.",
     userMeetDae: "Встречайте DAE",
-    busket: "Корзина: ",
+    busket: "Корзина",
     signUp: "Зарегестрироваться",
     login: "Войти",
     forgetPassword: "забыли пароль?",

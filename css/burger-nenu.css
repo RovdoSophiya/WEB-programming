@@ -47,11 +47,14 @@
   background-color: var(--var-green-menu);
   box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.2);
 }
+.shop-page .menu-box {
+  background-color: var(--var-color-red);
+}
 /* элементы меню */
 .menu-item-burger {
   display: block;
   padding: 12px 0px;
-  color: var(--var-header-menu-text);
+  color: white;
   font-size: 20px;
   font-weight: 600;
   text-decoration: none;
@@ -94,6 +97,9 @@
   display: none;
 }
 @media (max-width: 768px) {
+  .user-page .menu-box {
+    height: 390px;
+  }
   .menu-box {
     height: 330px;
   }
@@ -121,6 +127,17 @@
   }
   .themes-burger button.dark-theme {
     background: rgb(44, 91, 34);
+    color: white;
+  }
+  .shop-page .menu-box .themes-burger button.light-theme {
+    background: rgb(206, 100, 51);
+  }
+
+  .shop-page .menu-box .themes-burger button.dark-theme {
+    background: rgb(98, 53, 13);
+    color: white;
+  }
+  .menu-box .language-buttons-burger button {
     color: white;
   }
   .themes-burger {

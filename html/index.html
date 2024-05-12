@@ -31,7 +31,7 @@
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
           <a class="menu-item" data-i18="shop" href="#">Shop</a>
-          <a class="menu-item" data-i18="story" href="about-shop-non-reg.html"
+          <a class="menu-item" data-i18="story" href="shop-non-reg.html"
             >Our story</a
           >
           <a class="menu-item" data-i18="reviews" href="reviews.html"
@@ -125,7 +125,7 @@
         <input type="checkbox" id="chk" aria-hidden="true" />
         <button id="close" class="close">x</button>
         <div class="signup">
-          <form>
+          <form id="signupForm">
             <label
               class="reg-button"
               for="chk"
@@ -171,16 +171,17 @@
               name="txt"
               placeholder="Enter father name"
               data-i18="enterFatherName"
-              required=""
             />
             <input
               class="input"
               type="text"
-              name="txt"
+              name="nick"
+              id="nicknameInput"
               placeholder="Enter nick name"
               data-i18="enterNickName"
               required=""
             />
+            <button class="gen-nick">Generate nick name</button>
             <input
               class="input"
               type="password"
@@ -189,6 +190,7 @@
               data-i18="enterPassword"
               required=""
             />
+            <button class="gen-pswrd">Generate password</button>
             <input
               class="input"
               type="password"
@@ -537,9 +539,9 @@
     </footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
-    <script src="../javaScript/open-menu.js"></script>
     <script src="../javaScript/open-admin.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/product-list-slider.js"></script>
+    <script src="../javaScript/enter-modal.js"></script>
   </body>
 </html>

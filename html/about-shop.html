@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../css/index/footer.css" />
     <link rel="stylesheet" href="../css/index/meet-dae.css" />
     <link rel="stylesheet" href="../css/about-shop/about-shop-photo.css" />
+    <link rel="stylesheet" href="../css/map.css" />
+    <link rel="stylesheet" href="../css/burger-nenu.css" />
     <!-- <link rel="stylesheet" href="../css/index/photo-section.css" />
   <link rel="stylesheet" href="../css/index/green-menu.css" />
   <link rel="stylesheet" href="../css/index/production-list.css" />
@@ -22,7 +24,7 @@
     <link rel="stylesheet" href="../css/change-theme.css" />
     <title>About Dae</title>
   </head>
-  <body>
+  <body class="user-page">
     <header>
       <div class="annotation">
         <p data-i18="shoppingAnnotation" class="shopping-annotation">
@@ -31,28 +33,80 @@
       </div>
       <div class="header-menu">
         <div class="menu">
+          <a class="menu-item" data-i18="pers" href="user.html"
+            >Personal area</a
+          >
           <a class="menu-item" data-i18="main" href="user.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
-          <a class="menu-item" data-i18="story" href="#">Our story</a>
+          <a class="menu-item" data-i18="story" href="about-shop.html"
+            >Our story</a
+          >
           <a class="menu-item" data-i18="reviews" href="reviews.html"
             >Reviews</a
           >
         </div>
-        <div class="hidden-menu">
-          <button class="show-burger-menu">
-            <img src="../img/green-menu.png" />
-          </button>
-          <nav class="menu-nav">
-            <a class="menu-item" data-i18="main" href="user.html">Main</a>
-            <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
-            <a class="menu-item" data-i18="story" href="#">Our story</a>
-            <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
-          </nav>
-        </div>
-        <div class="menu-logo">
+        <nav class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <ul class="menu-box">
+            <li>
+              <a class="menu-item-burger" data-i18="pers" href="user.html"
+                >Personal area</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="main" href="index.html"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="shop" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="story" href="#"
+                >Our story</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="reviews" href="#"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="exit" href="index.html"
+                >Exit</a
+              >
+            </li>
+            <li>
+              <div class="language-buttons-burger">
+                <div class="lang-button">
+                  <button data-i18="rusB" class="rus">Rus</button>
+                </div>
+                <div class="lang-button">
+                  <button data-i18="enB" class="en">En</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="themes-burger">
+                <button class="dark-menu-icon" id="darkTheme-burger">
+                  <img src="../img/Dark-theme.png" alt="Dark-icon" />
+                </button>
+                <button class="light-menu-icon" id="lightTheme-burger">
+                  <img src="../img/Ligth-theme.png" alt="Light-icon" />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div class="menu-logo-user">
           <img class="logo" src="../img/Logo.png" />
         </div>
-        <div class="account">
+        <div class="user-account">
           <div class="language-buttons-and-themes">
             <div class="language-buttons">
               <div class="lang-button">
@@ -70,16 +124,10 @@
                 <img src="../img/Ligth-theme.png" />
               </button>
             </div>
-          </div>
-          <div class="account-information">
-            <p class="account-name">Account</p>
-            <div class="sum">
-              <img class="busket-icon" src="../img/Shop-icon.png" />
-              <p>0</p>
-            </div>
+            <div class="account-name"></div>
           </div>
           <div class="user-exit">
-            <a class="menu-item" data-i18="exit" href="index.html">Exit</a>
+            <a class="user-exit-item" data-i18="exit" href="index.html">Exit</a>
           </div>
         </div>
       </div>
@@ -102,6 +150,21 @@
             to feel the warmth of the desert wherever you are.
           </p>
           <button data-i18="learnMore" class="Learn-more">Read More</button>
+        </div>
+      </section>
+      <section class="map-link">
+        <div class="line"></div>
+        <div class="map-container">
+          <a data-i18="map" href="#" class="map">WE ARE ON MAP</a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381511.740576621!2d-114.57148240398581!3d34.1397521772096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1715194027267!5m2!1sru!2sby"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>

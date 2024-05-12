@@ -31,6 +31,9 @@
   padding-left: 1.4%;
   padding-top: 1.6%;
 }
+.user-page .menu {
+  width: 40%;
+}
 .menu-item {
   font-size: 18px;
   line-height: 28.8px; /* 160% */
@@ -129,6 +132,9 @@
   background: rgb(44, 91, 34);
   color: white;
 }
+.shop-page .language-buttons-and-themes button {
+  background-color: var(--var-button-color);
+}
 .signs {
   display: flex;
   width: 30%;
@@ -213,6 +219,29 @@
 .burger-menu {
   display: none;
 }
+@media (max-width: 1289px) {
+  .user-page .burger-menu {
+    display: flex;
+  }
+  .user-page .show-burger-menu {
+    width: 40px;
+    height: auto;
+  }
+  .user-page .menu {
+    display: none;
+  }
+  .user-page .menu-logo-user {
+    margin-right: -11%;
+  }
+}
+@media (max-width: 1075px) {
+  .user-page .menu {
+    display: none;
+  }
+  .user-page .burger-menu {
+    display: flex;
+  }
+}
 @media (max-width: 1393px) and (min-width: 1001px) {
   .menu {
     width: 40%;
@@ -229,11 +258,8 @@
   }
 }
 @media (max-width: 1001px) {
-  .hidden-menu {
-    display: contents;
-    width: 12%;
-    font-size: 24px;
-    line-height: normal;
+  .burger-menu {
+    display: flex;
   }
   .show-burger-menu {
     width: 40px;
@@ -246,6 +272,7 @@
   .menu {
     display: none;
   }
+
   .menu-logo {
     margin-left: 28%;
   }
