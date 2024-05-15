@@ -219,6 +219,8 @@
 .burger-menu {
   display: none;
 }
+.shop .menu{
+  width: 5043}
 @media (max-width: 1289px) {
   .user-page .burger-menu {
     display: flex;

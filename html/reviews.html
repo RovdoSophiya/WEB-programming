@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/index/header.css" />
+    <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
     <link rel="stylesheet" href="../css/normalized.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <link rel="stylesheet" href="../css/change-theme.css" />
+    <link rel="stylesheet" href="../css/map.css" />
+    <link rel="stylesheet" href="../css/index/following.css" />
+    <link rel="stylesheet" href="../css/index/footer.css" />
     <link rel="stylesheet" href="../css/reviews/reviews-image.css" />
     <link rel="stylesheet" href="../css/reviews/reviews.css" />
     <title>Dae reviews</title>
   </head>
-  <body>
+  <body class="shop-page ">
     <section class="header">
       <div class="annotation">
         <p data-i18="shoppingAnnotation" class="shopping-annotation">
@@ -23,10 +27,62 @@
       <div class="header-menu">
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
-          <a class="menu-item" data-i18="shop" href="shop.html">Shop</a>
-          <a class="menu-item" data-i18="story" href="#">Our story</a>
-          <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
+          <a class="menu-item" data-i18="shop" href="#">Shop</a>
+          <a class="menu-item" data-i18="story" href="shop-non-reg.html"
+            >Our story</a
+          >
+          <a class="menu-item" data-i18="reviews" href="reviews.html"
+            >Reviews</a
+          >
         </div>
+        <nav class="burger-menu">
+          <input id="menu-toggle" type="checkbox" />
+          <label class="menu-btn" for="menu-toggle">
+            <span></span>
+          </label>
+          <ul class="menu-box">
+            <li>
+              <a class="menu-item-burger" data-i18="main" href="index.html"
+                >Main</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="shop" href="shop.html"
+                >Shop</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="story" href="#"
+                >Our story</a
+              >
+            </li>
+            <li>
+              <a class="menu-item-burger" data-i18="reviews" href="#"
+                >Reviews</a
+              >
+            </li>
+            <li>
+              <div class="language-buttons-burger">
+                <div class="lang-button">
+                  <button data-i18="rusB" class="rus">Rus</button>
+                </div>
+                <div class="lang-button">
+                  <button data-i18="enB" class="en">En</button>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="themes-burger">
+                <button class="dark-menu-icon" id="darkTheme-burger">
+                  <img src="../img/Dark-theme.png" alt="Dark-icon" />
+                </button>
+                <button class="light-menu-icon" id="lightTheme-burger">
+                  <img src="../img/Ligth-theme.png" alt="Light-icon" />
+                </button>
+              </div>
+            </li>
+          </ul>
+        </nav>
         <div class="menu-logo">
           <img class="logo" src="../img/Logo.png" alt="Logo" />
         </div>
@@ -60,6 +116,122 @@
           </div>
         </div>
       </div>
+    </section>
+    <section class="registration-authorization-modal" id="modal-window">
+      <nav class="modal" id="Modal">
+        <input type="checkbox" id="chk" aria-hidden="true" />
+        <button id="close" class="close">x</button>
+        <div class="signup">
+          <form id="signupForm">
+            <label
+              class="reg-button"
+              for="chk"
+              aria-hidden="true"
+              data-i18="signUp"
+              >Sign up</label
+            >
+            <input
+              class="input"
+              type="tel"
+              name="tel"
+              placeholder="Enter phone"
+              data-i18="enterPhone"
+              required=""
+            />
+            <input
+              class="input"
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              data-i18="enterEmail"
+              required=""
+            />
+            <input
+              class="input"
+              type="text"
+              name="txt"
+              placeholder="Enter last name"
+              data-i18="enterLastName"
+              required=""
+            />
+            <input
+              class="input"
+              type="text"
+              name="txt"
+              placeholder="Enter name"
+              data-i18="enterName"
+              required=""
+            />
+            <input
+              class="input"
+              type="text"
+              name="txt"
+              placeholder="Enter father name"
+              data-i18="enterFatherName"
+            />
+            <input
+              class="input"
+              type="text"
+              name="nick"
+              id="nicknameInput"
+              placeholder="Enter nick name"
+              data-i18="enterNickName"
+              required=""
+            />
+            <button class="gen-nick">Generate nick name</button>
+            <input
+              class="input"
+              type="password"
+              name="pswd"
+              placeholder="Enter password"
+              data-i18="enterPassword"
+              required=""
+            />
+            <button class="gen-pswrd">Generate password</button>
+            <input
+              class="input"
+              type="password"
+              name="repeatpswd"
+              placeholder="Repeat password"
+              data-i18="repeatPassword"
+              required=""
+            />
+            <button class="ra" data-i18="signUp">Sign up</button>
+          </form>
+        </div>
+
+        <div class="login">
+          <form>
+            <label
+              class="reg-button"
+              for="chk"
+              aria-hidden="true"
+              data-i18="login"
+              >Login</label
+            >
+            <input
+              class="input"
+              type="email"
+              name="email"
+              id="sign-up-login"
+              placeholder="Enter email"
+              data-i18="enterEmail"
+              required=""
+            />
+            <input
+              class="input"
+              type="password"
+              name="pswd"
+              id="sign-up-password"
+              placeholder="Enter password"
+              data-i18="enterPassword"
+              required=""
+            />
+            <a data-i18="forgetPassword">forget your password?</a>
+            <button class="ra" id="loginButton" data-i18="login">Login</button>
+          </form>
+        </div>
+      </nav>
     </section>
     <main>
       <section class="reviews-image">
@@ -108,6 +280,9 @@
           </div>
         </div>
         <div class="reviews-pagination">
+          <!-- Кнопки пагинации будут добавлены здесь динамически -->
+        </div>
+        <!-- <div class="reviews-pagination">
           <button class="pagination-item" onclick="prevPage()">&lt;&lt;</button>
           <button class="pagination-item" onclick="changePage(1)">1</button>
           <button class="pagination-item" onclick="changePage(2)">2</button>
@@ -115,26 +290,123 @@
           <button class="pagination-item" onclick="changePage(4)">4</button>
           <button class="pagination-item" onclick="changePage(5)">5</button>
           <button class="pagination-item" onclick="changePage(6)">6</button>
-          <button class="pagination-item" onclick="changePage(7)">7</button>
           <button class="pagination-item" onclick="nextPage()">&gt;&gt;</button>
-          <!-- <div class="pagination-item">  <a href="reviews-card1.html"><<</a></div>
-          <div class="pagination-item">  <a href="reviews-card1.html">1</a></div>
-          <div class="pagination-item">  <a href="reviews-card2.html">2</a></div>
-          <div class="pagination-item">  <a href="#">3</a></div>
-          <div class="pagination-item">  <a href="#">4</a></div>
-          <div class="pagination-item">  <a href="#">5</a></div>
-          <div class="pagination-item">  <a href="#">6</a></div>
-          <div class="pagination-item">  <a href="#">7</a></div>
-          <div class="pagination-item">  <a href="#">>></a></div> -->
+        </div> -->
+      </section>
+      <section class="following">
+        <div class="following-map">
+          <a data-i18="followingLink" class="following-link"
+            >Follow Us @daehair</a
+          >
+        </div>
+        <div class="follows-photos">
+          <div class="photo-item">
+            <img src="../img/following-photo1.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo2.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo3.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo4.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo5.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo6.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="map-link">
+        <div class="line"></div>
+        <div class="map-container">
+          <a data-i18="map" href="#" class="map">WE ARE ON MAP</a>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381511.740576621!2d-114.57148240398581!3d34.1397521772096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1715194027267!5m2!1sru!2sby"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>   <div class="line"></div>
+      <div class="footer-info">
+        <div class="links-and-email">
+          <div class="link-block">
+            <div class="first-links-block">
+              <a data-i18="sustainability" class="link">Sustainability</a>
+              <a data-i18="contactUs" class="link">Contact Us</a>
+              <a data-i18="FAQ" class="link">FAQ</a>
+              <a data-i18="careers" class="link">Careers</a>
+            </div>
+            <div class="second-links-block">
+              <a data-i18="privacyPolicy" class="link">Privacy Policy</a>
+              <a data-i18="CAPrivacyRights" class="link">CA Privacy Rights</a>
+              <a data-i18="termsOfUse" class="link">Terms of Use</a>
+              <a data-i18="newsletter" class="link">Newsletter</a>
+            </div>
+          </div>
+
+          <div class="email-block">
+            <p data-i18="firstEmailText" class="first-email-text">
+              ONLY GOOD HAIR DAES AHEAD—AND 10% OFF YOUR FIRST ORDER
+            </p>
+            <div class="email">
+              <div class="email-field">
+                <input type="email" class="email-input" />
+              </div>
+              <button data-i18="subscribe" class="subscribe">Subscribe</button>
+            </div>
+            <p data-i18="underEmailText" class="under-email-text">
+              Want to shop in person? Swing by our showroom.
+            </p>
+            <p data-i18="address" class="under-email-text">
+              M-F, 10am-2pm 5051 E Indigo St, Suite 105, Mesa, AZ 85205
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="rights">
+        <p data-i18="rights">© 2021 dae. All rights reserved.</p>
+      </div></footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/modal-window.js"></script>
     <script src="../javaScript/open-menu.js"></script>
     <script src="../javaScript/open-admin.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/reviews-paginatiion.js"></script>
+    <script src="../javaScript/open-modal-window.js"></script>
+    <script src="../javaScript/enter-modal.js"></script>
   </body>
 </html>

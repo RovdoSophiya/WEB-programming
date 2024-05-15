@@ -49,7 +49,7 @@
   width: 94%;
   display: inline-flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-between;
   padding-left: 55px;
   padding-bottom: 45px;
@@ -88,18 +88,38 @@
     height: auto;
   }
   .photo-section-information {
-  padding-top: 24%;
-  padding-left: 76px;
-  display: flex;
-  flex-direction: column;
-  gap: 21px;
+    padding-top: 24%;
+    padding-left: 76px;
+    display: flex;
+    flex-direction: column;
+    gap: 21px;
+  }
+  .shop-all {
+    font-size: 40px;
+    line-height: 27.2px; /* 68% */
+  }
+  .shop-information {
+    font-size: 33px;
+    line-height: 64px; /* 193.939% */
+  }
 }
-.shop-all {
-  font-size: 40px;
-  line-height: 27.2px; /* 68% */
+@media (max-width: 768px) {
+  .shop-all {
+    font-size: 30px;
+  }
+  .shop-information {
+    font-size: 23px;
+  }
 }
-.shop-information {
-  font-size: 33px;
-  line-height: 64px; /* 193.939% */
-}
+@media (max-width: 500px) {
+  .photo-section-information {
+    padding-left: 30px;
+  }
+
+  .shop-all {
+    font-size: 20px;
+  }
+  .shop-information {
+    font-size: 13px;
+  }
 }

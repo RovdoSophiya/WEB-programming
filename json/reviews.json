@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Alena Dripr",
+    "image": "../img/reviews/person1.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "5"
+  },
+  {
+    "name": "Bob Ross",
+    "image": "../img/reviews/person2.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "5"
+  },
+  {
+    "name": "Selena Star",
+    "image": "../img/reviews/person3.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "4"
+  },
+  {
+    "name": "Mell Diow",
+    "image": "../img/reviews/person3.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "5"
+  },
+  {
+    "name": "Ricky Nicher",
+    "image": "../img/reviews/person3.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "5"
+  },
+  {
+    "name": "Lana Ray",
+    "image": "../img/reviews/person3.jpg",
+    "review": "Lorem ipsum dolor sit amet consectetuf\n adipisicing elit.\nDelectus odio consectetur qui ut cum dolores a, reprehenderit architecto quos, deserunt aspernatur illum vitae, porro numquam asperiores. Exercitationem illum corrupti ex?",
+    "star": "4"
+  }
+]

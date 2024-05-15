@@ -120,7 +120,7 @@
             <input type="checkbox" id="chk" aria-hidden="true" />
             <button id="close" class="close">x</button>
             <div class="signup">
-              <form>
+              <form id="signupForm">
                 <label
                   class="reg-button"
                   for="chk"
@@ -166,16 +166,17 @@
                   name="txt"
                   placeholder="Enter father name"
                   data-i18="enterFatherName"
-                  required=""
                 />
                 <input
                   class="input"
                   type="text"
-                  name="txt"
+                  name="nick"
+                  id="nicknameInput"
                   placeholder="Enter nick name"
                   data-i18="enterNickName"
                   required=""
                 />
+                <button class="gen-nick">Generate nick name</button>
                 <input
                   class="input"
                   type="password"
@@ -184,6 +185,7 @@
                   data-i18="enterPassword"
                   required=""
                 />
+                <button class="gen-pswrd">Generate password</button>
                 <input
                   class="input"
                   type="password"
@@ -192,10 +194,12 @@
                   data-i18="repeatPassword"
                   required=""
                 />
+               <button class="seePasd">See password</button>
+               <input type="checkbox" >
                 <button class="ra" data-i18="signUp">Sign up</button>
               </form>
             </div>
-
+    
             <div class="login">
               <form>
                 <label
@@ -224,9 +228,7 @@
                   required=""
                 />
                 <a data-i18="forgetPassword">forget your password?</a>
-                <button class="ra" id="loginButton" data-i18="login">
-                  Login
-                </button>
+                <button class="ra" id="loginButton" data-i18="login">Login</button>
               </form>
             </div>
           </nav>
@@ -323,17 +325,6 @@
             <button class="shop-buy" data-i18="buy">Buy</button>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="busket">
-      <p data-i18="userMeetDae" class="user-meet-dae">MEET DAE</p>
-      <div class="busket-container">
-        <div class="text-icon">
-          <p class="busket-text" data-i18="busket">Busket</p>
-          <img class="shop-icon" src="../img/Shop-icon.png" />
-        </div>
-
-        <p class="busket-price">64.00$</p>
       </div>
     </section>
     <section class="map-link">
@@ -443,5 +434,6 @@
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
+    <script src="../javaScript/enter-modal.js"></script>
   </body>
 </html>

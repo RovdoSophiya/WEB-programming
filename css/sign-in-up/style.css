@@ -64,6 +64,15 @@
   outline: none;
   border-radius: 5px;
 }
+.gen-nick, .gen-pswrd{
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   background-color: transparent;
+   border:none;
+   color:antiquewhite;
+}
+
 .ra {
   width: 60%;
   height: 40px;
