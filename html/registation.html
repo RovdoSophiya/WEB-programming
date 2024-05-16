@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/sign-in-up/registration.css" />
+    <link rel="stylesheet" href="../css/index/fonts.css" />
+    <title>Register</title>
+  </head>
+  <body class="registration">
+    <section class="close">
+      <a href="index.html"><h2>BACK TO MAIN</h2></a>
+    </section>
+    <section class="registration-box">
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2 class="Registration">Registration</h2>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/envelope.png" />
+              <input class="inp" type="email" required />
+              <label for="">Email*</label>
+            </div>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/telephone-call.png" />
+              <input class="inp" type="tel" required />
+              <label for="">Telephone*</label>
+            </div>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/card.png" />
+              <input class="inp" type="text" required />
+              <label for="">Last name*</label>
+            </div>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/card.png" />
+              <input class="inp" type="text" required />
+              <label for="">First name*</label>
+            </div>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/card.png" />
+              <input class="inp" type="text"  />
+              <label for="">Father name</label>
+            </div>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/nick.png" />
+              <input class="inp" type="text" required />
+              <label for="">Nick name*</label>
+            </div>
+            <button class="gen">Genetate nick name</button>
+            <div class="inputbox">
+              <img
+                class="lock-closed-outline"
+                src="../img/signInUp/lock.png"
+                onclick="togglePassword(this)"
+              />
+              <input class="inp" type="password" id="passwordField" required />
+              <label for="">Password</label>
+            </div>
+            <button class="gen">Genetate password</button>
+            <div class="inputbox">
+              <img
+                class="lock-closed-outline"
+                src="../img/signInUp/lock.png"
+                onclick="togglePassword(this)"
+              />
+              <input class="inp" type="password" id="passwordField" required />
+              <label for="">Repeat password</label>
+            </div>
+            <div class="licence">
+              <label for=""
+                ><input type="checkbox" />I read the licence aggreements
+                <a href="#">Licence agreements</a></label
+              >
+            </div>
+            <button class="reg">Register</button>
+            <div class="log">
+              <p>Already have an account?<a href="authorisation.html">Login</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function togglePassword(icon) {
+      const passwordField = document.getElementById("passwordField");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.src = "../img/signInUp/unlock.png";
+      } else {
+        passwordField.type = "password";
+        icon.src = "../img/signInUp/lock.png";
+      }
+    }
+  </script>
+   <script src="../javaScript/change-language.js"></script>
+</html>

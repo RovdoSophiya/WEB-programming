@@ -64,13 +64,14 @@
   outline: none;
   border-radius: 5px;
 }
-.gen-nick, .gen-pswrd{
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   background-color: transparent;
-   border:none;
-   color:antiquewhite;
+.gen-nick,
+.gen-pswrd {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  color: antiquewhite;
 }
 
 .ra {
@@ -137,6 +138,14 @@
   color: black;
   text-decoration: none;
   cursor: pointer;
+}
+.seePswd{
+  position: relative;
+  top:-40px;
+  left:500px;
+}
+#seePswd{
+ display: none;
 }
 @media (min-width: 768px) {
   .modal {

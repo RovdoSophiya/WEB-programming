@@ -109,13 +109,11 @@
             </div>
           </div>
           <div class="signs">
-            <button
-              class="open-modal-button"
-              id="open-modal-button"
-              data-i18="openModalButton"
-            >
-              <img src="../img/User-icon.png" alt="User icon" />
-            </button>
+
+            <a   href="authorisation.html" class="open-modal-button"
+            id="open-modal-button"
+            data-i18="openModalButton"> <img src="../img/User-icon.png" alt="User icon" /></a>
+
           </div>
         </div>
       </div>
@@ -199,6 +197,11 @@
               data-i18="repeatPassword"
               required=""
             />
+            <div class="seePswd">
+              <input type="checkbox" id="seePswd">
+              <img class="see" src="../img/envelope.png"></img>
+              <img class="hide" src="../img/hide.png"></img>
+            </div>
             <button class="ra" data-i18="signUp">Sign up</button>
           </form>
         </div>
@@ -598,9 +601,10 @@
     </footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
-    <script src="../javaScript/open-admin.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/admin.js"></script>
     <script src="../javaScript/enter-modal.js"></script>
+     <script src="../javaScript/burger.js"></script>
+     <script src="../javaScript/see-password.js"></script>
   </body>
 </html>

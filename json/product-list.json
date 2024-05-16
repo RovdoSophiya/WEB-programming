@@ -2,16 +2,61 @@
   {
     "name": "The Daedreamer Set",
     "price": "$49.00",
-    "image": "../img/Dream-set.png"
+    "image": "../img/products/Dream-set.png"
   },
   {
     "name": "Shampoo",
     "price": "$24.00 to $64.00",
-    "image": "../img/Shampoo.png"
+    "image": "../img/products/Shampoo.png"
   },
   {
     "name": "Conditioner",
     "price": "$24.00 to $64.00",
-    "image": "../img/Conditioner.png"
+    "image": "../img/products/Conditioner.png"
+  },
+  {
+    "name": "Citrus candle",
+    "price": "$10.00 to $12.00",
+    "image": "../img/products/citrus-candle.jpg"
+  },
+  {
+    "name": "Hair oil",
+    "price": "$10.00 to $14.00",
+    "image": "../img/products/hair-oil.png"
+  },
+  {
+    "name": "Moisture mask",
+    "price": "$24.00 to $44.00",
+    "image": "../img/products/moisture-mask.png"
+  },
+  {
+    "name": "Scalp scrubber",
+    "price": "$3.00 to $6.00",
+    "image": "../img/products/scalp-scrubber.png"
+  },
+  {
+    "name": "Signature conditioner",
+    "price": "$20.00 to $40.00",
+    "image": "../img/products/signature-conditioner.png"
+  },
+  {
+    "name": "Signature shampoo",
+    "price": "$24.00 to $64.00",
+    "image": "../img/products/signature-shampoo.png"
+  },
+  {
+    "name": "Style brush",
+    "price": "$7.00 to $10.00",
+    "image": "../img/products/style-brush.png"
+  },
+  {
+    "name": "Hair trio",
+    "price": "$44.00 to $74.00",
+    "image": "../img/products/trio.png"
+  },
+  {
+    "name": "Way spray",
+    "price": "$14.00 to $16.00",
+    "image": "../img/products/way-spray.png"
   }
 ]

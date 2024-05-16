@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/sign-in-up/authorization.css" />
+    <link rel="stylesheet" href="../css/index/fonts.css" />
+    <title>Login</title>
+  </head>
+  <body class="authorization">
+    <section class="close">
+      <a href="index.html"><h2>BACK TO MAIN</h2></a>
+    </section>
+    <section class="authorization-box">
+      <div class="form-box">
+        <div class="form-value">
+          <form action="">
+            <h2 class="Login">Login</h2>
+            <div class="inputbox">
+              <img class="mail-outline" src="../img/signInUp/envelope.png" />
+              <input class="inp" type="email" required />
+              <label for="">Email</label>
+            </div>
+            <div class="inputbox">
+              <img
+                class="lock-closed-outline"
+                src="../img/signInUp/lock.png"
+                onclick="togglePassword(this)"
+              />
+              <input class="inp" type="password" id="passwordField" required />
+              <label for="">Password</label>
+            </div>
+            <div class="forget">
+              <label for=""
+                ><input type="checkbox" />Remember Me.
+                <a href="#">Forget Password?</a></label
+              >
+            </div>
+            <button class="log">Log in</button>
+            <div class="register">
+              <p>Dont have an account?<a href="registation.html">Register</a></p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function togglePassword(icon) {
+      const passwordField = document.getElementById("passwordField");
+      if (passwordField.type === "password") {
+        passwordField.type = "text";
+        icon.src = "../img/signInUp/unlock.png";
+      } else {
+        passwordField.type = "password";
+        icon.src = "../img/signInUp/lock.png";
+      }
+    }
+  </script>
+   <script src="../javaScript/change-language.js"></script>
+   <script src="../javaScript/change-theme.js"></script>
+</html>

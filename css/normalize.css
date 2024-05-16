@@ -10,7 +10,20 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 
-
+body {
+  max-width: 1440px;
+  /* margin: 0 auto; */
+  font-family: "Roboto";
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--var-body);
+}
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 
 /**
  * Render the `main` element consistently in IE.
