@@ -10,44 +10,49 @@
   </head>
   <body class="registration">
     <section class="close">
-      <a href="index.html"><h2>BACK TO MAIN</h2></a>
+      <a href="index.html"><h2 data-i18="backMain">BACK TO MAIN</h2></a>
     </section>
     <section class="registration-box">
       <div class="form-box">
         <div class="form-value">
           <form action="">
-            <h2 class="Registration">Registration</h2>
+            <h2 class="Registration" data-i18="Registration">Registration</h2>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/envelope.png" />
               <input class="inp" type="email" required />
-              <label for="">Email*</label>
+              <label for=""><p data-i18="enterEmail">Email*</p></label>
             </div>
             <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/telephone-call.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/telephone-call.png"
+              />
               <input class="inp" type="tel" required />
-              <label for="">Telephone*</label>
+              <label for=""><p data-i18="enterPhone">Telephone*</p></label>
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
               <input class="inp" type="text" required />
-              <label for="">Last name*</label>
+              <label for=""><p data-i18="enterLastName">Last name*</p></label>
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
               <input class="inp" type="text" required />
-              <label for="">First name*</label>
+              <label for=""><p data-i18="enterName">First name*</p></label>
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
-              <input class="inp" type="text"  />
-              <label for="">Father name</label>
+              <input class="inp" type="text" />
+              <label for=""
+                ><p data-i18="enterFatherName">Father name</p></label
+              >
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/nick.png" />
               <input class="inp" type="text" required />
-              <label for="">Nick name*</label>
+              <label for=""><p data-i18="enterNickName">Nick name*</p></label>
             </div>
-            <button class="gen">Genetate nick name</button>
+            <button class="gen" data-i18="genNick">Genetate nick name</button>
             <div class="inputbox">
               <img
                 class="lock-closed-outline"
@@ -55,9 +60,9 @@
                 onclick="togglePassword(this)"
               />
               <input class="inp" type="password" id="passwordField" required />
-              <label for="">Password</label>
+              <label for=""><p data-i18="enterPassword">Password*</p></label>
             </div>
-            <button class="gen">Genetate password</button>
+            <button class="gen" data-i18="genPswd">Genetate password</button>
             <div class="inputbox">
               <img
                 class="lock-closed-outline"
@@ -65,17 +70,26 @@
                 onclick="togglePassword(this)"
               />
               <input class="inp" type="password" id="passwordField" required />
-              <label for="">Repeat password</label>
+              <label for=""
+                ><p data-i18="repeatPassword">Repeat password</p></label
+              >
             </div>
             <div class="licence">
               <label for=""
-                ><input type="checkbox" />I read the licence aggreements
-                <a href="#">Licence agreements</a></label
+                ><input type="checkbox" />
+                <p data-i18="chkLicense">I read the licence aggreements</p>
+                <a href="#"
+                  ><p data-i18="licence">Licence agreements</p></a
+                ></label
               >
             </div>
-            <button class="reg">Register</button>
+            <button class="reg" data-i18="register">Register</button>
             <div class="log">
-              <p>Already have an account?<a href="authorisation.html">Login</a></p>
+              <p data-i18="haveAccount">
+                Already have an account?<a href="authorisation.html"
+                  ><p data-i18="regLogin">Login</p></a
+                >
+              </p>
             </div>
           </form>
         </div>
@@ -94,5 +108,5 @@
       }
     }
   </script>
-   <script src="../javaScript/change-language.js"></script>
+  <script src="../javaScript/change-language.js"></script>
 </html>

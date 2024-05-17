@@ -10,17 +10,25 @@
   </head>
   <body class="authorization">
     <section class="close">
-      <a href="index.html"><h2>BACK TO MAIN</h2></a>
+      <div class="language-buttons">
+        <div class="lang-button">
+          <button data-i18="rus" class="rus">Rus</button>
+        </div>
+        <div class="lang-button">
+          <button data-i18="en" class="en">En</button>
+        </div>
+      </div>
+      <a href="index.html"><h2 data-i18="backMain">BACK TO MAIN</h2></a>
     </section>
     <section class="authorization-box">
       <div class="form-box">
         <div class="form-value">
           <form action="">
-            <h2 class="Login">Login</h2>
+            <h2 class="Login" data-i18="Login">Login</h2>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/envelope.png" />
-              <input class="inp" type="email" required />
-              <label for="">Email</label>
+              <input class="inp" type="email" id="log-in-email" required />
+              <label for=""><p data-i18="enterEmail">Email*</p></label>
             </div>
             <div class="inputbox">
               <img
@@ -29,35 +37,33 @@
                 onclick="togglePassword(this)"
               />
               <input class="inp" type="password" id="passwordField" required />
-              <label for="">Password</label>
+              <label for=""><p data-i18="enterPassword">Password*</p></label>
             </div>
             <div class="forget">
-              <label for=""
-                ><input type="checkbox" />Remember Me.
-                <a href="#">Forget Password?</a></label
-              >
+              <label for=""></label>
+                <div>
+                  <input type="checkbox" />
+                  <p class="remember" data-i18="remember">Remember Me.</p>
+                </div>
+                <a href="#"
+                  ><p data-i18="forgetpswd" class="forgerPswd">Forget Password?</p></a
+                >
+                </label>
             </div>
-            <button class="log">Log in</button>
+            <button class="log" id="Log-in" data-i18="regLogin">Log in</button>
             <div class="register">
-              <p>Dont have an account?<a href="registation.html">Register</a></p>
+              <p data-i18="dhaveAccount">
+                Dont have an account?<a href="registation.html"
+                  ><p data-i18="reg" class="reg">Register</p></a
+                >
+              </p>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <script src="../javaScript/change-language.js"></script>
+    <script src="../javaScript/see-password.js"></script>
+    <script src="../javaScript/log-in.js"></script>
   </body>
-  <script>
-    function togglePassword(icon) {
-      const passwordField = document.getElementById("passwordField");
-      if (passwordField.type === "password") {
-        passwordField.type = "text";
-        icon.src = "../img/signInUp/unlock.png";
-      } else {
-        passwordField.type = "password";
-        icon.src = "../img/signInUp/lock.png";
-      }
-    }
-  </script>
-   <script src="../javaScript/change-language.js"></script>
-   <script src="../javaScript/change-theme.js"></script>
 </html>

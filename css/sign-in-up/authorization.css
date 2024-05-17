@@ -20,6 +20,19 @@
 .close a h2:hover {
   text-decoration: underline;
 }
+.language-buttons {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-right: 40px;
+}
+.lang-button button {
+  color: white;
+  background: transparent;
+  border: 1px solid white;
+  border-radius: 4px;
+  height: 28px;
+}
 .authorization-box {
   display: flex;
   justify-content: center;
@@ -31,6 +44,7 @@
   position: relative;
   width: 60%;
   height: 450px;
+  top: 9px;
   background: transparent;
   border: 2px solid white;
   border-radius: 20px;
@@ -50,7 +64,7 @@
 .inputbox {
   position: relative;
   margin: 30px 0px;
-  width: 110%;
+  width: 100%;
   border-bottom: 2px solid white;
 }
 .inputbox label {
@@ -80,20 +94,29 @@
   top: 20px;
 }
 .forget {
+  width: 100%;
   margin: -15px 0 15px;
-  font-size: 0.9s;
+  font-size: 1rem;
   color: white;
   display: flex;
   justify-content: center;
 }
+.forget label {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
 .forget label input {
   margin-right: 3px;
 }
-.forget label a {
-  color: white;
-  text-decoration: none;
+.forget label div {
+  display: flex;
+  flex-direction: row;
 }
-.forget label a:hover {
+.forgerPswd{
+  color:white;
+}
+.forgerPswd:hover {
   text-decoration: underline;
 }
 .log {
@@ -108,16 +131,36 @@
   font-weight: 500;
 }
 .register {
+  width: 100%;
   font-size: 0.9em;
   color: white;
   text-align: center;
   margin: 25px 0 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
 }
 .register p a {
   text-decoration: none;
   color: white;
   font-weight: 600;
 }
-.register p a:hover {
+.reg:hover {
   text-decoration: underline;
+}
+.remember {
+  display: inline;
+}
+@media (max-width: 724px) {
+  .form-value {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .form-value {
+    width: 100%;
+  }
+  .form-box {
+    width: 83%;
+  }
 }

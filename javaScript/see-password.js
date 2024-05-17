@@ -1,9 +1,10 @@
-const seePswdCheckbox = document.getElementById('seePswd');
-const passwordInputs = document.querySelectorAll('input[type="password"]');
-
-seePswdCheckbox.addEventListener('change', function() {
-  const isChecked = this.checked;
-  passwordInputs.forEach(function(input) {
-    input.type = isChecked ? 'text' : 'password';
-  });
-});
+function togglePassword(icon) {
+  const passwordField = document.getElementById("passwordField");
+  if (passwordField.type === "password") {
+    passwordField.type = "text";
+    icon.src = "../img/signInUp/unlock.png";
+  } else {
+    passwordField.type = "password";
+    icon.src = "../img/signInUp/lock.png";
+  }
+}
