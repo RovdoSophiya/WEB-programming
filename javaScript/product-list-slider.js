@@ -1,4 +1,4 @@
-let products;
+let reviews;
 
 fetch("../json/product-list.json")
   .then((response) => {
@@ -8,7 +8,7 @@ fetch("../json/product-list.json")
     return response.json();
   })
   .then((jsonData) => {
-    products = jsonData;
+    reviews = jsonData;
   })
   .catch((error) => console.error("Ошибка при исполнении запроса: ", error));
 
@@ -17,7 +17,7 @@ fetch("../json/product-list.json")
 // const text = section.querySelector('.text-upp');
 // const price = alltext.querySelectorAll('.text');
 
-let activeIndex = 0;
+let activep = 0;
 
 const btnLeft = document.getElementById("left-arrow");
 const btnRight = document.getElementById("right-arrow");
@@ -26,21 +26,21 @@ btnLeft.addEventListener("click", slideleft);
 btnRight.addEventListener("click", slideright);
 
 function slideleft() {
-  activeIndex = activeIndex === 0 ? products.length - 1 : activeIndex - 1;
+  activep = activep === 0 ? reviews.length - 1 : activep - 1;
   setdata();
 }
 
 function slideright() {
-  activeIndex = activeIndex === products.length - 1 ? 0 : activeIndex + 1;
+  activep = activep === reviews.length - 1 ? 0 : activep + 1;
   setdata();
 }
 function setdata() {
   for (let i = 0; i < 3; i++) {
-    const productIndex = (activeIndex + i) % products.length;
-    document.getElementById("img" + i).src = products[productIndex].image;
+    const productIndex = (activep + i) % reviews.length;
+    document.getElementById("img" + i).src = reviews[productIndex].image;
     document.getElementById("name" + i).textContent =
       i18Obj[currentLanguage]["name" + productIndex];
     document.getElementById("price" + i).textContent =
-      products[productIndex].price;
+      reviews[productIndex].price;
   }
 }

@@ -1,103 +1,49 @@
-/* .reviews {
+.reviews {
   width: 100%;
-  display: flex;
-  overflow-x: hidden;
-  flex-direction: column;
-  /* align-items: center;
-  justify-content: center; */
-
-/* .reviews-cards-container {
-  overflow-x: hidden;
-  width: 10080px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} 
-.reviews-cards {
-  overflow-x: hidden;
-  width: 10080px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: transform 0.5s ease;  Плавный переход для смены страниц 
+  padding-top: 30px;
 }
-.reviews-card {
-  width: 537px;
-  height: 307px;
-  border-radius: 10px;
-  border: 4px solid #a9ae8d;
-  background: #fff;
-  margin-left: auto;
-  margin-right: auto;
-}
- .review{
-  width: 537px;
-  height: 307px;
-  border-radius: 10px;
-  border: 4px solid #a9ae8d;
-  background: #fff;
-} 
-.reviews-pagination {
+.reviews-list {
   display: flex;
   flex-direction: row;
-  text-align: center;
-  margin-top: 20px;
+  justify-content: space-around;
 }
-.pagination-item {
-  display: flex;
-  width: 57px;
-  height: 57px;
-  justify-content: center;
-  align-items: center;
-  flex-shrink: 0;
-  background-color: var(--var-green-menu);
-}
-.pagination-item a {
-  color: white;
-  font-size: 50px;
-  font-weight: 400;
-  line-height: 27.2px;
-}
-.pagination-item a.active {
-  background-color: aqua;
-  border-radius: 5px;
-}
-.pagination-item:hover:not(.active) {
-  background-color: aqua;
-  border-radius: 10px;
-} */
 .review-item {
-  background-color: aqua;
-  width: 70%;
-  margin: auto;
-  height: 190px;
+  width: 45%;
+  background-color: antiquewhite;
+  border: 2px solid green;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
 }
-.review-account {
-  width: 80%;
+.review-person {
+  width: 100%;
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 }
-.review-photo {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  margin-top: 10px;
-  margin-left: 10px;
+.person-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
-.review-account p {
+.person-photo {
+  width: 50px;
+  border-radius: 50%;
+  margin-top: 2px;
+  margin-left: 7px;
+}
+.info {
+  font-size: 24px;
+  font-weight: 400;
   text-transform: uppercase;
 }
-.review-text {
-  margin-top: 10px;
-  margin-left: 10px;
-  width: 95%;
+.stars {
+  width: 50%;
 }
-/*пое*/
-
-.reviews-card {
-  transition: transform 0.3s ease; /* Добавляем плавный переход при смещении */
+.review-description {
+  width: 90%;
+  margin: 15px auto;
+}
+.review-description p {
+  width: 100%;
+  font-size: 20px;
 }

@@ -117,122 +117,6 @@
         </div>
       </div>
     </section>
-    <section class="registration-authorization-modal" id="modal-window">
-      <nav class="modal" id="Modal">
-        <input type="checkbox" id="chk" aria-hidden="true" />
-        <button id="close" class="close">x</button>
-        <div class="signup">
-          <form id="signupForm">
-            <label
-              class="reg-button"
-              for="chk"
-              aria-hidden="true"
-              data-i18="signUp"
-              >Sign up</label
-            >
-            <input
-              class="input"
-              type="tel"
-              name="tel"
-              placeholder="Enter phone"
-              data-i18="enterPhone"
-              required=""
-            />
-            <input
-              class="input"
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              data-i18="enterEmail"
-              required=""
-            />
-            <input
-              class="input"
-              type="text"
-              name="txt"
-              placeholder="Enter last name"
-              data-i18="enterLastName"
-              required=""
-            />
-            <input
-              class="input"
-              type="text"
-              name="txt"
-              placeholder="Enter name"
-              data-i18="enterName"
-              required=""
-            />
-            <input
-              class="input"
-              type="text"
-              name="txt"
-              placeholder="Enter father name"
-              data-i18="enterFatherName"
-            />
-            <input
-              class="input"
-              type="text"
-              name="nick"
-              id="nicknameInput"
-              placeholder="Enter nick name"
-              data-i18="enterNickName"
-              required=""
-            />
-            <button class="gen-nick">Generate nick name</button>
-            <input
-              class="input"
-              type="password"
-              name="pswd"
-              placeholder="Enter password"
-              data-i18="enterPassword"
-              required=""
-            />
-            <button class="gen-pswrd">Generate password</button>
-            <input
-              class="input"
-              type="password"
-              name="repeatpswd"
-              placeholder="Repeat password"
-              data-i18="repeatPassword"
-              required=""
-            />
-            <button class="ra" data-i18="signUp">Sign up</button>
-          </form>
-        </div>
-
-        <div class="login">
-          <form>
-            <label
-              class="reg-button"
-              for="chk"
-              aria-hidden="true"
-              data-i18="login"
-              >Login</label
-            >
-            <input
-              class="input"
-              type="email"
-              name="email"
-              id="sign-up-login"
-              placeholder="Enter email"
-              data-i18="enterEmail"
-              required=""
-            />
-            <input
-              class="input"
-              type="password"
-              name="pswd"
-              id="sign-up-password"
-              placeholder="Enter password"
-              data-i18="enterPassword"
-              required=""
-            />
-            <a data-i18="forgetPassword">forget your password?</a>
-            <button class="ra" id="loginButton" data-i18="login">Login</button>
-          </form>
-        </div>
-      </nav>
-    </section>
     <main>
       <section class="reviews-image">
         <div class="reviews-page-info">
@@ -253,45 +137,72 @@
         </div>
       </section>
       <section class="reviews">
-        <p class="Reviews-upper">Dae reviews</p>
-        <div class="reviews-cards-container">
-          <div class="reviews-cards">
-            <div class="reviews-card" id="page1">
-              <div class="review"></div>
+        <div class="reviews-list">
+          <div class="review-item">
+            <div class="review-person">
+              <div class="person-info">
+                <img
+                  class="person-photo"
+                  id="photo1"
+                  src="../img/reviews/person1.jpg"
+                  alt="photo"
+                />
+                <p class="info" id="info1">Helena Grag</p>
+              </div>
+              <div class="stars" id="stars1">
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+              </div>
             </div>
-            <div class="reviews-card" id="page2">
-              <div class="review"></div>
+            <div class="review-description">
+              <p id="description1">
+                Amazing shop!!! LU. Bought some hair spray to my daughter and
+                she really appreciate this. Good luck,guys!!!!!
+              </p>
             </div>
-            <div class="reviews-card" id="page3">
-              <div class="review"></div>
+          </div>
+          <div class="review-item">
+            <div class="review-person">
+              <div class="person-info">
+                <img
+                  class="person-photo"
+                  id="photo2"
+                  src="../img/reviews/person2.jpg"
+                  alt="photo"
+                />
+                <p class="info" id="info2">Dilan Stark</p>
+              </div>
+              <div class="stars" id="stars2">
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+                <img src="../img/reviews/star.png" />
+              </div>
             </div>
-            <div class="reviews-card" id="page4">
-              <div class="review"></div>
-            </div>
-            <div class="reviews-card" id="page5">
-              <div class="review"></div>
-            </div>
-            <div class="reviews-card" id="page6">
-              <div class="review"></div>
-            </div>
-            <div class="reviews-card" id="page7">
-              <div class="review"></div>
+            <div class="review-description">
+              <p id="description2">
+                The store has a wide selection of hair care products, including
+                sprays and shampoos. Looks promising but needs more exploration
+                to judge effectiveness
+              </p>
             </div>
           </div>
         </div>
-        <div class="reviews-pagination">
-          <!-- Кнопки пагинации будут добавлены здесь динамически -->
+        <div class="slider-paggination">
+          <p class="left-side">&laquo;</p>
+          <p class="left">&lt</p>
+          <ul class="paggination">
+            <li class="active"><p>1</p></li>
+            <li><p>2</p></li>
+            <li><p>3</p></li>
+          </ul>
+          <p class="right">&gt</p>
+          <p class="right-side">&raquo;</p>
         </div>
-        <!-- <div class="reviews-pagination">
-          <button class="pagination-item" onclick="prevPage()">&lt;&lt;</button>
-          <button class="pagination-item" onclick="changePage(1)">1</button>
-          <button class="pagination-item" onclick="changePage(2)">2</button>
-          <button class="pagination-item" onclick="changePage(3)">3</button>
-          <button class="pagination-item" onclick="changePage(4)">4</button>
-          <button class="pagination-item" onclick="changePage(5)">5</button>
-          <button class="pagination-item" onclick="changePage(6)">6</button>
-          <button class="pagination-item" onclick="nextPage()">&gt;&gt;</button>
-        </div> -->
       </section>
       <section class="following">
         <div class="following-map">
