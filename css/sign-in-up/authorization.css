@@ -113,8 +113,8 @@
   display: flex;
   flex-direction: row;
 }
-.forgerPswd{
-  color:white;
+.forgerPswd {
+  color: white;
 }
 .forgerPswd:hover {
   text-decoration: underline;

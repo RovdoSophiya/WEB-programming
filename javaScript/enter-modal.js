@@ -17,10 +17,15 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Проверка на формат email
+
+    var labelElementEmail = formEmail.querySelector(".input-error");
+
+    inputElementEmail.addEventListener("input", removeErrorClass);
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(userData.email)) {
-      alert("Invalid email format.");
-      return;
+      labelElementEmail.classList.add("error");
+    } else {
+      labelElementEmail.classList.remove("error");
     }
 
     // Проверка на уникальность email

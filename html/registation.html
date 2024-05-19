@@ -15,42 +15,59 @@
     <section class="registration-box">
       <div class="form-box">
         <div class="form-value">
-          <form action="">
+          <form id="registration" action="">
             <h2 class="Registration" data-i18="Registration">Registration</h2>
-            <div class="inputbox">
+            <div class="inputbox email">
               <img class="mail-outline" src="../img/signInUp/envelope.png" />
               <input class="inp" type="email" required />
-              <label for=""><p data-i18="enterEmail">Email*</p></label>
+              <label for="" class="inp-label" name="email"
+                ><p data-i18="enterEmail">Email*</p></label
+              >
+              <label class="input-error email-error"
+                >Invalid email format or it's already registered</label
+              >
             </div>
-            <div class="inputbox">
+            <div class="inputbox phone">
               <img
                 class="mail-outline"
                 src="../img/signInUp/telephone-call.png"
               />
-              <input class="inp" type="tel" required />
-              <label for=""><p data-i18="enterPhone">Telephone*</p></label>
+              <input class="inp" type="tel" name="tel" required />
+              <label for="" class="inp-label"
+                ><p data-i18="enterPhone">Telephone*</p></label
+              >
+              <label class="input-error phone-error"
+                >Phone number must start with +375 and have 13 digits in
+                total</label
+              >
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
               <input class="inp" type="text" required />
-              <label for=""><p data-i18="enterLastName">Last name*</p></label>
+              <label for="" class="inp-label"
+                ><p data-i18="enterLastName">Last name*</p></label
+              >
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
               <input class="inp" type="text" required />
-              <label for=""><p data-i18="enterName">First name*</p></label>
+              <label for="" class="inp-label"
+                ><p data-i18="enterName">First name*</p></label
+              >
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/card.png" />
               <input class="inp" type="text" />
-              <label for=""
+              <label for="" class="inp-label"
                 ><p data-i18="enterFatherName">Father name</p></label
               >
             </div>
             <div class="inputbox">
               <img class="mail-outline" src="../img/signInUp/nick.png" />
               <input class="inp" type="text" required />
-              <label for=""><p data-i18="enterNickName">Nick name*</p></label>
+              <label for="" class="inp-label"
+                ><p data-i18="enterNickName">Nick name*</p></label
+              >
             </div>
             <button class="gen" data-i18="genNick">Genetate nick name</button>
             <div class="inputbox">
@@ -59,8 +76,20 @@
                 src="../img/signInUp/lock.png"
                 onclick="togglePassword(this)"
               />
-              <input class="inp" type="password" id="passwordField" required />
-              <label for=""><p data-i18="enterPassword">Password*</p></label>
+              <input
+                class="inp"
+                type="password"
+                name="pswd"
+                id="passwordField"
+                required
+              />
+              <label for="" class="inp-label"
+                ><p data-i18="enterPassword">Password*</p></label
+              >
+              <label class="input-error pswd-error"
+                >Invalid password(need to have at least 8 characters(uppercase,
+                lowercase,digit, special character and not be popular))
+              </label>
             </div>
             <button class="gen" data-i18="genPswd">Genetate password</button>
             <div class="inputbox">
@@ -69,8 +98,14 @@
                 src="../img/signInUp/lock.png"
                 onclick="togglePassword(this)"
               />
-              <input class="inp" type="password" id="passwordField" required />
-              <label for=""
+              <input
+                class="inp"
+                type="password"
+                name="repeatpswd"
+                id="passwordField"
+                required
+              />
+              <label for="" class="inp-label"
                 ><p data-i18="repeatPassword">Repeat password</p></label
               >
             </div>
@@ -109,4 +144,6 @@
     }
   </script>
   <script src="../javaScript/change-language.js"></script>
+  <script src="../javaScript/enter-modal.js"></script>
+  <script src="../javaScript/validate-registration.js"></script>
 </html>
