@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="../css/index/header.css" />
     <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
-    <link rel="stylesheet" href="../css/normalized.css" />
+    <link rel="stylesheet" href="../css/index/production-list.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/shop/shop.css" />
     <link rel="stylesheet" href="../css/change-theme.css" />
@@ -132,88 +132,65 @@
         </p>
       </div>
     </section>
-    <section class="shop-container">
-      <div class="shop-page-annotation">
-        <p class="shop-text1" data-i18="bundleSave">BUNDLE & SAVE</p>
-        <p class="shop-text2" data-i18="perfectProducts">
-          The perfect product for you
+    <section class="production-list">
+      <div class="production-list-container">
+        <p data-i18="pickBottles" class="pick-bottles">
+          Pick a Pretty Bottle
         </p>
       </div>
-      <div class="shop-goods">
-        <div class="section">
-          <img src="../img/section1-photo2.png" />
-          <div class="section-text">
-            <p data-i18="motherSet">MOTHER SET</p>
-            <p>64.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
+      <div class="production-frame">
+        <div class="product-list" id="product-list">
+          <div class="product-item">
+            <div class="product-photo">
+              <img
+                id="img0"
+                src="../img/slider/Dream-set.png"
+                alt="Dream set"
+              />
+            </div>
+            <div class="product-description">
+              <p id="name0" class="text-upp" data-i18="name0">
+                The Dreamer Set
+              </p>
+              <p id="price0" class="product-price" data-i18="price0">
+                $49.00
+              </p>
+              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+            </div>
           </div>
-        </div>
-        <div class="section">
-          <img src="../img/section1-photo1.png" />
-          <div class="section-text">
-            <p data-i18="shampoo">SHAMPOO</p>
-            <p>14.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
+          <div class="product-item">
+            <div class="product-photo">
+              <img id="img1" src="../img/slider/Shampoo.png" alt="Shampoo" />
+            </div>
+            <div class="product-description">
+              <p id="name1" class="text-upp">Shampoo</p>
+              <p id="price1" class="text">$24.00 to $64.00</p>
+              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+            </div>
           </div>
-        </div>
-        <div class="section">
-          <img src="../img/section1-photo3.png" />
-          <div class="section-text">
-            <p data-i18="hairSet">HAIR SET</p>
-            <p>34.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
-          </div>
-        </div>
-        <div class="section">
-          <img src="../img/section1-photo4.png" />
-          <div class="section-text">
-            <p data-i18="serumFace">SERUM FACE</p>
-            <p>10.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
+          <div class="product-item">
+            <div class="product-photo">
+              <img
+                id="img2"
+                src="../img/slider/Conditioner.png"
+                alt="Conditioner"
+              />
+            </div>
+            <div class="product-description">
+              <p id="name2" class="text-upp">Conditioner</p>
+              <p id="price2" class="text">$24.00 to $64.00</p>
+              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <section class="shop-container">
-      <div class="shop-page-annotation">
-        <p class="shop-text1" data-i18="styling">STYLING</p>
-        <p class="shop-text2" data-i18="easierRoutine">
-          Make your routine easier with Dae
-        </p>
-      </div>
-      <div class="shop-goods">
-        <div class="section">
-          <img src="../img/section2-photo1.png" />
-          <div class="section-text">
-            <p data-i18="hairSpray">HAIR SPRAY</p>
-            <p>5.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
-          </div>
-        </div>
-        <div class="section">
-          <img src="../img/section2-photo2.png" />
-          <div class="section-text">
-            <p data-i18="hairGear">HAIR GEAR</p>
-            <p>45.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
-          </div>
-        </div>
-        <div class="section">
-          <img src="../img/section2-photo3.png" />
-          <div class="section-text">
-            <p data-i18="handCream">HAND CREAM</p>
-            <p>34.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
-          </div>
-        </div>
-        <div class="section">
-          <img src="../img/section2-photo4.png" />
-          <div class="section-text">
-            <p data-i18="serumSet">SERUM SET</p>
-            <p>10.00$</p>
-            <button class="shop-buy" data-i18="buy">Buy</button>
-          </div>
-        </div>
+      <div class="arrows">
+        <button class="left-arrow" id="left-arrow">
+          <img src="../img/slider/Arrow-left.png" alt="left" />
+        </button>
+        <button id="right-arrow" class="right-arrow">
+          <img src="../img/slider/Arrow-right.png" alt="right" />
+        </button>
       </div>
     </section>
     <section class="following">
@@ -321,5 +298,6 @@
     </footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/change-theme.js"></script>
+    <script src="../javaScript/product-list-slider.js"></script>
   </body>
 </html>
