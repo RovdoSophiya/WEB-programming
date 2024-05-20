@@ -1,7 +1,7 @@
 let reviews;
 let activeIndex = 0;
 const reviewsPerPage = 2;
-const totalReviews = 6; 
+const totalReviews = 6;
 const paggination = document.querySelector(".slider-paggination");
 const selector = paggination.querySelectorAll("li");
 
@@ -68,7 +68,8 @@ function displayReviews() {
     if (review) {
       document.getElementById("info" + (i + 1)).textContent = review.name;
       document.getElementById("photo" + (i + 1)).src = review.image;
-      document.getElementById("description" + (i + 1)).textContent = review.review;
+      document.getElementById("description" + (i + 1)).textContent =
+        review.review;
     }
   }
 }

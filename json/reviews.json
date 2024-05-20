@@ -26,13 +26,13 @@
   {
     "name": "Ricky Nicher",
     "image": "../img/reviews/person5.jpg",
-    "review": "I recently went on a haircare shopping spree and I'm absolutely delighted with my purchases! I picked up a variety of products from the store, and I must say, everything exceeded my expectations. From shampoos to styling products, each item has left me thoroughly impressed. I couldn't be happier with my haul!",
+    "review": "I recently went on a haircare shopping spree and I'm absolutely delighted with my purchases! I picked up a variety of products from the store, and I must say, everything exceeded my expectations.",
     "star": "5"
   },
   {
     "name": "Lana Ray",
     "image": "../img/reviews/person6.jpg",
-    "review": "Unfortunately, the haircare products I recently purchased turned out to be a big disappointment for me. Shortly after using them, I experienced an allergic reaction, which was quite unexpected and unpleasant. It's disappointing because I had high hopes for these products, but unfortunately, they didn't work out for me at all.",
+    "review": "Unfortunately, the haircare products I recently purchased turned out to be a big disappointment for me.I experienced an allergic reaction, which was quite unexpected and unpleasant.",
     "star": "2"
   }
 ]
