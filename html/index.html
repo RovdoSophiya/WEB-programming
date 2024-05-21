@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
     <link rel="stylesheet" href="../css/index/header.css" />
     <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
-    <link rel="stylesheet" href="../css/normalized.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/index/photo-section.css" />
     <link rel="stylesheet" href="../css/index/green-menu.css" />
@@ -15,7 +15,6 @@
     <link rel="stylesheet" href="../css/index/meet-dae.css" />
     <link rel="stylesheet" href="../css/index/following.css" />
     <link rel="stylesheet" href="../css/index/footer.css" />
-    <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <link rel="stylesheet" href="../css/change-theme.css" />
     <link rel="stylesheet" href="../css/map.css" />
     <link rel="stylesheet" href="../css/modal.css" />
@@ -32,12 +31,8 @@
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop-non-reg.html">Shop</a>
-          <a class="menu-item" data-i18="story" href="#"
-            >Our story</a
-          >
-          <a class="menu-item" data-i18="reviews" href="#"
-            >Reviews</a
-          >
+          <a class="menu-item" data-i18="story" href="#">Our story</a>
+          <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
         </div>
         <nav class="burger-menu">
           <input id="menu-toggle" type="checkbox" />
@@ -51,7 +46,10 @@
               >
             </li>
             <li>
-              <a class="menu-item-burger" data-i18="shop" href="shop-non-reg.html"
+              <a
+                class="menu-item-burger"
+                data-i18="shop"
+                href="shop-non-reg.html"
                 >Shop</a
               >
             </li>
@@ -126,7 +124,9 @@
       <section class="photo-section">
         <div class="shop-now-container">
           <div class="shop-now">
-            <a data-i18="shopText" class="shop-text open-modal" href="#">SHOP NOW</a>
+            <a data-i18="shopText" class="shop-text open-modal" href="#"
+              >SHOP NOW</a
+            >
           </div>
         </div>
       </section>
@@ -137,15 +137,25 @@
         <p data-i18="greenMenuText2" class="green-menu-text2">
           Meet Monsoon Moisture Mask
         </p>
-        <a data-i18="greenMenuText3" class="green-menu-text3 open-modal">Shop Now</a>
+        <a data-i18="greenMenuText3" class="green-menu-text3 open-modal"
+          >Shop Now</a
+        >
       </section>
       <section class="modal">
         <div class="modal-container">
           <button class="modal-close">&#215;</button>
-          <div class="modal-title"><h2 data-i18="sorry">Ooopws,we are sorry!</h2>
-            <p data-i18="modal-error">Our site is not yet fully developed. We will definitely notify you when it is finalized.</p></div>
+          <div class="modal-title">
+            <h2 data-i18="sorry">Ooopws,we are sorry!</h2>
+          </div>
+          <hr />
+          <div class="modal-content">
+            <p data-i18="modal-error">
+              Our site is not yet fully developed. We will definitely notify you
+              when it is finalized.
+            </p>
+            <img src="../img/Orange-logo.png" alt="Dae" />
+          </div>
         </div>
-       
       </section>
       <section class="production-list">
         <div class="production-list-container">
@@ -170,7 +180,9 @@
                 <p id="price0" class="product-price" data-i18="price0">
                   $49.00
                 </p>
-                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
               </div>
             </div>
             <div class="product-item">
@@ -180,7 +192,9 @@
               <div class="product-description">
                 <p id="name1" class="text-upp">Shampoo</p>
                 <p id="price1" class="text">$24.00 to $64.00</p>
-                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
               </div>
             </div>
             <div class="product-item">
@@ -194,7 +208,9 @@
               <div class="product-description">
                 <p id="name2" class="text-upp">Conditioner</p>
                 <p id="price2" class="text">$24.00 to $64.00</p>
-                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
               </div>
             </div>
           </div>
@@ -236,7 +252,9 @@
             in your everyday hair routine from sunrise to sunset and allows you
             to feel the warmth of the desert wherever you are.
           </p>
-          <button data-i18="learnMore" class="Learn-more open-modal">Read More</button>
+          <button data-i18="learnMore" class="Learn-more open-modal">
+            Read More
+          </button>
         </div>
       </section>
       <section class="following">
@@ -307,16 +325,6 @@
       </section>
     </main>
     <footer>
-       <section class="modal-email">
-        <div class="modal-close-email">
-          <p>X</p>
-        </div>
-        <div class="modal-container">
-          <hr>
-          <p data-i18="email-modal">We have received your application. it will be processed soon</p>
-          <hr>
-        </div>
-      </section> 
       <div class="line"></div>
       <div class="footer-info">
         <div class="links-and-email">
@@ -359,10 +367,8 @@
       </div>
     </footer>
     <script src="../javaScript/change-language.js"></script>
-     <script src="../javaScript/open-modal-window.js"></script>  
+    <script src="../javaScript/open-modal-window.js"></script>
     <script src="../javaScript/change-theme.js"></script>
-    <script src="../javaScript/enter-modal.js"></script>
-    <script src="../javaScript/see-password.js"></script>
     <script src="../javaScript/product-list-slider.js"></script>
   </body>
 </html>
