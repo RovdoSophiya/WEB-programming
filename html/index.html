@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <link rel="stylesheet" href="../css/change-theme.css" />
     <link rel="stylesheet" href="../css/map.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
     <title>Dae</title>
   </head>
   <body>
@@ -125,7 +126,7 @@
       <section class="photo-section">
         <div class="shop-now-container">
           <div class="shop-now">
-            <a data-i18="shopText" class="shop-text" href="#">SHOP NOW</a>
+            <button data-i18="shopText" class="shop-text open-modal" href="#">SHOP NOW</button>
           </div>
         </div>
       </section>
@@ -139,13 +140,12 @@
         <a data-i18="greenMenuText3" class="green-menu-text3">Shop Now</a>
       </section>
       <section class="modal">
-        <div class="modal-close">
-          <p>X</p>
-        </div>
         <div class="modal-container">
-          <p data-i18="sorry">Ooopws,we are sorry!</p>
-          <p data-i18="modal-error">Our site is not yet fully developed. We will definitely notify you when it is finalized.</p>
+          <button class="modal-close">&#215;</button>
+          <div class="modal-title"><h2 data-i18="sorry">Ooopws,we are sorry!</h2>
+            <p data-i18="modal-error">Our site is not yet fully developed. We will definitely notify you when it is finalized.</p></div>
         </div>
+       
       </section>
       <section class="production-list">
         <div class="production-list-container">
@@ -170,7 +170,7 @@
                 <p id="price0" class="product-price" data-i18="price0">
                   $49.00
                 </p>
-                <button class="buy-product"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
               </div>
             </div>
             <div class="product-item">
@@ -180,7 +180,7 @@
               <div class="product-description">
                 <p id="name1" class="text-upp">Shampoo</p>
                 <p id="price1" class="text">$24.00 to $64.00</p>
-                <button class="buy-product"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
               </div>
             </div>
             <div class="product-item">
@@ -194,7 +194,7 @@
               <div class="product-description">
                 <p id="name2" class="text-upp">Conditioner</p>
                 <p id="price2" class="text">$24.00 to $64.00</p>
-                <button class="buy-product"><p data-i18="buy">Buy</p></button>
+                <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
               </div>
             </div>
           </div>
@@ -307,7 +307,7 @@
       </section>
     </main>
     <footer>
-      <section class="modal-email">
+       <section class="modal-email">
         <div class="modal-close-email">
           <p>X</p>
         </div>
@@ -316,7 +316,7 @@
           <p data-i18="email-modal">We have received your application. it will be processed soon</p>
           <hr>
         </div>
-      </section>
+      </section> 
       <div class="line"></div>
       <div class="footer-info">
         <div class="links-and-email">
@@ -359,11 +359,9 @@
       </div>
     </footer>
     <script src="../javaScript/change-language.js"></script>
-    <script src="../javaScript/open-modal-window.js"></script>
+     <script src="../javaScript/open-modal-window.js"></script>  
     <script src="../javaScript/change-theme.js"></script>
-    <script src="../javaScript/admin.js"></script>
     <script src="../javaScript/enter-modal.js"></script>
-    <script src="../javaScript/burger.js"></script>
     <script src="../javaScript/see-password.js"></script>
     <script src="../javaScript/product-list-slider.js"></script>
   </body>

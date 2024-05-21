@@ -1,0 +1,40 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background-color:rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+  display: none;
+}
+.modal-container{
+  position: relative;
+  width: 600px;
+  background-color:aqua;
+  margin:auto;
+  color:black;
+  border-radius:16px;
+  cursor:default;
+}
+.modal-title{
+  margin-bottom: 30px;
+}
+.modal-close{
+ background-color:transparent;
+ border:none;
+ cursor: pointer;
+ font-size:22px;
+ outline: 1px solid transparent;
+ outline-offset: 3px;
+ transition: outline-color .15s ease-in-out;
+ border-radius:3px;
+ padding:0;
+ text-align: center;
+ display: block;
+ width: 30px;
+ height: 30px;
+
+}
+.modal-close:focus-visible{
+  outline-color: green;
+}
