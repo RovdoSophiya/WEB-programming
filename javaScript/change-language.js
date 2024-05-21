@@ -94,8 +94,9 @@ const i18Obj = {
     reviewsInfo: "Reviews",
     custSay: "What our customers say about us",
 
-    sorry:"Ooopws,we are sorry!",
-    modalError:"Our site is not yet fully developed. We will definitely notify you when it is finalized."
+    sorry: "Ooopws,we are sorry!",
+    modalError:
+      "Our site is not yet fully developed. We will definitely notify you when it is finalized.",
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
@@ -192,8 +193,9 @@ const i18Obj = {
     reviewsInfo: "Отзывы",
     custSay: "Что говорят наши покупатели",
 
-    sorry:"Уупс, извините!",
-    modalError:"Наш сайт еще не доработан до конца. Мы обязательно уведомим вас, когда он будет доработан"
+    sorry: "Уупс, извините!",
+    modalError:
+      "Наш сайт еще не доработан до конца. Мы обязательно уведомим вас, когда он будет доработан",
   },
 };
 
