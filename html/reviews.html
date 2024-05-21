@@ -3,22 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
     <link rel="stylesheet" href="../css/index/header.css" />
     <link rel="stylesheet" href="../css/burger-nenu.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
-    <link rel="stylesheet" href="../css/normalized.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
-    <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <link rel="stylesheet" href="../css/change-theme.css" />
     <link rel="stylesheet" href="../css/map.css" />
     <link rel="stylesheet" href="../css/index/following.css" />
     <link rel="stylesheet" href="../css/index/footer.css" />
     <link rel="stylesheet" href="../css/reviews/reviews-image.css" />
     <link rel="stylesheet" href="../css/reviews/reviews.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
+
     <title>Dae reviews</title>
   </head>
   <body class="shop-page">
-    <section class="header">
+    <header class="header">
       <div class="annotation">
         <p data-i18="shoppingAnnotation" class="shopping-annotation">
           Free Shopping on US Orders Over $60
@@ -27,8 +28,8 @@
       <div class="header-menu">
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
-          <a class="menu-item" data-i18="shop" href="#">Shop</a>
-          <a class="menu-item" data-i18="story" href="shop-non-reg.html"
+          <a class="menu-item" data-i18="shop" href="shop-non-reg.html">Shop</a>
+          <a class="menu-item" data-i18="story" href="#"
             >Our story</a
           >
           <a class="menu-item" data-i18="reviews" href="reviews.html"
@@ -47,7 +48,7 @@
               >
             </li>
             <li>
-              <a class="menu-item-burger" data-i18="shop" href="shop.html"
+              <a class="menu-item-burger" data-i18="shop" href="shop-non-reg.html"
                 >Shop</a
               >
             </li>
@@ -57,7 +58,7 @@
               >
             </li>
             <li>
-              <a class="menu-item-burger" data-i18="reviews" href="#"
+              <a class="menu-item-burger" data-i18="reviews" href="reviews.html#"
                 >Reviews</a
               >
             </li>
@@ -106,17 +107,18 @@
             </div>
           </div>
           <div class="signs">
-            <button
+            <a
+              href="authorisation.html"
               class="open-modal-button"
               id="open-modal-button"
               data-i18="openModalButton"
             >
-              <img src="../img/User-icon.png" alt="User icon" />
-            </button>
+              <img src="../img/User-icon.png" alt="User icon"
+            /></a>
           </div>
         </div>
       </div>
-    </section>
+    </header>
     <main>
       <section class="reviews-image">
         <div class="reviews-page-info">
@@ -273,6 +275,18 @@
       </section>
     </main>
     <footer>
+      <section class="popup">
+        <div class="popup-container">
+          <button class="popup-close">&#215;</button>
+          <div class="popup-title" data-i18="popupTitle">
+            Thanks, dear customer!
+          </div>
+          <hr />
+          <div class="popup-text" data-i18="popupText">
+            We have received your application. It will be processed soon
+          </div>
+        </div>
+      </section>
       <div class="line"></div>
       <div class="footer-info">
         <div class="links-and-email">
@@ -299,7 +313,7 @@
               <div class="email-field">
                 <input type="email" class="email-input" />
               </div>
-              <button data-i18="subscribe" class="subscribe">Subscribe</button>
+              <button data-i18="subscribe" class="subscribe open-popup">Subscribe</button>
             </div>
             <p data-i18="underEmailText" class="under-email-text">
               Want to shop in person? Swing by our showroom.
@@ -315,12 +329,9 @@
       </div>
     </footer>
     <script src="../javaScript/change-language.js"></script>
-    <script src="../javaScript/modal-window.js"></script>
-    <script src="../javaScript/open-menu.js"></script>
-    <script src="../javaScript/open-admin.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/reviews-paginatiion.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
-    <script src="../javaScript/enter-modal.js"></script>
+    <script src="../javaScript/open-popup.js"></script>
   </body>
 </html>
