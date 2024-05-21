@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
     <link rel="stylesheet" href="../css/index/header.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
     <link rel="stylesheet" href="../css/normalize.css" />
@@ -12,8 +13,9 @@
     <link rel="stylesheet" href="../css/index/following.css" />
     <link rel="stylesheet" href="../css/index/footer.css" />
     <link rel="stylesheet" href="../css/burger-nenu.css" />
-    <link rel="stylesheet" href="../css/sign-in-up/style.css" />
     <link rel="stylesheet" href="../css/map.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/popup.css" />
     <title>Shop</title>
   </head>
   <body class="shop-page">
@@ -26,8 +28,8 @@
       <div class="header-menu">
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
-          <a class="menu-item" data-i18="shop" href="#">Shop</a>
-          <a class="menu-item" data-i18="story" href="about-shop-non-reg.html"
+          <a class="menu-item" data-i18="shop" href="about-shop-non-reg.html">Shop</a>
+          <a class="menu-item" data-i18="story" href="#"
             >Our story</a
           >
           <a class="menu-item" data-i18="reviews" href="reviews.html"
@@ -105,13 +107,14 @@
             </div>
           </div>
           <div class="signs">
-            <button
+            <a
+              href="authorisation.html"
               class="open-modal-button"
               id="open-modal-button"
               data-i18="openModalButton"
             >
-              <img src="../img/User-icon.png" alt="User icon" />
-            </button>
+              <img src="../img/User-icon.png" alt="User icon"
+            /></a>
           </div>
         </div>
       </div>
@@ -147,7 +150,7 @@
               <p id="price0" class="product-price" data-i18="price0">
                 $49.00
               </p>
-              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+              <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
             </div>
           </div>
           <div class="product-item">
@@ -157,7 +160,7 @@
             <div class="product-description">
               <p id="name1" class="text-upp">Shampoo</p>
               <p id="price1" class="text">$24.00 to $64.00</p>
-              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+              <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
             </div>
           </div>
           <div class="product-item">
@@ -171,7 +174,7 @@
             <div class="product-description">
               <p id="name2" class="text-upp">Conditioner</p>
               <p id="price2" class="text">$24.00 to $64.00</p>
-              <button class="buy-product"><p data-i18="buy">Buy</p></button>
+              <button class="buy-product open-modal"><p data-i18="buy">Buy</p></button>
             </div>
           </div>
         </div>
@@ -183,6 +186,22 @@
         <button id="right-arrow" class="right-arrow">
           <img src="../img/slider/Arrow-right.png" alt="right" />
         </button>
+      </div>
+    </section>
+    <section class="modal">
+      <div class="modal-container">
+        <button class="modal-close">&#215;</button>
+        <div class="modal-title">
+          <h2 data-i18="sorry">Ooopws,we are sorry!</h2>
+        </div>
+        <hr />
+        <div class="modal-content">
+          <p data-i18="modalError">
+            Our site is not yet fully developed. We will definitely notify you
+            when it is finalized.
+          </p>
+          <img src="../img/Orange-logo.png" alt="Dae" />
+        </div>
       </div>
     </section>
     <section class="map-link">
@@ -248,6 +267,18 @@
       </div>
     </section>
     <footer>
+      <section class="popup">
+        <div class="popup-container">
+          <button class="popup-close">&#215;</button>
+          <div class="popup-title" data-i18="popupTitle">
+            Thanks, dear customer!
+          </div>
+          <hr />
+          <div class="popup-text" data-i18="popupText">
+            We have received your application. It will be processed soon
+          </div>
+        </div>
+      </section>
       <div class="line"></div>
       <div class="footer-info">
         <div class="links-and-email">
@@ -274,7 +305,7 @@
               <div class="email-field">
                 <input type="email" class="email-input" />
               </div>
-              <button data-i18="subscribe" class="subscribe">Subscribe</button>
+              <button data-i18="subscribe" class="subscribe open-popup">Subscribe</button>
             </div>
             <p data-i18="underEmailText" class="under-email-text">
               Want to shop in person? Swing by our showroom.
@@ -292,5 +323,8 @@
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/product-list-slider.js"></script>
+    <script src="../javaScript/open-modal-window.js"></script>
+    <script src="../javaScript/open-popup.js"></script>
+    
   </body>
 </html>
