@@ -117,6 +117,12 @@
     margin-left: auto;
     margin-right: auto;
   }
+  .Learn-more{
+    width: 100%;
+    text-align: center;
+    margin: 0 0 0 0;
+    padding: 20px 0;
+  }
 }
 @media (max-width: 495px) {
   .meet-dae {
