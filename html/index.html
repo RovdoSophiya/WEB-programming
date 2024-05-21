@@ -33,7 +33,9 @@
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop-non-reg.html">Shop</a>
           <a class="menu-item" data-i18="story" href="#">Our story</a>
-          <a class="menu-item" data-i18="reviews" href="#">Reviews</a>
+          <a class="menu-item" data-i18="reviews" href="reviews.html"
+            >Reviews</a
+          >
         </div>
         <nav class="burger-menu">
           <input id="menu-toggle" type="checkbox" />
@@ -60,7 +62,7 @@
               >
             </li>
             <li>
-              <a class="menu-item-burger" data-i18="reviews" href="#"
+              <a class="menu-item-burger" data-i18="reviews" href="reviews.html"
                 >Reviews</a
               >
             </li>
@@ -328,11 +330,15 @@
     <footer>
       <section class="popup">
         <div class="popup-container">
-        <button class="popup-close">&#215;</button>
-        <div class="popup-title" data-i18="popupTitle">Thanks, dear customer!</div>
-        <hr>
-        <div class="popup-text"  data-i18="popupText">We have received your application. It will be processed soon</div>
-      </div>
+          <button class="popup-close">&#215;</button>
+          <div class="popup-title" data-i18="popupTitle">
+            Thanks, dear customer!
+          </div>
+          <hr />
+          <div class="popup-text" data-i18="popupText">
+            We have received your application. It will be processed soon
+          </div>
+        </div>
       </section>
       <div class="line"></div>
       <div class="footer-info">
@@ -360,7 +366,9 @@
               <div class="email-field">
                 <input type="email" class="email-input" />
               </div>
-              <button data-i18="subscribe" class="subscribe">Subscribe</button>
+              <button data-i18="subscribe" class="subscribe open-popup">
+                Subscribe
+              </button>
             </div>
             <p data-i18="underEmailText" class="under-email-text">
               Want to shop in person? Swing by our showroom.
@@ -377,6 +385,7 @@
     </footer>
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
+    <script src="../javaScript/open-popup.js"></script>
     <script src="../javaScript/change-theme.js"></script>
     <script src="../javaScript/product-list-slider.js"></script>
   </body>
