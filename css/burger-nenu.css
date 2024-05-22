@@ -96,7 +96,6 @@ body.no-scroll {
     background: transparent;
     border-radius: 5px;
   }
-
   .themes-burger {
     width: 45px;
   }
@@ -110,11 +109,21 @@ body.no-scroll {
     background: rgb(44, 91, 34);
     color: white;
   }
-  .shop-page .menu-box .themes-burger button.light-theme {
-    background: rgb(206, 100, 51);
+  .red-theme .burger-menu-container {
+    background: var(--var-color-red);
+  }
+  .red-theme .menu-box .language-buttons-burger div button.russ {
+    background: rgb(98, 53, 13);
+    color: white;
+  }
+  .red-theme .menu-box .language-buttons-burger div button.eng {
+    background: rgb(191, 145, 123);
   }
 
-  .shop-page .menu-box .themes-burger button.dark-theme {
+  .red-theme .menu-box .themes-burger button.light-theme {
+    background: rgb(191, 145, 123);
+  }
+  .red-theme .menu-box .themes-burger button.dark-theme {
     background: rgb(98, 53, 13);
     color: white;
   }
