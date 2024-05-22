@@ -1,5 +1,5 @@
 :root {
-  --var-body: transparent;
+  --var-body: rgba(246, 244, 236, 1);
 
   --var-shopping-annotation-text: #f1d3b9;
   --var-header-menu-bg: rgba(246, 244, 236, 1);
