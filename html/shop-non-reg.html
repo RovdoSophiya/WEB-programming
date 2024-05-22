@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="../css/popup.css" />
     <title>Shop</title>
   </head>
-  <body class="shop-page">
-    <section class="header">
+  <body class="red-theme">
+    <header>
       <div class="annotation">
         <p data-i18="shoppingAnnotation" class="shopping-annotation">
           Free Shopping on US Orders Over $60
@@ -29,61 +29,68 @@
         <div class="menu">
           <a class="menu-item" data-i18="main" href="index.html">Main</a>
           <a class="menu-item" data-i18="shop" href="shop-non-reg.html">Shop</a>
-          <a class="menu-item" data-i18="story" href="#"
-            >Our story</a
-          >
+          <a class="menu-item" data-i18="story" href="#">Our story</a>
           <a class="menu-item" data-i18="reviews" href="reviews.html"
             >Reviews</a
           >
         </div>
-        <nav class="burger-menu">
-          <input id="menu-toggle" type="checkbox" />
-          <label class="menu-btn" for="menu-toggle">
+        <div class="burger-menu">
+          <button class="burger-menu-btn">
             <span></span>
-          </label>
-          <ul class="menu-box">
-            <li>
-              <a class="menu-item-burger" data-i18="main" href="index.html"
-                >Main</a
-              >
-            </li>
-            <li>
-              <a class="menu-item-burger" data-i18="shop" href="shop-non-reg.html"
-                >Shop</a
-              >
-            </li>
-            <li>
-              <a class="menu-item-burger" data-i18="story" href="#"
-                >Our story</a
-              >
-            </li>
-            <li>
-              <a class="menu-item-burger" data-i18="reviews" href="reviews.html"
-                >Reviews</a
-              >
-            </li>
-            <li>
-              <div class="language-buttons-burger">
-                <div class="lang-button">
-                  <button data-i18="rusB" class="rus">Rus</button>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="burger-menu-container">
+            <ul class="menu-box">
+              <li>
+                <a class="menu-item-burger" data-i18="main" href="index.html"
+                  >Main</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-item-burger"
+                  data-i18="shop"
+                  href="shop-non-reg.html"
+                  >Shop</a
+                >
+              </li>
+              <li>
+                <a class="menu-item-burger" data-i18="story" href="#"
+                  >Our story</a
+                >
+              </li>
+              <li>
+                <a
+                  class="menu-item-burger"
+                  data-i18="reviews"
+                  href="reviews.html"
+                  >Reviews</a
+                >
+              </li>
+              <li>
+                <div class="language-buttons-burger">
+                  <div class="lang-button">
+                    <button data-i18="rusB" class="rus">Rus</button>
+                  </div>
+                  <div class="lang-button">
+                    <button data-i18="enB" class="en">En</button>
+                  </div>
                 </div>
-                <div class="lang-button">
-                  <button data-i18="enB" class="en">En</button>
+              </li>
+              <li>
+                <div class="themes-burger">
+                  <button class="dark-menu-icon" id="darkTheme-burger">
+                    <img src="../img/Dark-theme.png" alt="Dark-icon" />
+                  </button>
+                  <button class="light-menu-icon" id="lightTheme-burger">
+                    <img src="../img/Ligth-theme.png" alt="Light-icon" />
+                  </button>
                 </div>
-              </div>
-            </li>
-            <li>
-              <div class="themes-burger">
-                <button class="dark-menu-icon" id="darkTheme-burger">
-                  <img src="../img/Dark-theme.png" alt="Dark-icon" />
-                </button>
-                <button class="light-menu-icon" id="lightTheme-burger">
-                  <img src="../img/Ligth-theme.png" alt="Light-icon" />
-                </button>
-              </div>
-            </li>
-          </ul>
-        </nav>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div class="menu-logo">
           <img class="logo" src="../img/Logo.png" alt="Logo" />
         </div>
@@ -118,164 +125,166 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="photo-section">
-      <div class="photo-section-information">
-        <p class="shop-all" id="shopAll" data-i18="shopAll">SHOP ALL</p>
-        <p class="shop-information" id="shopInfo" data-i18="shopInfo">
-          Clean hair for every hour of the day
-        </p>
-      </div>
-    </section>
-    <section class="production-list">
-      <div class="production-list-container">
-        <p data-i18="pickBottles" class="pick-bottles">
-          Pick a Pretty Bottle
-        </p>
-      </div>
-      <div class="production-frame">
-        <div class="product-list" id="product-list">
-          <div class="product-item">
-            <div class="product-photo">
-              <img
-                id="img0"
-                src="../img/slider/Dream-set.png"
-                alt="Dream set"
-              />
-            </div>
-            <div class="product-description">
-              <p id="name0" class="text-upp" data-i18="name0">
-                The Dreamer Set
-              </p>
-              <p id="price0" class="product-price" data-i18="price0">
-                $49.00
-              </p>
-              <button class="buy-product open-modal" data-i18="buy">
-                Buy
-              </button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-photo">
-              <img id="img1" src="../img/slider/Shampoo.png" alt="Shampoo" />
-            </div>
-            <div class="product-description">
-              <p id="name1" class="text-upp">Shampoo</p>
-              <p id="price1" class="text">$24.00 to $64.00</p>
-              <button class="buy-product open-modal" data-i18="buy">
-                Buy
-              </button>
-            </div>
-          </div>
-          <div class="product-item">
-            <div class="product-photo">
-              <img
-                id="img2"
-                src="../img/slider/Conditioner.png"
-                alt="Conditioner"
-              />
-            </div>
-            <div class="product-description">
-              <p id="name2" class="text-upp">Conditioner</p>
-              <p id="price2" class="text">$24.00 to $64.00</p>
-              <button class="buy-product open-modal" data-i18="buy">
-                Buy
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="arrows">
-        <button class="left-arrow" id="left-arrow">
-          <img src="../img/slider/Arrow-left.png" alt="left" />
-        </button>
-        <button id="right-arrow" class="right-arrow">
-          <img src="../img/slider/Arrow-right.png" alt="right" />
-        </button>
-      </div>
-    </section>
-    <section class="modal">
-      <div class="modal-container">
-        <button class="modal-close">&#215;</button>
-        <div class="modal-title">
-          <h2 data-i18="sorry">Ooopws,we are sorry!</h2>
-        </div>
-        <hr />
-        <div class="modal-content">
-          <p data-i18="modalError">
-            Our site is not yet fully developed. We will definitely notify you
-            when it is finalized.
+    </header>
+    <main>
+      <section class="photo-section">
+        <div class="photo-section-information">
+          <p class="shop-all" id="shopAll" data-i18="shopAll">SHOP ALL</p>
+          <p class="shop-information" id="shopInfo" data-i18="shopInfo">
+            Clean hair for every hour of the day
           </p>
-          <img src="../img/Orange-logo.png" alt="Dae" />
         </div>
-      </div>
-    </section>
-    <section class="map-link">
-      <div class="line"></div>
-      <div class="map-container">
-        <div data-i18="map" class="map">WE ARE ON MAP</div>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381511.740576621!2d-114.57148240398581!3d34.1397521772096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1715194027267!5m2!1sru!2sby"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-    </section>
-    <section class="following">
-      <div class="following-map">
-        <a data-i18="followingLink" class="following-link"
-          >Follow Us @daehair</a
-        >
-      </div>
-      <div class="follows-photos">
-        <div class="photo-item">
-          <img src="../img/following-photo1.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+      </section>
+      <section class="production-list">
+        <div class="production-list-container">
+          <p data-i18="pickBottles" class="pick-bottles">
+            Pick a Pretty Bottle
+          </p>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo2.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+        <div class="production-frame">
+          <div class="product-list" id="product-list">
+            <div class="product-item">
+              <div class="product-photo">
+                <img
+                  id="img0"
+                  src="../img/slider/Dream-set.png"
+                  alt="Dream set"
+                />
+              </div>
+              <div class="product-description">
+                <p id="name0" class="text-upp" data-i18="name0">
+                  The Dreamer Set
+                </p>
+                <p id="price0" class="product-price" data-i18="price0">
+                  $49.00
+                </p>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-photo">
+                <img id="img1" src="../img/slider/Shampoo.png" alt="Shampoo" />
+              </div>
+              <div class="product-description">
+                <p id="name1" class="text-upp">Shampoo</p>
+                <p id="price1" class="text">$24.00 to $64.00</p>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
+              </div>
+            </div>
+            <div class="product-item">
+              <div class="product-photo">
+                <img
+                  id="img2"
+                  src="../img/slider/Conditioner.png"
+                  alt="Conditioner"
+                />
+              </div>
+              <div class="product-description">
+                <p id="name2" class="text-upp">Conditioner</p>
+                <p id="price2" class="text">$24.00 to $64.00</p>
+                <button class="buy-product open-modal" data-i18="buy">
+                  Buy
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo3.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+        <div class="arrows">
+          <button class="left-arrow" id="left-arrow">
+            <img src="../img/slider/Arrow-left.png" alt="left" />
+          </button>
+          <button id="right-arrow" class="right-arrow">
+            <img src="../img/slider/Arrow-right.png" alt="right" />
+          </button>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo4.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+      </section>
+      <section class="modal">
+        <div class="modal-container">
+          <button class="modal-close">&#215;</button>
+          <div class="modal-title">
+            <h2 data-i18="sorry">Ooopws,we are sorry!</h2>
+          </div>
+          <hr />
+          <div class="modal-content">
+            <p data-i18="modalError">
+              Our site is not yet fully developed. We will definitely notify you
+              when it is finalized.
+            </p>
+            <img src="../img/Orange-logo.png" alt="Dae" />
+          </div>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo5.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+      </section>
+      <section class="map-link">
+        <div class="line"></div>
+        <div class="map-container">
+          <div data-i18="map" class="map">WE ARE ON MAP</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381511.740576621!2d-114.57148240398581!3d34.1397521772096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2z0JDRgNC40LfQvtC90LAsINCh0KjQkA!5e0!3m2!1sru!2sby!4v1715194027267!5m2!1sru!2sby"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
-        <div class="photo-item">
-          <img src="../img/following-photo6.png" alt="following photo" /><img
-            class="orange-logo"
-            src="../img/Orange-logo.png"
-            alt="orange logo"
-          />
+      </section>
+      <section class="following">
+        <div class="following-map">
+          <a data-i18="followingLink" class="following-link"
+            >Follow Us @daehair</a
+          >
         </div>
-      </div>
-    </section>
+        <div class="follows-photos">
+          <div class="photo-item">
+            <img src="../img/following-photo1.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo2.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo3.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo4.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo5.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+          <div class="photo-item">
+            <img src="../img/following-photo6.png" alt="following photo" /><img
+              class="orange-logo"
+              src="../img/Orange-logo.png"
+              alt="orange logo"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <footer>
       <section class="popup">
         <div class="popup-container">
@@ -315,7 +324,9 @@
               <div class="email-field">
                 <input type="email" class="email-input" />
               </div>
-              <button data-i18="subscribe" class="subscribe open-popup">Subscribe</button>
+              <button data-i18="subscribe" class="subscribe open-popup">
+                Subscribe
+              </button>
             </div>
             <p data-i18="underEmailText" class="under-email-text">
               Want to shop in person? Swing by our showroom.
@@ -335,6 +346,6 @@
     <script src="../javaScript/product-list-slider.js"></script>
     <script src="../javaScript/open-modal-window.js"></script>
     <script src="../javaScript/open-popup.js"></script>
-    
+    <script src="../javaScript/open-burger-menu.js"></script>
   </body>
 </html>
