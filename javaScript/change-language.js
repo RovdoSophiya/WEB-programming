@@ -98,7 +98,12 @@ const i18Obj = {
     modalError:"Our site is not yet fully developed. We will definitely notify you when it is finalized",
     modalAuthor: "Ooopws,you are not authorized!",
     modalLogReg:"Log in to your personal account or register to view store options",
-    LogReg:"Login/Register"
+    LogReg:"Login/Register",
+
+    popupTitle: "Thanks, dear customer!",
+    popupText:"We have received your application. It will be processed soon",
+    popupTitleUser: "Dear customer!",
+    popupTextUser:"You are already subscribed to the newsletter"
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
@@ -200,7 +205,12 @@ const i18Obj = {
       "Наш сайт еще не доработан до конца. Мы обязательно уведомим вас, когда он будет доработан",
     modalAuthor: "Уупс, вы не авторизированы",
     modalLogReg:"Войдите в личный кабинет или зарегестрируйтесь, чтобы посмотреть опции магазина",
-    LogReg:"Войти/зарегестрироваться"
+    LogReg:"Войти/зарегестрироваться",
+
+    popupTitle: "Спасибо, дорогой клиент!",
+    popupText:"Мы получили вашу заявку. Она будет обработана в ближайшее время",
+    popupTitleUser: "Дорогой клиент!",
+    popupTextUser:"Вы уже подписаны на рассылку"
   },
 };
 
