@@ -49,7 +49,7 @@ header {
 .menu-logo-user {
   padding-top: 0.4%;
   padding-bottom: 0.4%;
-  margin-right: 16%;
+  margin-right: 7%;
 }
 .menu-user {
   padding-top: 0.4%;
@@ -201,6 +201,11 @@ header {
 }
 .shop .menu {
   width: 5043;
+}
+@media (max-width: 1393px) {
+  .menu-logo-user {
+    margin-right: 17%;
+}
 }
 @media (max-width: 1289px) {
   .user-page .burger-menu {

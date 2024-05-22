@@ -15,7 +15,7 @@ body.no-scroll {
   position: absolute;
   width: 30px;
   height: 3px;
-  background-color:var(--var-follow-link);
+  background-color: var(--var-follow-link);
   left: 5px;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
 }
@@ -58,8 +58,8 @@ body.no-scroll {
     width: 100%;
     text-align: center;
   }
-  .menu-box li{
-    list-style-type:none;
+  .menu-box li {
+    list-style-type: none;
   }
   .menu-box li a {
     color: white;
@@ -67,7 +67,6 @@ body.no-scroll {
     font-size: 30px;
     display: block;
     padding: 10px 0;
-    
   }
   .burger-menu.openBg .burger-menu-container {
     transform: translateX(100%);
@@ -85,7 +84,7 @@ body.no-scroll {
     background: var(--var-color-red);
   }
 }
-@media(max-width:768px){
+@media (max-width: 768px) {
   .language-buttons-burger {
     display: flex;
     width: 100%; /* 258px*/

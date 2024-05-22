@@ -1,7 +1,7 @@
 const i18Obj = {
   en: {
     shoppingAnnotation: "Free Shopping on US Orders Over $60",
-    pers: "Personal area",
+    pers: "Cabinet",
     shop: "Shop",
     main: "Main",
     story: "Our Story",
@@ -100,7 +100,7 @@ const i18Obj = {
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
-    pers: "Личный кабинет",
+    pers: "Кабинет",
     shop: "Магазин",
     main: "Главная",
     story: "История",
