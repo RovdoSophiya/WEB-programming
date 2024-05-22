@@ -1,7 +1,7 @@
 const popupController = ({ popup, btnOpen, btnClose }) => {
   const buttonElems = document.querySelectorAll(btnOpen);
   const popupElem = document.querySelector(popup);
-
+  const email = document.querySelector(".email-input");
   popupElem.style.cssText = `
     display: flex;
     visibility: hidden;
@@ -24,9 +24,12 @@ const popupController = ({ popup, btnOpen, btnClose }) => {
   };
 
   const openPopup = () => {
-    popupElem.style.visibility = "visible";
-    popupElem.style.opacity = "1";
-    window.addEventListener("keydown", closePopup);
+    const emailForm = email.value.trim();
+    if (emailForm) {
+      popupElem.style.visibility = "visible";
+      popupElem.style.opacity = "1";
+      window.addEventListener("keydown", closePopup);
+    }
   };
 
   buttonElems.forEach((btn) => {
