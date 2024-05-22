@@ -81,7 +81,9 @@ body.no-scroll {
   .burger-menu.openBg .burger-menu-btn span:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
   }
-
+  .red-theme .burger-menu-container {
+    background: var(--var-color-red);
+  }
 }
 @media(max-width:768px){
   .language-buttons-burger {
@@ -108,9 +110,6 @@ body.no-scroll {
   .themes-burger button.dark-theme {
     background: rgb(44, 91, 34);
     color: white;
-  }
-  .red-theme .burger-menu-container {
-    background: var(--var-color-red);
   }
   .red-theme .menu-box .language-buttons-burger div button.russ {
     background: rgb(98, 53, 13);
