@@ -95,8 +95,10 @@ const i18Obj = {
     custSay: "What our customers say about us",
 
     sorry: "Ooopws,we are sorry!",
-    modalError:
-      "Our site is not yet fully developed. We will definitely notify you when it is finalized.",
+    modalError:"Our site is not yet fully developed. We will definitely notify you when it is finalized",
+    modalAuthor: "Ooopws,you are not authorized!",
+    modalLogReg:"Log in to your personal account or register to view store options",
+    LogReg:"Login/Register"
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
@@ -196,6 +198,9 @@ const i18Obj = {
     sorry: "Уупс, извините!",
     modalError:
       "Наш сайт еще не доработан до конца. Мы обязательно уведомим вас, когда он будет доработан",
+    modalAuthor: "Уупс, вы не авторизированы",
+    modalLogReg:"Войдите в личный кабинет или зарегестрируйтесь, чтобы посмотреть опции магазина",
+    LogReg:"Войти/зарегестрироваться"
   },
 };
 
