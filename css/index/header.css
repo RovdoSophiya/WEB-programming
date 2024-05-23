@@ -141,6 +141,10 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.red-theme .language-buttons-and-themes button {
+  background: var(--var-button-color);
+}
+
 .themes button.light-theme {
   background: rgb(122, 224, 115);
 }
