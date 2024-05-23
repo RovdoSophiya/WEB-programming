@@ -62,6 +62,20 @@ function toEnd() {
   active(Math.floor(activeIndex / reviewsPerPage), false);
 }
 
+function displayStars(starsElement, starCount) {
+  starsElement.innerHTML = ''; // Clear any existing stars
+  for (let i = 0; i < 5; i++) {
+    const star = document.createElement('div');
+    star.classList.add('star');
+    if (i < starCount) {
+      star.classList.add('yellow');
+    } else {
+      star.classList.add('black');
+    }
+    starsElement.appendChild(star);
+  }
+}
+
 function displayReviews() {
   for (let i = 0; i < reviewsPerPage; i++) {
     const review = reviews[activeIndex + i];
@@ -72,6 +86,9 @@ function displayReviews() {
       document.getElementById("info" + (i + 1)).textContent = i18Obj[currentLanguage][nameKey] || review.name;
       document.getElementById("photo" + (i + 1)).src = review.image;
       document.getElementById("description" + (i + 1)).textContent = i18Obj[currentLanguage][descriptionKey] || review.review;
+
+      const starsElement = document.getElementById("stars" + (i + 1));
+      displayStars(starsElement, parseInt(review.star, 10));
     }
   }
 }

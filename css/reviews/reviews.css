@@ -120,6 +120,24 @@
 .paggination li {
   list-style-type: none;
 }
+.stars {
+  display: flex;
+  justify-content: center;
+}
+
+.stars .star {
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  margin: 0 2px;
+}
+.star.yellow {
+  background-image: url("/img/reviews/star.png"); /* Replace with the path to your yellow star image */
+}
+
+.star.black {
+  background-image: url("/img/reviews/black-star.png"); /* Replace with the path to your black star image */
+}
 @media (max-width: 1249px) {
   .review-person {
     flex-direction: column;
@@ -145,7 +163,7 @@
     width: 48%;
   }
 }
-@media (max-width: 718px) {
+@media (max-width: 811px) {
   .reviews-list {
     flex-direction: column;
   }
@@ -156,13 +174,44 @@
   .review-item:nth-child(1) {
     margin-bottom: 20px;
   }
+  .stars .star {
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    margin-top: 5px;
+  }
 }
-@media (max-width: 418px) {
+@media (max-width: 500px) {
+  .left-side,
+  .left,
+  .right-side,
+  .right {
+    width: 20px;
+  }
+  .slider-paggination p {
+    width: 30px;
+    height: 30px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 440px) {
   .review-description p {
     font-size: 20px;
   }
   .info {
     font-size: 26px;
+  }
+  .review-person {
+    padding-top: 3%;
+    padding-left: 9px;
+  }
+}
+@media (max-width: 360px) {
+  .review-description p {
+    font-size: 16px;
+  }
+  .info {
+    font-size: 20px;
   }
   .review-person {
     padding-top: 3%;
