@@ -68,6 +68,25 @@ body.no-scroll {
     display: block;
     padding: 10px 0;
   }
+  .menu-item-burger:hover {
+    transform: scale(1.007);
+  }
+  .menu-item-burger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 100%;
+    height: 2px; 
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform .6s ease-in-out;
+  }
+  .menu-item-burger:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
   .burger-menu.openBg .burger-menu-container {
     transform: translateX(100%);
   }
