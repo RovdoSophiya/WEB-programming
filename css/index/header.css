@@ -200,7 +200,7 @@ header {
 @media (max-width: 1393px) {
   .menu-logo-user {
     margin-right: 17%;
-}
+  }
 }
 @media (max-width: 1393px) and (min-width: 1001px) {
   .menu {
