@@ -19,7 +19,7 @@
   color: var(--var-follow-link);
 }
 .map:hover {
-  color: rgba(131, 17, 17, 0.486);
+  color: var(--var-map);
 }
 iframe {
   width: 70%;

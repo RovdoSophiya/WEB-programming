@@ -22,6 +22,8 @@
   --var-shop-burger: #beab6b;
 
   --var-button-color: none;
+
+  --var-map:rgba(131, 17, 17, 0.486);
 }
 /*селектор выбора*/
 [dark] {
@@ -48,4 +50,6 @@
   --var-shop-burger: #564303;
 
   --var-button-color: #984407;
+
+  --var-map:rgba(238, 245, 53, 0.688);
 }
