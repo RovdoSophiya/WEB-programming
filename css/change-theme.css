@@ -1,5 +1,5 @@
 :root {
-  --var-body: rgba(246, 244, 236, 1);
+  --var-body:rgba(246, 244, 236, 1);
 
   --var-shopping-annotation-text: #f1d3b9;
   --var-header-menu-bg: rgba(246, 244, 236, 1);
@@ -24,6 +24,10 @@
   --var-button-color: none;
 
   --var-map:rgba(131, 17, 17, 0.486);
+
+  --var-green-text: #a9ae8d;
+  --var-review-bg:antiquewhite;
+  --var-review-txt:#813a3a;
 }
 /*селектор выбора*/
 [dark] {
@@ -52,4 +56,8 @@
   --var-button-color: #984407;
 
   --var-map:rgba(238, 245, 53, 0.688);
+
+  --var-green-text: white;
+  --var-review-bg:rgb(168, 137, 96);
+  --var-review-txt:white;
 }
