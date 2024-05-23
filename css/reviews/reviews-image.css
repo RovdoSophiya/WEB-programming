@@ -4,7 +4,7 @@
   background-image: url("/img/reviews-image.png");
   background-size: cover;
   background-position: center;
-  color: #f6f4ec;
+  color: var(--var-footer-bg);
   font-style: normal;
   font-weight: 400;
 }
