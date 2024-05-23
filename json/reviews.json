@@ -34,5 +34,17 @@
     "image": "../img/reviews/person6.jpg",
     "review": "Unfortunately, the haircare products I recently purchased turned out to be a big disappointment for me.I experienced an allergic reaction, which was quite unexpected and unpleasant.",
     "star": "2"
+  },
+  {
+    "name": "Sara Polson",
+    "image": "../img/reviews/person7.jfif",
+    "review": "Great shop. Really cool production. But I have a little allergy on shampoo",
+    "star": "4"
+  },
+  {
+    "name": "Alex Wesker",
+    "image": "../img/reviews/person8.jpeg",
+    "review": "This store offers a decent range of grooming essentials, from sprays to shampoos. Still testing them out, but initial impressions are good.",
+    "star": "5"
   }
 ]
