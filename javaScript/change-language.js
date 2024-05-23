@@ -103,7 +103,26 @@ const i18Obj = {
     popupTitle: "Thanks, dear customer!",
     popupText:"We have received your application. It will be processed soon",
     popupTitleUser: "Dear customer!",
-    popupTextUser:"You are already subscribed to the newsletter"
+    popupTextUser:"You are already subscribed to the newsletter",
+
+    rText:"DAE reviews",
+    info1:"Helena Grag",
+    info1:"Dilan Star",
+    info1:"Sanna Scott",
+    info1:"Mell Diow",
+    info1:"Ricky Niche",
+    info1:"Lana Ray",
+    info1:"Sara Polson",
+    info1:"Alex Wesker",
+    description1:"Amazing shop!!! LU. Bought some hair spray to my daughter and she really appreciate this. Good luck,guys!!!!!",
+    description2:"The store has a wide selection of hair care products, including sprays and shampoos. Looks promising but needs more exploration to judge effectiveness.",
+    description3:"This store offers a decent range of grooming essentials, from sprays to shampoos. Still testing them out, but initial impressions are good.",
+    description4:"The shampoo I bought here was just average. Unfortunately, it seemed to exacerbate my dandruff issue instead of solving it. Three stars out of five.",
+    description5:"I recently went on a haircare shopping spree and I'm absolutely delighted with my purchases! I picked up a variety of products from the store, and I must say, everything exceeded my expectations.",
+    description6:"Unfortunately, the haircare products I recently purchased turned out to be a big disappointment for me.I experienced an allergic reaction, which was quite unexpected and unpleasant",
+    description7:"Great shop. Really cool production. But I have a little allergy on shampoo",
+    description8:"This store offers a decent range of grooming essentials, from sprays to shampoos. Still testing them out, but initial impressions are good."
+
   },
   ru: {
     shoppingAnnotation: "Скидки от 60$",
@@ -210,7 +229,25 @@ const i18Obj = {
     popupTitle: "Спасибо, дорогой клиент!",
     popupText:"Мы получили вашу заявку. Она будет обработана в ближайшее время",
     popupTitleUser: "Дорогой клиент!",
-    popupTextUser:"Вы уже подписаны на рассылку"
+    popupTextUser:"Вы уже подписаны на рассылку",
+
+    rText:"DAE отзывы",
+    info1:"Елена Грег",
+    info1:"Дилан Стар",
+    info1:"Анна Скотт",
+    info1:"Мелисса Дьоу",
+    info1:"Рикки Нич",
+    info1:"Лана Рей",
+    info1:"Сара Полсон",
+    info1:"Алекс Вескер",
+    description1:"Замечательный магазин!!! ЛУ. Купила дочке лак для волос, ей понравилось. Удачи, ребята!!!!!",
+    description2:"В магазине представлен широкий выбор средств по уходу за волосами, включая спреи и шампуни. Выглядит многообещающе, но пока не оценила эффективность.",
+    description3:"В этом магазине представлен приличный ассортимент товаров для ухода за волосами: от спреев до шампуней. Пока тестирую, но первые впечатления хорошие",
+    description4:"Шампунь, который я купила здесь, был просто средним. К сожалению, это, похоже, усугубило мою проблему с перхотью, а не решило ее. Три звезды из пяти.",
+    description5:"Недавно я зашла в магазин по уходу за волосами и осталась в полном восторге от своих покупок! Подбирала в магазине самые разные товары, и надо сказать, все превзошло мои ожидания.",
+    description6:"К сожалению, недавно приобретенные средства по уходу за волосами оказались для меня большим разочарованием. У меня возникла аллергическая реакция, весьма неожиданная и неприятная.",
+    description7:"Отличный магазин. Действительно крутое производство. Но у меня небольшая аллергия на шампунь.",
+    description8:"В этом магазине представлен приличный ассортимент товаров для ухода за волосами: от спреев до шампуней. Пока тестирую, но первые впечатления хорошие."
   },
 };
 
