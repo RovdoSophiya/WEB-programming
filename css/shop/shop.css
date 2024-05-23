@@ -18,10 +18,14 @@
 .shop-all {
   font-size: 40px;
   line-height: 27.2px; /* 68% */
+  transition: transform 0.6s ease-in-out;
 }
 .shop-information {
   font-size: 33px;
   line-height: 64px; /* 193.939% */
+}
+.shop-all:hover {
+  transform: scale(1.005);
 }
 .shop-container {
   width: 100%;
@@ -45,51 +49,14 @@
   font-size: 33px;
   line-height: 64px; /* 193.939% */
 }
-.shop-goods {
-  width: 94%;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding-left: 55px;
-  padding-bottom: 45px;
-}
-.section {
-  width: 307px;
-  display: inline-flex;
-  flex-direction: column;
-  height: 500px;
-}
-.section img {
-  width: 100%;
-  height: 424px;
-  overflow: hidden;
-}
-.section-text {
-  padding-top: 5px;
-  color: var(--var-shop-text-color);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-}
-.shop-buy {
-  color: var(--var-shop-text-color);
-  background-color: transparent;
-  border: none;
-  padding: 0;
-  font-size: 20px;
-  font-weight: 400;
-}
-.busket {
-  margin-top: 0;
-}
 @media (max-width: 1200px) {
   .photo-section {
     height: auto;
   }
   .photo-section-information {
-    padding-top: 24%;
-    padding-left: 76px;
+    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-left: 50px;
     display: flex;
     flex-direction: column;
     gap: 21px;
@@ -111,13 +78,13 @@
     font-size: 23px;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 530px) {
   .photo-section-information {
     padding-left: 30px;
+    gap: 10px;
   }
-
   .shop-all {
-    font-size: 20px;
+    font-size: 17px;
   }
   .shop-information {
     font-size: 13px;
