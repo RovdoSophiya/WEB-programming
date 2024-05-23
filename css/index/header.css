@@ -39,11 +39,11 @@ header {
   line-height: 28.8px; /* 160% */
   text-transform: capitalize;
   color: var(--var-header-menu-text);
+  transition: transform 0.4s ease-in-out;
 }
 .menu-item:hover {
   font-size: 120%;
   transform: scale(1.1);
-  transition: transform 0.4s ease-in-out;
   text-decoration: underline;
 }
 .menu-logo {
