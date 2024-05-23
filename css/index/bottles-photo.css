@@ -41,6 +41,10 @@
   font-size: 18px;
   line-height: 28.8px; /* 160% */
   margin-right: 2.7%;
+  transition: transform .6s ease-in-out;
+}
+.bottles-text a:hover{
+  transform: scale(1.1);
 }
 @media (max-width: 1220px) {
   .bottles-photo {
