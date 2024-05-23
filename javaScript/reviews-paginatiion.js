@@ -66,10 +66,12 @@ function displayReviews() {
   for (let i = 0; i < reviewsPerPage; i++) {
     const review = reviews[activeIndex + i];
     if (review) {
-      document.getElementById("info" + (i + 1)).textContent = review.name;
+      const nameKey = `info${activeIndex + i + 1}`;
+      const descriptionKey = `description${activeIndex + i + 1}`;
+
+      document.getElementById("info" + (i + 1)).textContent = i18Obj[currentLanguage][nameKey] || review.name;
       document.getElementById("photo" + (i + 1)).src = review.image;
-      document.getElementById("description" + (i + 1)).textContent =
-        review.review;
+      document.getElementById("description" + (i + 1)).textContent = i18Obj[currentLanguage][descriptionKey] || review.review;
     }
   }
 }
