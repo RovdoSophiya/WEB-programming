@@ -26,9 +26,10 @@
   line-height: 27.2px;
   transition: transform 0.6s ease-in-out;
 }
-.reviews-image-section-text1:hover,.reviews-image-section-text2:hover{
-  transform:rotateY(-10deg);
-  transform:rotateZ(1deg);
+.reviews-image-section-text1:hover,
+.reviews-image-section-text2:hover {
+  transform: rotateY(-10deg);
+  transform: rotateZ(1deg);
 }
 @media (max-width: 700px) {
   .reviews-image-section-text1 {
