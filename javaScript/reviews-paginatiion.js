@@ -1,7 +1,7 @@
 let reviews;
 let activeIndex = 0;
 const reviewsPerPage = 2;
-const totalReviews = 6;
+const totalReviews = 8;
 const paggination = document.querySelector(".slider-paggination");
 const selector = paggination.querySelectorAll("li");
 
