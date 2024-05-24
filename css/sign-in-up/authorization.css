@@ -13,12 +13,16 @@
   color: white;
   width: 165px;
   height: 100%;
+  padding-right: 10px;
 }
-.close a h2 {
+.back-to-main h2 {
   margin: 0;
+  transition: text-shadow 0.6s ease-in-out, text-decoration 0.6s ease-in-out; 
 }
-.close a h2:hover {
-  text-decoration: underline;
+
+.back-to-main:hover {
+  text-shadow: 4px 4px 5px rgba(0, 0, 0, 0.3); 
+  text-decoration: underline; 
 }
 .language-buttons {
   display: flex;
@@ -28,10 +32,14 @@
 }
 .lang-button button {
   color: white;
-  background: transparent;
+  background-color: transparent;
   border: 1px solid white;
   border-radius: 4px;
   height: 28px;
+  transform: background-color .6s ease-in-out;
+}
+.lang-button button:hover {
+   background-color:rgb(171, 171, 188);
 }
 .authorization-box {
   display: flex;
@@ -76,7 +84,6 @@
   font-size: 1em;
   top: -5px;
 }
-
 .inputbox input {
   width: 100%;
   height: 50px;
@@ -86,6 +93,11 @@
   font-size: 1em;
   padding: 0px 35px 0px 5px;
   color: white;
+}
+.inputbox input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 50px rgba(0, 0, 0, 0) inset !important; /* Устанавливает прозрачный фон*/
+  -webkit-text-fill-color: white !important; /*цвет текста*/
+  -webkit-background-clip: text !important; /*фон клипируется по тексту, делая фон прозрачным */
 }
 .inputbox img {
   position: absolute;
@@ -104,7 +116,7 @@
 .forget label {
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-direction: row;
 }
 .forget label input {
   margin-right: 3px;
@@ -113,10 +125,10 @@
   display: flex;
   flex-direction: row;
 }
-.forgerPswd {
+.forget a{
   color: white;
 }
-.forgerPswd:hover {
+.forget a:hover{
   text-decoration: underline;
 }
 .log {
@@ -140,7 +152,7 @@
   justify-content: center;
   flex-direction: row;
 }
-.register p a {
+.register a {
   text-decoration: none;
   color: white;
   font-weight: 600;
@@ -148,10 +160,27 @@
 .reg:hover {
   text-decoration: underline;
 }
-.remember {
-  display: inline;
+.input-error {
+  display: none;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
 }
-@media (max-width: 724px) {
+.input-error.error{
+  width: 100%;
+  height: 40px;
+  display: flex;
+  opacity: 1;
+  text-align: center;
+  justify-content: center;
+  align-items:center;
+  margin: 10px auto;
+  color:rgb(234, 15, 15);
+  background-color: rgba(246, 244, 244, 0.755);
+  font-size: 24px;
+  font-weight: 600;
+  border-radius:20px;
+}
+@media (max-width: 743px) {
   .form-value {
     width: 90%;
   }
@@ -162,5 +191,8 @@
   }
   .form-box {
     width: 83%;
+  }
+  .input-error.error{
+    font-size: 20px;
   }
 }
