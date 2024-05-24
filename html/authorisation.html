@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/sign-in-up/authorization.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
@@ -23,40 +24,45 @@
     <section class="authorization-box">
       <div class="form-box">
         <div class="form-value">
-          <form action="">
+          <form>
             <h2 class="Login" data-i18="Login">Login</h2>
             <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/envelope.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/envelope.png"
+                alt="email"
+              />
               <input class="inp" type="email" id="log-in-email" required />
-              <label for=""><p data-i18="enterEmail">Email*</p></label>
+              <label><span data-i18="enterEmail">Email*</span></label>
             </div>
             <div class="inputbox">
               <img
                 class="lock-closed-outline"
                 src="../img/signInUp/lock.png"
                 onclick="togglePassword(this)"
+                alt="lock password"
               />
               <input class="inp" type="password" id="passwordField" required />
-              <label for=""><p data-i18="enterPassword">Password*</p></label>
+              <label><span data-i18="enterPassword">Password*</span></label>
             </div>
             <div class="forget">
-              <label for=""></label>
-                <div>
-                  <input type="checkbox" />
-                  <p class="remember" data-i18="remember">Remember Me.</p>
-                </div>
-                <a href="#"
-                  ><p data-i18="forgetpswd" class="forgerPswd">Forget Password?</p></a
-                >
-                </label>
+              <label>
+                <input type="checkbox" />
+                <span class="remember" data-i18="remember">Remember Me.</span>
+              </label>
+              <a href="#"
+                ><span data-i18="forgetpswd" class="forgetPswd"
+                  >Forget Password?</span
+                ></a
+              >
             </div>
-            <button class="log" id="Log-in" data-i18="regLogin">Log in</button>
+            <button class="log" id="Log-in" data-i18="regLogin">Login</button>
+            <div class="input-error pswd-error" data-i18="invalidEmPswd">
+              Invalid email or password
+            </div>
             <div class="register">
-              <p data-i18="dhaveAccount">
-                Dont have an account?<a href="registation.html"
-                  ><p data-i18="reg" class="reg">Register</p></a
-                >
-              </p>
+              <p data-i18="dhaveAccount">Don't have an account?></p>
+              <a href="registation.html" data-i18="reg" class="reg">Register</a>
             </div>
           </form>
         </div>
@@ -65,5 +71,6 @@
     <script src="../javaScript/change-language.js"></script>
     <script src="../javaScript/see-password.js"></script>
     <script src="../javaScript/log-in.js"></script>
+    <script src="../javaScript/open-popup.js"></script>
   </body>
 </html>
