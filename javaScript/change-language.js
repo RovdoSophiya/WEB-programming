@@ -72,8 +72,9 @@ const i18Obj = {
     Login: "Login",
     remember: "Remember Me.",
     forgetpswd: "Forget Password?",
-    dhaveAccount: "Dont have an account?",
+    dhaveAccount: "Don't have an account?",
     reg: "Register",
+    invalidEmPswd:"Invalid email or password",
 
     exit: "Exit",
     shopAll: "SHOP ALL",
@@ -208,6 +209,7 @@ const i18Obj = {
     forgetpswd: "Забыли пароль?",
     dhaveAccount: "Нет аккаунта?",
     reg: "Зарегестрируйтесь",
+    invalidEmPswd:"Неверная почта или пароль",
 
     exit: "Выход",
     shopAll: "КУПИТЬ",
