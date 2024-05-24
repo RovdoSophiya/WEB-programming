@@ -63,14 +63,14 @@ function toEnd() {
 }
 
 function displayStars(starsElement, starCount) {
-  starsElement.innerHTML = ''; // Clear any existing stars
+  starsElement.innerHTML = ""; // Clear any existing stars
   for (let i = 0; i < 5; i++) {
-    const star = document.createElement('div');
-    star.classList.add('star');
+    const star = document.createElement("div");
+    star.classList.add("star");
     if (i < starCount) {
-      star.classList.add('yellow');
+      star.classList.add("yellow");
     } else {
-      star.classList.add('black');
+      star.classList.add("black");
     }
     starsElement.appendChild(star);
   }
@@ -83,9 +83,11 @@ function displayReviews() {
       const nameKey = `info${activeIndex + i + 1}`;
       const descriptionKey = `description${activeIndex + i + 1}`;
 
-      document.getElementById("info" + (i + 1)).textContent = i18Obj[currentLanguage][nameKey] || review.name;
+      document.getElementById("info" + (i + 1)).textContent =
+        i18Obj[currentLanguage][nameKey] || review.name;
       document.getElementById("photo" + (i + 1)).src = review.image;
-      document.getElementById("description" + (i + 1)).textContent = i18Obj[currentLanguage][descriptionKey] || review.review;
+      document.getElementById("description" + (i + 1)).textContent =
+        i18Obj[currentLanguage][descriptionKey] || review.review;
 
       const starsElement = document.getElementById("stars" + (i + 1));
       displayStars(starsElement, parseInt(review.star, 10));

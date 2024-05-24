@@ -98,10 +98,11 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transition: transform .6s,background-color .6s,border-radius .6s ease-in-out;
+  transition: transform 0.6s, background-color 0.6s,
+    border-radius 0.6s ease-in-out;
 }
 .paggination li.active p {
-  transform:scale(1.05);
+  transform: scale(1.05);
   background-color: var(--var-active-pag);
   border-radius: 5px;
 }
