@@ -1,16 +1,22 @@
-const loginButton = document.getElementById("Log-in");
-loginButton.addEventListener("click", function () {
-  const emailInput = document.getElementById("log-in-email");
-  const passwordInput = document.getElementById("passwordField");
+document.addEventListener("DOMContentLoaded", function() {
+  const loginForm = document.querySelector('.form-value form');
+  const emailInput = document.getElementById('log-in-email');
+  const passwordInput = document.getElementById('passwordField');
+  const errorDiv = document.querySelector('.input-error.pswd-error');
 
-  const storedUserData = JSON.parse(localStorage.getItem("userData"));
-  if (
-    storedUserData &&
-    storedUserData.email === emailInput.value &&
-    storedUserData.pswd === passwordInput.value
-  ) {
-    window.location.href = "user.html";
-  } else {
-    alert("Invalid email or password.");
-  }
+  loginForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    
+    const users = JSON.parse(localStorage.getItem('users')) || [];
+    const enteredEmail = emailInput.value.trim();
+    const enteredPassword = passwordInput.value.trim();
+    
+    const user = users.find(user => user.email === enteredEmail && user.password === enteredPassword);
+    
+    if (user) {
+      window.location.href = 'user.html';
+    } else {
+      errorDiv.classList.add('error');
+    }
+  });
 });
