@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../img/Orange-logo.png" />
     <link rel="stylesheet" href="../css/normalize.css" />
     <link rel="stylesheet" href="../css/sign-in-up/registration.css" />
     <link rel="stylesheet" href="../css/index/fonts.css" />
@@ -10,63 +11,100 @@
   </head>
   <body class="registration">
     <section class="close">
-      <a href="index.html"><h2 data-i18="backMain">BACK TO MAIN</h2></a>
+      <div class="language-buttons">
+        <div class="lang-button">
+          <button data-i18="rus" class="rus">Rus</button>
+        </div>
+        <div class="lang-button">
+          <button data-i18="en" class="en">En</button>
+        </div>
+      </div>
+      <a href="index.html" class="back-to-main"
+        ><h2 data-i18="backMain">BACK TO MAIN</h2></a
+      >
     </section>
     <section class="registration-box">
       <div class="form-box">
         <div class="form-value">
-          <form id="registration" action="">
+          <form id="registration">
             <h2 class="Registration" data-i18="Registration">Registration</h2>
             <div class="inputbox email">
-              <img class="mail-outline" src="../img/signInUp/envelope.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/envelope.png"
+                alt="envelope"
+              />
               <input class="inp" type="email" required />
-              <label for="" class="inp-label" name="email"
-                ><p data-i18="enterEmail">Email*</p></label
+              <label class="inp-label"
+                ><span data-i18="enterEmail">Email*</span></label
               >
-              <label class="input-error email-error"
-                >Invalid email format or it's already registered</label
+              <label class="input-error email-invalid" data-i18=""
+                >Invalid email format</label
+              >
+              <label class="input-error email-error" data-i18=""
+                >It's already registered</label
               >
             </div>
             <div class="inputbox phone">
               <img
                 class="mail-outline"
                 src="../img/signInUp/telephone-call.png"
+                alt="telephone"
               />
               <input class="inp" type="tel" name="tel" required />
-              <label for="" class="inp-label"
-                ><p data-i18="enterPhone">Telephone*</p></label
+              <label class="inp-label"
+                ><span data-i18="enterPhone">Telephone*</span></label
               >
-              <label class="input-error phone-error"
+              <label class="input-error phone-invalid"
                 >Phone number must start with +375 and have 13 digits in
                 total</label
               >
-            </div>
-            <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/card.png" />
-              <input class="inp" type="text" required />
-              <label for="" class="inp-label"
-                ><p data-i18="enterLastName">Last name*</p></label
+              <label class="input-error phone-error"
+                >Number is already registered</label
               >
             </div>
             <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/card.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/card.png"
+                alt="card"
+              />
               <input class="inp" type="text" required />
-              <label for="" class="inp-label"
-                ><p data-i18="enterName">First name*</p></label
+              <label class="inp-label"
+                ><span data-i18="enterLastName">Last name*</span></label
               >
             </div>
             <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/card.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/card.png"
+                alt="card"
+              />
+              <input class="inp" type="text" required />
+              <label class="inp-label"
+                ><span data-i18="enterName">First name*</span></label
+              >
+            </div>
+            <div class="inputbox">
+              <img
+                class="mail-outline"
+                src="../img/signInUp/card.png"
+                alt="card"
+              />
               <input class="inp" type="text" />
-              <label for="" class="inp-label"
-                ><p data-i18="enterFatherName">Father name</p></label
+              <label class="inp-label"
+                ><span data-i18="enterFatherName">Father name</span></label
               >
             </div>
             <div class="inputbox">
-              <img class="mail-outline" src="../img/signInUp/nick.png" />
+              <img
+                class="mail-outline"
+                src="../img/signInUp/nick.png"
+                alt="nick"
+              />
               <input class="inp" type="text" required />
-              <label for="" class="inp-label"
-                ><p data-i18="enterNickName">Nick name*</p></label
+              <label class="inp-label"
+                ><span data-i18="enterNickName">Nick name*</span></label
               >
             </div>
             <button class="gen" data-i18="genNick">Genetate nick name</button>
@@ -75,16 +113,17 @@
                 class="lock-closed-outline"
                 src="../img/signInUp/lock.png"
                 onclick="togglePassword(this)"
+                alt="lock"
               />
               <input
-                class="inp"
+                class="inp pswd"
                 type="password"
                 name="pswd"
                 id="passwordField"
                 required
               />
-              <label for="" class="inp-label"
-                ><p data-i18="enterPassword">Password*</p></label
+              <label class="inp-label"
+                ><span data-i18="enterPassword">Password*</span></label
               >
               <label class="input-error pswd-error"
                 >Invalid password(need to have at least 8 characters(uppercase,
@@ -97,53 +136,38 @@
                 class="lock-closed-outline"
                 src="../img/signInUp/lock.png"
                 onclick="togglePassword(this)"
+                alt="lock"
               />
               <input
-                class="inp"
+                class="inp rpswd"
                 type="password"
                 name="repeatpswd"
-                id="passwordField"
                 required
               />
-              <label for="" class="inp-label"
-                ><p data-i18="repeatPassword">Repeat password</p></label
+              <label class="inp-label"
+                ><span data-i18="repeatPassword">Repeat password</span></label
               >
             </div>
             <div class="licence">
-              <label for=""
+              <label
                 ><input type="checkbox" />
-                <p data-i18="chkLicense">I read the licence aggreements</p>
-                <a href="#"
-                  ><p data-i18="licence">Licence agreements</p></a
-                ></label
+                <span data-i18="chkLicense"
+                  >I read the licence aggreements</span
+                >
+                <a href="#" data-i18="licence">Licence agreements</a></label
               >
             </div>
             <button class="reg" data-i18="register">Register</button>
             <div class="log">
-              <p data-i18="haveAccount">
-                Already have an account?<a href="authorisation.html"
-                  ><p data-i18="regLogin">Login</p></a
-                >
-              </p>
+              <p data-i18="haveAccount">Already have an account?</p>
+              <a href="authorisation.html" data-i18="regLogin">Login</a>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <script src="../javaScript/change-language.js"></script>
+    <script src="../javaScript/enter-modal.js"></script>
+    <script src="../javaScript/validate-registration.js"></script>
   </body>
-  <script>
-    function togglePassword(icon) {
-      const passwordField = document.getElementById("passwordField");
-      if (passwordField.type === "password") {
-        passwordField.type = "text";
-        icon.src = "../img/signInUp/unlock.png";
-      } else {
-        passwordField.type = "password";
-        icon.src = "../img/signInUp/lock.png";
-      }
-    }
-  </script>
-  <script src="../javaScript/change-language.js"></script>
-  <script src="../javaScript/enter-modal.js"></script>
-  <script src="../javaScript/validate-registration.js"></script>
 </html>
