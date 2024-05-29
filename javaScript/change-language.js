@@ -310,7 +310,7 @@ ruButton.addEventListener("click", () => {
 window.addEventListener("load", () => {
   getTranslate(currentLanguage);
 });
-
+if(window.location.pathname!=='/html/registation.html'&&window.location.pathname!=='/html/authorisation.html'){
 /*бургер-смена*/
 const enButtonB = document.querySelector('button[data-i18="enB"]');
 const ruButtonB = document.querySelector('button[data-i18="rusB"]');
@@ -329,3 +329,4 @@ ruButtonB.addEventListener("click", () => {
   currentLanguage = "ru";
   localStorage.setItem("language", "ru");
 });
+}

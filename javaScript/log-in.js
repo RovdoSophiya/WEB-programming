@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const loginForm = document.querySelector(".form-value form");
+  const loginForm = document.querySelector(".authorisation-form");
   const emailInput = document.getElementById("log-in-email");
   const passwordInput = document.getElementById("passwordField");
   const errorDiv = document.querySelector(".input-error.pswd-error");
-
   loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
 
-    const users = JSON.parse(localStorage.getItem("users")) || [];
+    const users = JSON.parse(localStorage.getItem("userData")) || [];
     const enteredEmail = emailInput.value.trim();
     const enteredPassword = passwordInput.value.trim();
 
