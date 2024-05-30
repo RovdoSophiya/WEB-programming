@@ -234,14 +234,13 @@ document.addEventListener("DOMContentLoaded", function () {
       password: passwordInput.value,
     };
 
-    const users = JSON.parse(localStorage.getItem('userData')) || [];
+    const users = JSON.parse(localStorage.getItem("userData")) || [];
     localStorage.setItem("userData", JSON.stringify([...users, userData]));
   }
   function GoToUser() {
     if (IsValidRegistration()) {
       regButton.classList.add("open");
-    }
-    else{
+    } else {
       regButton.classList.remove("open");
     }
   }
@@ -277,12 +276,14 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
   // Генерация пароля
-  document.querySelector(".gen.pswd").addEventListener("click", function (event) {
-    event.preventDefault();
-    const password = generatePassword();
-    passwordInput.value = password;
-    isPasswordValid(password);
-  });
+  document
+    .querySelector(".gen.pswd")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      const password = generatePassword();
+      passwordInput.value = password;
+      isPasswordValid(password);
+    });
 
   function generatePassword() {
     const length = 12;
@@ -297,11 +298,13 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Генерация ника
-  document.querySelector(".gen.nick").addEventListener("click", function (event) {
-    event.preventDefault();
-    const nickname = generateNickname();
-    nickNameInput.value = nickname;
-  });
+  document
+    .querySelector(".gen.nick")
+    .addEventListener("click", function (event) {
+      event.preventDefault();
+      const nickname = generateNickname();
+      nickNameInput.value = nickname;
+    });
 
   function generateNickname() {
     const adjectives = ["Cool", "Super", "Fast", "Brave", "Smart"];

@@ -74,7 +74,7 @@ const i18Obj = {
     forgetpswd: "Forget Password?",
     dhaveAccount: "Don't have an account?",
     reg: "Register",
-    invalidEmPswd:"Invalid email or password",
+    invalidEmPswd: "Invalid email or password",
 
     exit: "Exit",
     shopAll: "SHOP ALL",
@@ -209,7 +209,7 @@ const i18Obj = {
     forgetpswd: "Забыли пароль?",
     dhaveAccount: "Нет аккаунта?",
     reg: "Зарегестрируйтесь",
-    invalidEmPswd:"Неверная почта или пароль",
+    invalidEmPswd: "Неверная почта или пароль",
 
     exit: "Выход",
     shopAll: "КУПИТЬ",
@@ -310,23 +310,26 @@ ruButton.addEventListener("click", () => {
 window.addEventListener("load", () => {
   getTranslate(currentLanguage);
 });
-if(window.location.pathname!=='/html/registation.html'&&window.location.pathname!=='/html/authorisation.html'){
-/*бургер-смена*/
-const enButtonB = document.querySelector('button[data-i18="enB"]');
-const ruButtonB = document.querySelector('button[data-i18="rusB"]');
+if (
+  window.location.pathname !== "/html/registation.html" &&
+  window.location.pathname !== "/html/authorisation.html"
+) {
+  /*бургер-смена*/
+  const enButtonB = document.querySelector('button[data-i18="enB"]');
+  const ruButtonB = document.querySelector('button[data-i18="rusB"]');
 
-enButtonB.addEventListener("click", () => {
-  getTranslate("en");
-  enButtonB.classList.add("eng");
-  ruButtonB.classList.remove("russ");
-  currentLanguage = "en";
-  localStorage.setItem("language", "en");
-});
-ruButtonB.addEventListener("click", () => {
-  getTranslate("ru");
-  enButtonB.classList.remove("eng");
-  ruButtonB.classList.add("russ");
-  currentLanguage = "ru";
-  localStorage.setItem("language", "ru");
-});
+  enButtonB.addEventListener("click", () => {
+    getTranslate("en");
+    enButtonB.classList.add("eng");
+    ruButtonB.classList.remove("russ");
+    currentLanguage = "en";
+    localStorage.setItem("language", "en");
+  });
+  ruButtonB.addEventListener("click", () => {
+    getTranslate("ru");
+    enButtonB.classList.remove("eng");
+    ruButtonB.classList.add("russ");
+    currentLanguage = "ru";
+    localStorage.setItem("language", "ru");
+  });
 }
