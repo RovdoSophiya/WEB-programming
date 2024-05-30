@@ -125,7 +125,6 @@
   display: flex;
   justify-content: center;
 }
-
 .stars .star {
   width: 20px;
   height: 20px;
@@ -133,11 +132,10 @@
   margin: 0 2px;
 }
 .star.yellow {
-  background-image: url("/img/reviews/star.png"); /* Replace with the path to your yellow star image */
+  background-image: url("/img/reviews/star.png");
 }
-
 .star.black {
-  background-image: url("/img/reviews/black-star.png"); /* Replace with the path to your black star image */
+  background-image: url("/img/reviews/black-star.png");
 }
 @media (max-width: 1249px) {
   .review-person {
