@@ -293,15 +293,11 @@ const ruButton = document.querySelector('button[data-i18="rus"]');
 
 enButton.addEventListener("click", () => {
   getTranslate("en");
-  enButtonB.classList.add("eng");
-  ruButtonB.classList.remove("russ");
   currentLanguage = "en";
   localStorage.setItem("language", "en");
 });
 ruButton.addEventListener("click", () => {
   getTranslate("ru");
-  enButtonB.classList.remove("eng");
-  ruButtonB.classList.add("russ");
   currentLanguage = "ru";
   localStorage.setItem("language", "ru");
 });
