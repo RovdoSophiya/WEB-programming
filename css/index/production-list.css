@@ -36,7 +36,7 @@
 }
 .product-photo img {
   width: 380px;
-  height: 500px;
+  height: 567px;
 }
 .buy-product {
   border: none;
@@ -61,6 +61,21 @@
   cursor: pointer;
   outline: none;
 }
+.text-upp {
+  margin-top: 10px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.2px; /* 140% */
+  text-transform: uppercase;
+}
+.product-price {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
 @media (max-width: 1200px) {
   .product-list .product-item:nth-child(3) {
     display: none;
@@ -81,6 +96,6 @@
     width: 310px;
   }
   .production-list {
-    height: 750px;
+    height: 820px;
   }
 }
