@@ -1,5 +1,5 @@
 .registration {
-  background: url("/img/signInUp/fone.png") no-repeat center/cover;
+  background: url("../../img/signInUp/fone.png") no-repeat center/cover;
   z-index: -1;
   width: 100%;
 }

@@ -1,5 +1,5 @@
 .authorization {
-  background: url("/img/signInUp/fone.jpg");
+  background: url("../../img/signInUp/fone.jpg");
   z-index: -1;
   width: 100%;
 }

@@ -1,7 +1,7 @@
 .reviews-image {
   width: 100%;
   height: auto;
-  background-image: url("/img/reviews-image.png");
+  background-image: url("../../img/reviews-image.png");
   background-size: cover;
   background-position: center;
   color: var(--var-footer-bg);

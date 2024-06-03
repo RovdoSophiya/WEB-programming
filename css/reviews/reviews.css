@@ -132,10 +132,10 @@
   margin: 0 2px;
 }
 .star.yellow {
-  background-image: url("/img/reviews/star.png");
+  background-image: url("../../img/reviews/star.png");
 }
 .star.black {
-  background-image: url("/img/reviews/black-star.png");
+  background-image: url("../../img/reviews/black-star.png");
 }
 @media (max-width: 1249px) {
   .review-person {

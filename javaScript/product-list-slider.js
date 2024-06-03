@@ -12,11 +12,6 @@ fetch("../json/product-list.json")
   })
   .catch((error) => console.error("Ошибка при исполнении запроса: ", error));
 
-// const section = document.querySelector('.product-item');
-// const img = section.querySelectorAll('img');
-// const text = section.querySelector('.text-upp');
-// const price = alltext.querySelectorAll('.text');
-
 let activep = 0;
 
 const btnLeft = document.getElementById("left-arrow");
