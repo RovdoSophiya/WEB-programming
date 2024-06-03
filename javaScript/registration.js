@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
   let repeatPasswordTouched = false;
   let birthdayTouched = false;
 
-  
   const commonPasswords = [
     "password",
     "123456",
@@ -126,7 +125,6 @@ document.addEventListener("DOMContentLoaded", function () {
     "q1w2e3r4",
     "232323",
   ];
-
 
   function isEmailValid(email) {
     if (!emailTouched || email === "") {
