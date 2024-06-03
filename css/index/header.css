@@ -163,11 +163,11 @@ header {
   margin-top: -10px;
   gap: 5%;
 }
-.signs a{
-   width: 33px;
-   height: 33px;
-   border-radius:20px;
-   background-color:var(--var-icon-color);
+.signs a {
+  width: 33px;
+  height: 33px;
+  border-radius: 20px;
+  background-color: var(--var-icon-color);
 }
 .user-exit {
   margin-top: -15px;
