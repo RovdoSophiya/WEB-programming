@@ -1,23 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const emailInput = document.querySelector(".email-inp");
-  const phoneInput = document.querySelector(".phone-inp");
-  const lastNameInput = document.querySelector(".lastName-inp");
+  const birthdayInput = document.querySelector(".inp.date-inp");
+  const emailInput = document.querySelector(".inp.email-inp");
+  const phoneInput = document.querySelector(".inp.phone-inp");
+  const lastNameInput = document.querySelector(".inp.lastName-inp");
   const nameInput = document.querySelector(".name-inp");
-  const fatherNameInput = document.querySelector(".fatherName-inp");
+  const fatherNameInput = document.querySelector(".inp.fatherName-inp");
   const nickNameInput = document.querySelector(".nick");
   const passwordInput = document.querySelector(".inp.pswd-inp");
   const repeatPasswordInput = document.querySelector(".inp.rpswd");
   const licence = document.querySelector(".lic");
 
-  const emailInvalid = document.querySelector(".ei");
-  const emailUnique = document.querySelector(".ee");
-  const phoneInvalid = document.querySelector(".ti");
-  const phoneUnique = document.querySelector(".te");
-  const passwordInvalid = document.querySelector(".pe");
-  const passwordUnique = document.querySelector(".pi");
+  const birthdayInvalid = document.querySelector(".input-error.di");
+  const emailInvalid = document.querySelector(".input-error.ei");
+  const emailUnique = document.querySelector(".input-error.ee");
+  const phoneInvalid = document.querySelector(".input-error.ti");
+  const phoneUnique = document.querySelector(".input-error.te");
+  const passwordInvalid = document.querySelector(".pswd-error.pe");
   const passwordMatch = document.querySelector(".pm");
 
   const regButton = document.querySelector(".reg");
+
+  let emailTouched = false;
+  let phoneTouched = false;
+  let passwordTouched = false;
+  let repeatPasswordTouched = false;
+  let birthdayTouched = false;
+
+  
   const commonPasswords = [
     "password",
     "123456",
@@ -118,7 +127,13 @@ document.addEventListener("DOMContentLoaded", function () {
     "232323",
   ];
 
+
   function isEmailValid(email) {
+    if (!emailTouched || email === "") {
+      emailInvalid.classList.remove("email-invalid");
+      return false;
+    }
+
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/i;
     if (!emailRegex.test(email)) {
       emailInvalid.classList.add("email-invalid");
@@ -128,9 +143,16 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
   }
+
   function isEmailUnique(email) {
-    const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    if (storedUserData && storedUserData.email === email) {
+    if (!emailTouched || email === "") {
+      emailUnique.classList.remove("email-error");
+      return false;
+    }
+
+    const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
+    const isUnique = !storedUserData.some((user) => user.email === email);
+    if (!isUnique) {
       emailUnique.classList.add("email-error");
       return false;
     } else {
@@ -138,7 +160,13 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
   }
+
   function isPhoneValid(phone) {
+    if (!phoneTouched || phone === "") {
+      phoneInvalid.classList.remove("phone-invalid");
+      return false;
+    }
+
     const phoneRegex = /^\+375\d{9}$/;
     if (!phoneRegex.test(phone)) {
       phoneInvalid.classList.add("phone-invalid");
@@ -148,9 +176,16 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
   }
+
   function isPhoneUnique(phone) {
-    const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    if (storedUserData && storedUserData.phone === phone) {
+    if (!phoneTouched || phone === "") {
+      phoneUnique.classList.remove("phone-error");
+      return false;
+    }
+
+    const storedUserData = JSON.parse(localStorage.getItem("userData")) || [];
+    const isUnique = !storedUserData.some((user) => user.phone === phone);
+    if (!isUnique) {
       phoneUnique.classList.add("phone-error");
       return false;
     } else {
@@ -158,7 +193,13 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
   }
+
   function isPasswordValid(password) {
+    if (!passwordTouched || password === "") {
+      passwordInvalid.classList.remove("error");
+      return false;
+    }
+
     const uppercaseRegex = /[A-Z]/;
     const lowercaseRegex = /[a-z]/;
     const digitRegex = /[0-9]/;
@@ -178,17 +219,13 @@ document.addEventListener("DOMContentLoaded", function () {
       return true;
     }
   }
-  function isPasswordUnique(password) {
-    const storedUserData = JSON.parse(localStorage.getItem("userData"));
-    if (storedUserData && storedUserData.password === password) {
-      passwordUnique.classList.add("error");
-      return false;
-    } else {
-      passwordUnique.classList.remove("error");
-      return true;
-    }
-  }
+
   function isPasswordsMatch(password, repeatPassword) {
+    if (!repeatPasswordTouched || repeatPassword === "") {
+      passwordMatch.classList.remove("repeat-error");
+      return false;
+    }
+
     if (password === repeatPassword) {
       passwordMatch.classList.remove("repeat-error");
       return true;
@@ -197,33 +234,63 @@ document.addEventListener("DOMContentLoaded", function () {
       return false;
     }
   }
+
+  function isBirthdayValid(birthday) {
+    if (!birthdayTouched || birthday === "") {
+      birthdayInvalid.classList.remove("birthday-error");
+      return false;
+    }
+
+    const birthdayDate = new Date(birthday);
+    const today = new Date();
+    const age = today.getFullYear() - birthdayDate.getFullYear();
+    const monthDifference = today.getMonth() - birthdayDate.getMonth();
+    if (
+      monthDifference < 0 ||
+      (monthDifference === 0 && today.getDate() < birthdayDate.getDate())
+    ) {
+      age--;
+    }
+
+    if (age < 16) {
+      birthdayInvalid.classList.add("birthday-error");
+      return false;
+    } else {
+      birthdayInvalid.classList.remove("birthday-error");
+      return true;
+    }
+  }
+
   function isLicenceChecked(licence) {
     return licence.checked;
   }
-  function IsValidRegistration() {
-    const IsEmailValid = isEmailValid(emailInput.value);
-    const IsEmailUnique = isEmailUnique(emailInput.value);
-    const IsPhoneValid = isPhoneValid(phoneInput.value);
-    const IsPhoneUnique = isPhoneUnique(phoneInput.value);
-    const IsPasswordValid = isPasswordValid(passwordInput.value);
-    const IsPasswordUnique = isPasswordUnique(passwordInput.value);
-    const IsPasswordsMatch = isPasswordsMatch(
+
+  function isValidRegistration() {
+    const isEmailValidFlag = isEmailValid(emailInput.value);
+    const isEmailUniqueFlag = isEmailUnique(emailInput.value);
+    const isPhoneValidFlag = isPhoneValid(phoneInput.value);
+    const isPhoneUniqueFlag = isPhoneUnique(phoneInput.value);
+    const isPasswordValidFlag = isPasswordValid(passwordInput.value);
+    const isPasswordsMatchFlag = isPasswordsMatch(
       passwordInput.value,
       repeatPasswordInput.value
     );
-    const IsLicenceChecked = isLicenceChecked(licence);
+    const isBirthdayValidFlag = isBirthdayValid(birthdayInput.value);
+    const isLicenceCheckedFlag = isLicenceChecked(licence);
+
     return (
-      IsEmailValid &&
-      IsEmailUnique &&
-      IsPhoneValid &&
-      IsPhoneUnique &&
-      IsPasswordValid &&
-      IsPasswordUnique &&
-      IsPasswordsMatch &&
-      IsLicenceChecked
+      isEmailValidFlag &&
+      isEmailUniqueFlag &&
+      isPhoneValidFlag &&
+      isPhoneUniqueFlag &&
+      isPasswordValidFlag &&
+      isPasswordsMatchFlag &&
+      isBirthdayValidFlag &&
+      isLicenceCheckedFlag
     );
   }
-  function SaveUserData() {
+
+  function saveUserData() {
     const userData = {
       email: emailInput.value,
       phone: phoneInput.value,
@@ -232,49 +299,65 @@ document.addEventListener("DOMContentLoaded", function () {
       fatherName: fatherNameInput.value,
       nick: nickNameInput.value,
       password: passwordInput.value,
+      birthday: birthdayInput.value,
     };
 
     const users = JSON.parse(localStorage.getItem("userData")) || [];
     localStorage.setItem("userData", JSON.stringify([...users, userData]));
   }
-  function GoToUser() {
-    if (IsValidRegistration()) {
+
+  function goToUser() {
+    if (isValidRegistration()) {
       regButton.classList.add("open");
     } else {
       regButton.classList.remove("open");
     }
   }
+
   emailInput.addEventListener("input", function () {
+    emailTouched = true;
     isEmailValid(emailInput.value);
     isEmailUnique(emailInput.value);
-    GoToUser();
+    goToUser();
   });
 
   phoneInput.addEventListener("input", function () {
+    phoneTouched = true;
     isPhoneValid(phoneInput.value);
-    isPasswordUnique(phoneInput.value);
-    GoToUser();
+    isPhoneUnique(phoneInput.value);
+    goToUser();
   });
+
   passwordInput.addEventListener("input", function () {
+    passwordTouched = true;
     isPasswordValid(passwordInput.value);
-    isPasswordUnique(passwordInput.value);
-    GoToUser();
+    goToUser();
   });
+
   repeatPasswordInput.addEventListener("input", function () {
+    repeatPasswordTouched = true;
     isPasswordsMatch(passwordInput.value, repeatPasswordInput.value);
-    GoToUser();
+    goToUser();
   });
+
+  birthdayInput.addEventListener("input", function () {
+    birthdayTouched = true;
+    isBirthdayValid(birthdayInput.value);
+    goToUser();
+  });
+
   licence.addEventListener("change", function () {
-    IsValidRegistration();
-    GoToUser();
+    goToUser();
   });
+
   regButton.addEventListener("click", function (event) {
     event.preventDefault();
     if (regButton.classList.contains("open")) {
-      SaveUserData();
+      saveUserData();
       window.location.href = "user.html";
     }
   });
+
   // Генерация пароля
   document
     .querySelector(".gen.pswd")

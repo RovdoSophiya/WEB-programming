@@ -186,7 +186,7 @@
 .ee.email-error,
 .ti.phone-invalid,
 .te.phone-error,
-.ne.nick-error {
+.di.birthday-error {
   position: relative;
   top: 0px;
   width: 100%;
@@ -203,7 +203,6 @@
   border-radius: 20px;
 }
 .pe,
-.pi,
 .pm {
   display: flex;
   height: 0;
@@ -212,7 +211,6 @@
   transition: height 0.6s ease-in-out, opacity 0.6s ease-in-out;
 }
 .pe.error,
-.pi.error,
 .pm.repeat-error {
   position: relative;
   top: 0px;
