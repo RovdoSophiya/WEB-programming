@@ -241,7 +241,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const birthdayDate = new Date(birthday);
     const today = new Date();
-    const age = today.getFullYear() - birthdayDate.getFullYear();
+    let age = today.getFullYear() - birthdayDate.getFullYear();
     const monthDifference = today.getMonth() - birthdayDate.getMonth();
     if (
       monthDifference < 0 ||
