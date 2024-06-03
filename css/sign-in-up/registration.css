@@ -260,4 +260,12 @@
   .gen {
     width: 100%;
   }
+  .pswd-error.pe{
+    font-size: 10px;
+  }
+}
+@media (max-width: 557px) {
+  .pswd-error.pe{
+    font-size: 8px;
+  }
 }
