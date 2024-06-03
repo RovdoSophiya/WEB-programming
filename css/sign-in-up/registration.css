@@ -97,6 +97,16 @@
   padding: 0px 35px 0px 5px;
   color: white;
 }
+.inputbox.birthday input {
+  width: 110px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  padding: 0px 35px 0px 5px;
+  color: white;
+}
 .inputbox img {
   position: absolute;
   right: 8px;

@@ -38,10 +38,10 @@
               <label class="inp-label"
                 ><span data-i18="enterEmail">Email*</span></label
               >
-              <label class="input-error ei" data-i18=""
+              <label class="input-error ei" data-i18="ei"
                 >Invalid email format</label
               >
-              <label class="input-error ee" data-i18=""
+              <label class="input-error ee" data-i18="ee"
                 >It's already registered</label
               >
             </div>
@@ -55,11 +55,13 @@
               <label class="inp-label"
                 ><span data-i18="enterPhone">Telephone*</span></label
               >
-              <label class="input-error ti"
+              <label class="input-error ti" data-i18="ti"
                 >Phone number must start with +375 and have 13 digits in
                 total</label
               >
-              <label class="input-error te">Number is already registered</label>
+              <label class="input-error te" data-i18="te"
+                >Number is already registered</label
+              >
             </div>
             <div class="inputbox">
               <img
@@ -104,13 +106,24 @@
               <label class="inp-label"
                 ><span data-i18="enterNickName">Nick name*</span></label
               >
-              <label class="input-error ne" data-i18=""
-                >It's already registered</label
-              >
             </div>
             <button class="gen nick" data-i18="genNick">
               Genetate nick name
             </button>
+            <div class="inputbox birthday">
+              <img
+                class="birthday"
+                src="../img/signInUp/birthday.png"
+                alt="birthday"
+              />
+              <input class="inp date-inp" type="date" name="date" required />
+              <label class="inp-label"
+                ><span data-i18="enterBirthday">Birhday*</span></label
+              >
+              <label class="input-error di" data-i18="di"
+                >You need to be over 16 y.o.</label
+              >
+            </div>
             <div class="inputbox">
               <img
                 class="lock-closed-outline sec"
@@ -129,11 +142,10 @@
               <label class="inp-label pswd-inp"
                 ><span data-i18="enterPassword">Password*</span></label
               >
-              <label class="pswd-error pe"
+              <label class="pswd-error pe" data-i18="pe"
                 >Invalid password(need to have at least 8 characters(uppercase,
                 lowercase,digit, special character and not be popular))
               </label>
-              <label class="pswd-error pi">It is already used </label>
             </div>
             <button class="gen pswd" data-i18="genPswd">
               Genetate password
