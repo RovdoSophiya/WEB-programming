@@ -204,7 +204,7 @@ const i18Obj = {
     te: "Номер уже зарегестрирован",
     enterLastName: "Фамилия*",
     enterName: "Имя*",
-    enterFatherNam: "Отчество",
+    enterFatherName: "Отчество",
     enterNickName: "Ник*",
     genNick: "Сгенерировать ник",
     enterBirthday: "День рождения*",
