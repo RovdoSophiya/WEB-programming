@@ -306,31 +306,3 @@ ruButton.addEventListener("click", () => {
 window.addEventListener("load", () => {
   getTranslate(currentLanguage);
 });
-console.log(window.location.pathname);
-if (
-  window.location.pathname !== "/html/registation.html" &&
-  window.location.pathname !== "/html/authorisation.html" &&
-  window.location.pathname !==
-    "/D:/Programming/javaScript/2course/%D0%BA%D1%83%D1%80%D1%81.%D1%80%D0%B0%D0%B1/WEB-programming/html/authorisation.html" &&
-  window.location.pathname !==
-    "/D:/Programming/javaScript/2course/%D0%BA%D1%83%D1%80%D1%81.%D1%80%D0%B0%D0%B1/WEB-programming/html/registation.html"
-) {
-  /*бургер-смена*/
-  const enButtonB = document.querySelector('button[data-i18="enB"]');
-  const ruButtonB = document.querySelector('button[data-i18="rusB"]');
-
-  enButtonB.addEventListener("click", () => {
-    getTranslate("en");
-    enButtonB.classList.add("eng");
-    ruButtonB.classList.remove("russ");
-    currentLanguage = "en";
-    localStorage.setItem("language", "en");
-  });
-  ruButtonB.addEventListener("click", () => {
-    getTranslate("ru");
-    enButtonB.classList.remove("eng");
-    ruButtonB.classList.add("russ");
-    currentLanguage = "ru";
-    localStorage.setItem("language", "ru");
-  });
-}
