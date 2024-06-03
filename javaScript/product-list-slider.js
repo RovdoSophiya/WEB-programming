@@ -1,3 +1,4 @@
+document.addEventListener("DOMContentLoaded", function () {
 let reviews;
 
 fetch("../json/product-list.json")
@@ -39,3 +40,4 @@ function setdata() {
       reviews[productIndex].price;
   }
 }
+});
