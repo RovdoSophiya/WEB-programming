@@ -118,10 +118,15 @@ header {
   transform: scale(1.1);
   transition: transform 0.6s ease-in-out;
 }
+.red-theme .rus:focus,
+.red-theme .en:focus {
+  color: rgb(164, 137, 137);
+  transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
+}
 .rus:focus,
 .en:focus {
   background-color: var(--var-shop-burger);
-  color: rgb(56, 51, 51);
+  color: rgb(251, 247, 247);
   transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
 }
 .themes {
@@ -144,7 +149,6 @@ header {
 .red-theme .language-buttons-and-themes button {
   background: var(--var-button-color);
 }
-
 .themes button.light-theme {
   background: rgb(122, 224, 115);
 }
@@ -168,6 +172,11 @@ header {
   height: 33px;
   border-radius: 20px;
   background-color: var(--var-icon-color);
+  transition: transform 0.6s ease-in-out;
+}
+.signs a:hover {
+  filter: drop-shadow(7px -3px 15px rgba(243, 228, 67, 0.796));
+  transform: scale(1.1);
 }
 .user-exit {
   margin-top: -15px;
@@ -178,6 +187,12 @@ header {
   line-height: 28.8px; /* 160% */
   text-transform: capitalize;
   color: var(--var-header-menu-text);
+  transition: transform 0.4s ease-in-out;
+}
+.user-exit-item:hover {
+  font-size: 200%;
+  transform: scale(1.1);
+  text-decoration: underline;
 }
 .open-modal-button {
   display: flex;
@@ -263,6 +278,7 @@ header {
   }
   .user-account {
     width: 15%;
+    margin-right: 30px;
   }
   /*__________burger-menu_____________________*/
   .burger-menu {
